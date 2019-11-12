@@ -1,12 +1,203 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Погнали</title>
   </head>
   <body>
+    <!-- SVG СПРАЙТ-->
+    <div style="display:none">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <symbol id="htmlacademy">
+            <path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+        </symbol>
+      </svg>
+    </div>
+    <header class="page-header">
+      <div page-header__logo-toogle>
+        <a href="index.html" class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo-mobile-white.png" width="100" height="19" alt="Логотип погнали">
+        </a>
+        <button class="page-header__toogle-btn" type="button">
+          Открыть меню
+        </button>
+      </div>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+      <section class="drop-menu">
+        <nav class="drop-menu__nav">
+          <ul class="drop-menu__nav-list">
+            <li><a href="">О сервисе</a></li>
+            <li><a href="">Направления</a></li>
+            <li><a href="">Попутчики</a></li>
+          </ul>
+        </nav>
+        <button class="drop-menu__auth-btn button-auth" type="button">Авторизация</button>
+        <a href ="tel:+78005558628">8 800 555-86-28</a>
+        <a href="">mail@htmlacademy.ru</a>
+      </section>
+      <section class="page-header__slogan-auth">
+        <p class="page-header__slogan">В путешествие с крутыми попутчиками!</p>
+        <div class="page-header__auth-block">
+          <button class="page-header__auth-btn button-auth" type="button">Авторизация</button>
+        </div>
+      </section>
+    </header>
 
+    <main class="page-main">
+      <h1 class="visually-hidden">Погнали - сайт про путешествия</h1>
+      <blockquote class="page-main__review">
+        <p>«Лучшее приложение, что я видел в жизни»</p>
+        <cite class="page-main__review_author">Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite>
+      </blockquote>
+      <ul class="page-main-list steps">
+        <li class="steps__item steps__item--first">Выберите Направления</li>
+        <li class="steps__item steps__item--second">Изучите идеи путешественников</li>
+        <li class="steps__item steps__item--third">Находите тех, кто похож на вас</li>
+        <li class="steps__item steps__item--fourth">Путешествуйте вместе!</li>
+      </ul>
+
+      <section class="about">
+        <h2 class="about__title"> О сервисе</h2>
+        <p class="about__slogan slogan--bold">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+        <p class="about__slogan slogan--normal">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+      </section>
+
+      <section class="directions">
+        <h2 class="directions__title">Направления</h2>
+        <p class="directions__slogan slogan--bold">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+        <ul class="directions__list-country list-country">
+          <li class="list-country__item">
+            <a href="">
+              <img src="img/thailand-mobile.png" width="270" height="110" alt="Фото Таиланда">
+              <div class="list-country__item-desc">
+                <div>
+                  <strong>Таиланд</strong>
+                  <p class="list-country__slogan">Джунгли зовут!</p>
+                </div>
+                <span class="list-country__price">18321</span>
+              </div>
+            </a>
+          </li>
+          <li class="list-country__item">
+            <a href="">
+              <img src="img/france-mobile.png" width="270" height="110" alt="Фото Франции">
+              <div class="list-country__item-desc">
+                <div>
+                  <strong>Франция</strong>
+                  <p class="list-country__slogan">Трэ бьен, манифик!</p>
+                </div>
+                <span class="list-country__price">12518</span>
+              </div>
+            </a>
+          </li>
+            <li class="list-country__item">
+              <a href="">
+                <img src="img/czech-mobile.png" width="270" height="110" alt="Фото Чехии">
+                <div class="list-country__item-desc">
+                  <div>
+                    <strong>Чехия</strong>
+                    <p class="list-country__slogan">Джунгли зовут!</p>
+                  </div>
+                  <span class="list-country__price">5326</span>
+                </div>
+              </a>
+            </li>
+        </ul>
+        <button class="button-show button-show--yellow">
+          Показать все
+        </button>
+      </section>
+      <section class="fellow-travelers">
+        <h2 class="fellow-travelers__title">Попутчики</h2>
+        <p class="fellow-travelers__slogan slogan--bold">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+        <p class="fellow-travelers__slogan slogan--normal">Теперь можно легко найти единомышленников!</p>
+        <ul class="fellow-travelers__tr-list traveler-list">
+          <li class="traveler-list__item">
+            <a class="traveler-list__link" href="">
+              <div class="traveler-list__sticker">
+                <span>99</span>
+                <span>level</span>
+              </div>
+              <img src="img/traveler-1.jpg" width="275" height="270" alt="Фото путешественника, девушка плавает на спине в бассейне">
+              <div class="traveler-list__item-desc">
+                <div class="traveler-list__flags"></div>
+                <p class="traveler-list__person-name">Таня Фирсова</p>
+                <p class="traveler-list__hashtag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+                <div class="traveler-list__icons">
+
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="traveler-list__item">
+            <a class="traveler-list__link" href="">
+              <div class="traveler-list__sticker">
+                <span>80</span>
+                <span>level</span>
+              </div>
+              <img src="img/traveler-2.jpg" width="275" height="270" alt="Фото путешественника, девушка плавает на спине в бассейне">
+              <div class="traveler-list__item-desc">
+                <div class="traveler-list__flags"></div>
+                <p class="traveler-list__person-name">Петя Демин</p>
+                <p class="traveler-list__hashtag">#бургер #бар #футбол #концерт #крафт</p>
+                <div class="traveler-list__icons">
+
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <button class="button-show button-show--yellow">
+          Показать все
+        </button>
+      </section>
+
+      <section class="profile">
+        <header class="profile__header">
+          <h2 class="profile__title">Добавьте свой профиль</h2>
+          <img src="img/rates.png" widht="99" height="99">
+        </header>
+        <ul class="profile__list">
+          <li class="profile__list-item profile__list-item--first">
+              Базовое размещение Бесплатно
+          </li>
+          <li class="profile__list-item profile__list-item--second">
+              Вывод на первых позициях 99 руб./мес
+          </li>
+          <li class="profile__list-item profile__list-item--third">
+              Кастомный цвет карточки 59 руб./мес
+          </li>
+        </ul>
+        <button class="profile__button" type="button">
+          Показать тарифы для бизнеса
+        </button>
+        <div class="hidden-rates">
+          <h2 class="hidden-rates__title">Бизнес тарифы</h2>
+          <ul class="hidden-rates__list">
+            <li class="hidden-rates__list-item">Реклама у блоггера 300 000 руб./пост</li>
+            <li class="hidden-rates__list-item">Накрутка подписчиков от 1 руб./шт.</li>
+            <li class="hidden-rates__list-item">Лайки от ботов от 20 коп./лайк</li>
+            <li class="hidden-rates__list-item">Ваш продакт-плейсмент Индивидуально</li>
+          </ul>
+          <button class="hidden-rates__button" type="button">
+            Показать тарифы для бизнеса
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <img src="img/logo-mobile-blue.png" width="100" height="19" alt="Логотип погнали">\
+      <div class="page-footer__icons">
+
+      </div>
+      <div class="page-footer__low">
+        <span>Разработано</span>
+        <svg aria-label="Логотип htmlacademy" viewBox="0 0 60 60" width="27" height="34">
+            <use xlink:href="#htmlacademy"></use>
+        </svg>
+      </div>
+    </footer>
   </body>
 </html>
