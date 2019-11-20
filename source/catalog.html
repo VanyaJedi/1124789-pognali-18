@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Погнали каталог</title>
+</head>
+<body>
+    <header class="page-header">
+      <div page-header__logo-toogle>
+        <a href="index.html" class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo-mobile-white.png" width="100" height="19" alt="Логотип погнали">
+        </a>
+        <button class="page-header__toogle-btn" type="button">
+          Открыть меню
+        </button>
+      </div>
+
+      <section class="drop-menu">
+        <nav class="drop-menu__nav">
+          <ul class="drop-menu__nav-list">
+            <li><a href="">О сервисе</a></li>
+            <li><a href="">Направления</a></li>
+            <li><a href="">Попутчики</a></li>
+          </ul>
+        </nav>
+        <button class="drop-menu__auth-btn button-auth" type="button">Авторизация</button>
+        <a href ="tel:+78005558628">8 800 555-86-28</a>
+        <a href="">mail@htmlacademy.ru</a>
+      </section>
+      <section class="page-header__slogan-auth">
+        <p class="page-header__slogan">В путешествие с крутыми попутчиками!</p>
+        <div class="page-header__auth-block">
+          <button class="page-header__auth-btn button-auth" type="button">Авторизация</button>
+        </div>
+      </section>
+    </header>
+
+    <main class="page-main">
+      <h1 class="page-main__title">Попутчики</h1>
+
+      <section class="filter">
+        <h2 class="filter__title">
+          Фильтрация по странам
+        </h2>
+        <ul class="filter__region-list">
+          <li class="filter__region-list-item filter__country-list-item--active">Европа</li>
+          <li class="filter__region-list-item">Азия</li>
+          <li class="filter__region-list-item">Америка</li>
+          <li class="filter__region-list-item">Острова</li>
+        </ul>
+        <button class="hide-btn">Свернуть все</button>
+        <button class="hide-btn hide-btn--hidden">Показать все</button>
+        <ul class="filter__country-list country-list">
+          <li class="country-list__item">
+            А
+            <ul class="country-list__name-list">
+              <li>Австралия</li>
+              <li>Австрия</li>
+              <li>Азербайджан</li>
+              <li>Албания</li>
+              <li>Алжир</li>
+              <li>Ангола</li>
+              <li>Андорра</li>
+              <li>Антигуа и Барбуда</li>
+              <li>Аргентина</li>
+              <li>Армения</li>
+              <li>Афганистан</li>
+            </ul>
+          </li>
+          <li class="country-list__item">Б</li>
+          <li class="country-list__item">В</li>
+          <li class="country-list__item">Г</li>
+          <li class="country-list__item">Д</li>
+          <li class="country-list__item">Е</li>
+          <li class="country-list__item">З</li>
+          <li class="country-list__item">И</li>
+          <li class="country-list__item">К</li>
+          <li class="country-list__item">Л</li>
+          <li class="country-list__item">М</li>
+          <li class="country-list__item">Н</li>
+          <li class="country-list__item">О</li>
+          <li class="country-list__item">П</li>
+          <li class="country-list__item">Р</li>
+          <li class="country-list__item">С</li>
+          <li class="country-list__item">Т</li>
+          <li class="country-list__item">У</li>
+          <li class="country-list__item">Ф</li>
+          <li class="country-list__item">Х</li>
+          <li class="country-list__item">Ч</li>
+          <li class="country-list__item">Ш</li>
+          <li class="country-list__item">Э</li>
+          <li class="country-list__item">Ю</li>
+          <li class="country-list__item">Я</li>
+        </ul>
+        <button class="button-hide-show button-hide-show--hide">
+          Свернуть
+        </button>
+      </section>
+
+      <section class="choose-fellow-travelers">
+        <form class="fellow-filter" method="POST" action="https://echo.htmlacademy.ru">
+          <h3>Подберите идеального попутчика</h3>
+          <ul class="fellow-filter__list">
+            <li class="fellow-filter__list-category">Хобби</li>
+            <li class="fellow-filter__list-category fellow-music">Музыка
+              <ul class="fellow-music__items">
+                <li class="fellow-music__item">Тяжелый рок</li>
+                <li class="fellow-music__item">Русский рэп</li>
+                <li class="fellow-music__item">Евроденс</li>
+              </ul>
+            </li>
+            <li class="fellow-filter__list-category">Еда</li>
+            <li class="fellow-filter__list-category fellow-transp">Транспорт
+              <ul class="fellow-transp__items transport-list">
+                <li class="transport-list__item"></li>
+                <li class="transport-list__item"></li>
+                <li class="transport-list__item transport-list__item--active"></li>
+                <li class="transport-list__item"></li>
+              </ul>
+            </li>
+            <li class="fellow-filter__list-category">Левел</li>
+          </ul>
+          <button class="button-show button-show--form" type="submit">Показать</button>
+        </form>
+
+        <ul class="fellow-list">
+          <li class="fellow-list__item">
+            <form class="person" method="POST" action="">
+              <img class="person__photo" src="https://via.placeholder.com/150x150">
+              <span class="person__name">Таня Фирсова</span>
+              <p class="hashtag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+              <span class="person__wanted">Хочет посетить:</span>
+              <ul class="person__countries list-counry">
+                <li class="list-county-item">Шри-ланка</li>
+                <li class="list-county-item">Тайланд</li>
+                <li class="list-county-item">Сейшелы</li>
+              </ul>
+              <ul class="person-transp__items transport-list">
+                <li class="transport-list__item"></li>
+                <li class="transport-list__item"></li>
+                <li class="transport-list__item transport-list__item--active"></li>
+                <li class="transport-list__item"></li>
+              </ul>
+              <div class="level">
+                <span class="level-num">99</span>
+              </div>
+              <div class="like">like</div>
+              <span>1,5 M</span>
+              <button type="submit" class="button-follow"> Позвать </button>
+            </form>
+          </li>
+          <li class="fellow-list__item">
+            <form class="person" method="POST" action="">
+              <img class="person__photo" src="https://via.placeholder.com/150x150">
+              <span class="person__name">Петя Демин</span>
+              <p class="hashtag">#бургер #бар #футбол #концерт #крафт</p>
+              <span class="person__wanted">Хочет посетить:</span>
+              <ul class="person__countries list-counry">
+                <li class="list-county-item">Бельгия</li>
+                <li class="list-county-item">Чехия</li>
+              </ul>
+              <ul class="person-transp__items transport-list">
+                <li class="transport-list__item"></li>
+                <li class="transport-list__item"></li>
+                <li class="transport-list__item transport-list__item--active"></li>
+                <li class="transport-list__item"></li>
+              </ul>
+              <div class="level">
+                <span class="level-num">80</span>
+              </div>
+              <div class="like">like</div>
+              <span>150</span>
+              <button type="submit" class="button-follow"> Позвать </button>
+            </form>
+          </li>
+          <li class="fellow-list__item">
+            <form class="person" method="POST" action="">
+              <img class="person__photo" src="https://via.placeholder.com/150x150">
+              <span class="person__name">Марк Смолов</span>
+              <p class="hashtag">#рэп #тату #хайпбист #кроссовки #суприм</p>
+              <span class="person__wanted">Хочет посетить:</span>
+              <ul class="person__countries list-counry">
+                <li class="list-county-item">США</li>
+                <li class="list-county-item">Австралия</li>
+                <li class="list-county-item">Доменикана</li>
+              </ul>
+              <ul class="person-transp__items transport-list">
+                <li class="transport-list__item"></li>
+                <li class="transport-list__item"></li>
+                <li class="transport-list__item transport-list__item--active"></li>
+                <li class="transport-list__item"></li>
+              </ul>
+              <div class="level">
+                <span class="level-num">25</span>
+              </div>
+              <div class="like">like</div>
+              <span>1700</span>
+              <button type="submit" class="button-follow"> Позвать </button>
+            </form>
+          </li>
+          <li class="fellow-list__item">
+            <form class="person" method="POST" action="">
+              <img class="person__photo" src="https://via.placeholder.com/150x150">
+              <span class="person__name">Лариса Роговая</span>
+              <p class="hashtag">#образование #карьера #учеба #линкедин</p>
+              <span class="person__wanted">Хочет посетить:</span>
+              <ul class="person__countries list-counry">
+                <li class="list-county-item">Великобритания</li>
+                <li class="list-county-item">Германия</li>
+              </ul>
+              <ul class="person-transp__items transport-list">
+                <li class="transport-list__item"></li>
+                <li class="transport-list__item"></li>
+                <li class="transport-list__item transport-list__item--active"></li>
+                <li class="transport-list__item"></li>
+              </ul>
+              <div class="level">
+                <span class="level-num">50</span>
+              </div>
+              <div class="like">like</div>
+              <span>23</span>
+              <button type="submit" class="button-follow"> Позвать </button>
+            </form>
+          </li>
+        </ul>
+        <button class="button-hide-show button-hide-show--show">Показать еще</button>
+        <div class="pagination">
+          <button class="pagination__prev"></button>
+          <button class="pagination__next"></button>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <img src="img/logo-mobile-blue.png" width="100" height="19" alt="Логотип погнали">\
+      <div class="page-footer__icons">
+
+      </div>
+      <div class="page-footer__low">
+        <span>Разработано</span>
+        <svg aria-label="Логотип htmlacademy" viewBox="0 0 60 60" width="27" height="34">
+            <use xlink:href="#htmlacademy"></use>
+        </svg>
+      </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.toogle-btn{
+  @include clear-btn;
+  cursor:pointer;
+}
+.toogle-btn__svg{
+  fill:#fff;
+}
+
+@media (min-width: $desktop-width){
+  .toogle-btn{
+    display:none;
+  }
+}
