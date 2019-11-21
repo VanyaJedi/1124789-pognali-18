@@ -1,0 +1,162 @@
+.drop-menu{
+  display:none;
+  position:absolute;
+  top:73px;
+  width: 84.37%;
+  height:520px;
+  padding-top:70px;;
+  background-color:#fff;
+  align-items: center;
+    a{
+      color:$prime-color;
+      text-decoration: none;
+      font-family:'bloggersans-medium','Arial', sans-serif;
+      text-transform: uppercase;
+      line-height: 36px;
+  }
+}
+
+.drop-menu--nojs{
+  position:relative;
+  top:auto;
+}
+
+.drop-menu__nav{
+  padding:0;
+  list-style: none;
+  text-align: center;
+  margin-bottom:54px;
+    a{
+      font-size:30px;
+    }
+}
+
+.drop-menu__auth-btn{
+  margin-bottom: 49px;
+}
+
+.drop-menu__contact{
+  display:flex;
+  align-items: center;
+  a{
+    font-family:'bloggersans-bold','Arial', sans-serif;
+    font-size:16px;
+  }
+}
+
+.drop-menu__contact-icon{
+  fill:$main-yellow;
+  width:18px;
+  height:18px;
+}
+
+.drop-menu__icon-wrapper{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-right:14px;
+  width:45px;
+  height:45px;
+  border-radius: 50%;
+  background-color: $prime-color;
+}
+
+.drop-menu__social{
+  width:106px;
+  margin:0 auto;
+  list-style: none;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:44px;
+}
+
+.drop-menu__svg{
+  stroke:#cccccc;
+}
+
+@media (min-width:$tablet-width){
+  .drop-menu{
+    top:132px;
+    height:823px;
+    align-items: flex-start;
+    width:89.58%;
+  }
+  .drop-menu__nav{
+    text-align: left;
+    margin-left:59px;
+    margin-bottom:139px;
+      a{
+        font-size:60px;
+        line-height: 71px;
+      }
+  }
+
+  .drop-menu__auth-btn{
+    display:none;
+  }
+
+  .drop-menu__contact{
+    margin-left:59px;
+      a{
+        font-size:28px;
+      }
+  }
+
+  .drop-menu__icon-wrapper{
+    width:68px;
+    height:68px;
+    margin-right:24px;
+  }
+
+  .drop-menu__contact-icon{
+    width:27px;
+    height:27px;
+  }
+
+  .drop-menu__social{
+    width:106px;
+    margin-left:84px;
+    margin-top:129px;
+  }
+}
+
+@media (min-width:$desktop-width){
+  .drop-menu{
+    position:static;
+    display:flex;
+    height:132px;
+    padding:0;
+    width:500px;
+    background-color: $prime-color;
+    align-items: center;
+  }
+
+  .drop-menu__contact{
+    display:none;
+  }
+
+  .drop-menu__social{
+    display:none;
+  }
+  .drop-menu__nav{
+      display:flex;
+      padding:0;
+      margin:0;
+      align-items: center;
+      li{
+        margin-left:38px;
+      }
+      a{
+        color:#fff;
+        font-size:20px;
+      }
+      &::before{
+        content:'';
+        display:block;
+        width:60px;
+        height:2px;
+        background-color: white;
+      }
+  }
+}

@@ -1,0 +1,177 @@
+.page-header{
+  background-color:$prime-color;
+  padding-bottom: 112px;
+  min-height:762px;
+}
+.page-header__logo-image--tablet{
+  display:none;
+}
+.page-header__logo-toogle{
+  //width:100%;
+  height:73px;
+  display:flex;
+  justify-content: space-between;
+  margin-bottom:41px;
+}
+.page-header__logo{
+  display:flex;
+  align-items: center;
+}
+.page-header__icon{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background-color: #ffbd30;
+  border:none;
+}
+
+.page-header__icon--orange{
+  background-color: #ff8d30;
+}
+
+.page-header__auth{
+  display: flex;
+  justify-content: center;
+  //width:100%;
+  margin:0 auto;
+  margin-bottom:27px;
+}
+.page-header__icon-svg{
+  fill: $prime-color;
+}
+.page-header__slogan{
+  margin:0 auto;
+  margin-bottom:244px;
+    p{
+      color:#fff;
+      text-align:center;
+      font-family: 'bloggersans-bold','Arial', sans-serif;
+      font-size: 36px;
+      line-height: 40px;
+      width:238px;
+      margin:0 auto;
+    }
+}
+
+.page-main__review{
+  width:160px;
+  color:#fff;
+    p{
+      margin-bottom:27px;
+    }
+}
+
+@media (min-width: $tablet-width){
+  .page-header{
+    min-height:994px;
+  }
+  .page-header__section{
+    display:flex;
+    flex-wrap:wrap;
+  }
+
+  .page-header__logo-image--mobile{
+    display:none;
+  }
+  .page-header__logo-image--tablet{
+    display:block;
+  }
+  .page-header__logo-toogle{
+    order:1;
+    width:50%;
+    height:132px;
+    align-items: center;
+    padding:0;
+    margin:0;
+    margin-bottom:53px;
+  }
+  .page-header__slogan{
+    order:3;
+    width:90%;
+    margin-bottom:100px;
+    p{
+      width:400px;
+      font-size: 60px;
+      line-height: 70px;
+    }
+  }
+  .page-header__auth{
+    order:2;
+    height:132px;
+    align-items:center;
+    justify-content: flex-end;
+    width:50%;
+    padding:0;
+    margin:0;
+  }
+  .page-header__icon{
+    display:none;
+  }
+
+  .page-header__review-block{
+    order:4;
+    margin-left:33px;
+  }
+
+  .page-main__review{
+    width:260px;
+    color:#fff;
+      p{
+        margin-bottom:27px;
+        font-size:28px;
+        line-height: 33px;
+      }
+      cite{
+        display:inline-block;
+        width:245px;
+        font-size:21px;
+        line-height: 25px;
+      }
+  }
+}
+
+@media (min-width:$desktop-width){
+  .page-header{
+    min-height:750px;
+
+  }
+
+  .page-header__section{
+    justify-content: space-between;
+  }
+
+  .page-header__logo-toogle{
+    width:222px;
+  }
+  .page-header__icon{
+    width:50px;
+    height:50px;
+    display:block;
+  }
+
+  .page-header__menu{
+    order:2;
+  }
+  .page-header__auth{
+    order:3;
+    width:345px;
+  }
+
+  .page-header__slogan{
+      order:4;
+      width:50%;
+      margin:0;
+      margin-bottom:100px;
+      p{
+        text-align: left;
+        margin:0;
+        width:400px;
+        font-size: 60px;
+        line-height: 70px;
+      }
+    }
+
+  .page-header__review-block{
+    order:5;
+  }
+}

@@ -1,3 +1,19 @@
-*{
-  display:none;
-}
+@import "global.scss";
+
+@import "variables.scss";
+
+@import "mixins.scss";
+
+@import "blocks/wrapper.scss";
+
+@import "blocks/page-header.scss";
+
+@import "blocks/drop-menu.scss";
+
+@import "blocks/toogle-btn.scss";
+
+@import "blocks/button-auth.scss";
+
+@import "blocks/visually-hidden.scss";
+
+@import "blocks/text-bold.scss";
