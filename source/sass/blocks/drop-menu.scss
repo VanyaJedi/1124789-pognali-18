@@ -7,12 +7,12 @@
   padding-top:70px;;
   background-color:#fff;
   align-items: center;
-   a {
-    color:$prime-color;
-    text-decoration: none;
-    font-family:'bloggersans-medium','Arial', sans-serif;
-    text-transform: uppercase;
-    line-height: 36px;
+    a{
+      color:$prime-color;
+      text-decoration: none;
+      font-family:'bloggersans-medium','Arial', sans-serif;
+      text-transform: uppercase;
+      line-height: 36px;
   }
 }
 
@@ -137,7 +137,7 @@
   }
 
   .drop-menu__social{
-   display:none;
+    display:none;
   }
   .drop-menu__nav{
       display:flex;
