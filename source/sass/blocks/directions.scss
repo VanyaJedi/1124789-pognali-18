@@ -1,0 +1,20 @@
+.directions{
+  background-color:#edeff6;
+}
+.directions__slogan{
+  width:195px;
+  margin-top:23px;
+  color:#444444;
+}
+
+.directions__text{
+  padding:34px 32px 86px 25px;
+}
+
+@media (min-width:$tablet-width){
+  .directions__slogan{
+    width:375px;
+    font-size:28px;
+    line-height: 33px;
+  }
+}

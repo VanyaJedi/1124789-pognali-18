@@ -1,8 +1,9 @@
 .drop-menu{
   display:none;
   position:absolute;
+  left:0;
   top:73px;
-  width: 84.37%;
+  width: 100%;
   height:520px;
   padding-top:70px;;
   background-color:#fff;
@@ -14,6 +15,10 @@
       text-transform: uppercase;
       line-height: 36px;
   }
+}
+
+.drop-menu--active{
+  display:block;
 }
 
 .drop-menu--nojs{
@@ -80,7 +85,7 @@
     top:132px;
     height:823px;
     align-items: flex-start;
-    width:89.58%;
+    width:100%;
   }
   .drop-menu__nav{
     text-align: left;
@@ -127,7 +132,7 @@
     display:flex;
     height:132px;
     padding:0;
-    width:500px;
+    width:700px;
     background-color: $prime-color;
     align-items: center;
   }

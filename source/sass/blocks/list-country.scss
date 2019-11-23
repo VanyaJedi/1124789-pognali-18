@@ -1,0 +1,63 @@
+.list-country{
+  list-style: none;
+}
+
+.list-country__item{
+  margin-bottom: 10px;
+}
+
+.list-country__block{
+  display:block;
+  text-decoration: none;
+}
+
+.list-country__image{
+  position:relative;
+  border-radius:10px 10px 0 0;
+}
+
+.list-country__item-desc{
+  width:100%;
+  position:relative;
+  z-index:10;
+  display:flex;
+  justify-content: space-between;
+  background-color:#fff;
+  padding:30px 24px;
+  height:90px;
+  border-radius:10px;
+  margin-top:-15px;
+}
+
+.list-country__name{
+  color:$text-color;
+  font-size:21px;
+}
+
+.list-country__slogan,
+.list-country__price{
+  font-family: 'bloggersans-medium','Arial', sans-serif;
+  font-size:16px;
+  color:#c7c7c7;
+}
+.list-country__button{
+  display:block;
+  margin:0 auto;
+}
+
+@media (min-width:$tablet-width){
+  .list-country__block{
+    display:flex;
+  }
+  .list-country__image{
+    order:2;
+    border-radius: 0 10px 10px 0;
+  }
+  .list-country__item-desc{
+    display:flex;
+    flex-direction: column;
+    order:1;
+    margin-top:0;
+    height:140px;
+  }
+}

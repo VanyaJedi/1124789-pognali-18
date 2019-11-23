@@ -4,6 +4,8 @@
 
 @import "mixins.scss";
 
+@import "blocks/title.scss";
+
 @import "blocks/wrapper.scss";
 
 @import "blocks/page-header.scss";
@@ -14,6 +16,16 @@
 
 @import "blocks/button-auth.scss";
 
+@import "blocks/button-show.scss";
+
 @import "blocks/visually-hidden.scss";
 
 @import "blocks/text-bold.scss";
+
+@import "blocks/page-main.scss";
+
+@import "blocks/steps.scss";
+
+@import "blocks/directions";
+
+@import "blocks/list-country.scss"

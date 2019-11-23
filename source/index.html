@@ -110,6 +110,7 @@
           </button>
         </div>
         <section class="page-header__menu drop-menu">
+          <div class="wrapper">
             <ul class="drop-menu__nav">
               <li><a href="">О сервисе</a></li>
               <li><a href="">Направления</a></li>
@@ -149,6 +150,7 @@
                 </svg>
               </li>
             </ul>
+          </div>
         </section>
 
         <div class="page-header__slogan">
@@ -179,64 +181,74 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Погнали - сайт про путешествия</h1>
+      <section class="page-main__list">
+        <ul class="steps wrapper">
+          <li class="steps__item steps__item--first">Выберите <br> Направления</li>
+          <li class="steps__item steps__item--second">Изучите идеи <br> путешественников</li>
+          <li class="steps__item steps__item--third">Находите тех, <br> кто похож на вас</li>
+          <li class="steps__item steps__item--fourth">Путешествуйте <br> вместе!</li>
+        </ul>
+      </section>
 
-      <ul class="page-main-list steps">
-        <li class="steps__item steps__item--first">Выберите Направления</li>
-        <li class="steps__item steps__item--second">Изучите идеи путешественников</li>
-        <li class="steps__item steps__item--third">Находите тех, кто похож на вас</li>
-        <li class="steps__item steps__item--fourth">Путешествуйте вместе!</li>
-      </ul>
-
-      <section class="about">
-        <h2 class="about__title"> О сервисе</h2>
-        <p class="about__slogan text-bold">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-        <p class="about__slogan text-normal">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+      <section class="page-main__about">
+        <div class="page-main__about-wrapper wrapper">
+          <h2 class="title"> О сервисе</h2>
+          <p class="page-main__about-slogan" >Любое путешествие веселее с&nbspпопутчиками, которые на одной волне с&nbspтобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+          <p class="page-main__about-slogan-2 text-bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+          <button type="button" class="page-main__about-button button-show">
+            Подробнее
+          </button>
+        </div>
       </section>
 
       <section class="directions">
-        <h2 class="directions__title">Направления</h2>
-        <p class="directions__slogan text-bold">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
-        <ul class="directions__list-country list-country">
-          <li class="list-country__item">
-            <a href="">
-              <img src="img/thailand-mobile.png" width="270" height="110" alt="Фото Таиланда">
-              <div class="list-country__item-desc">
-                <div>
-                  <strong>Таиланд</strong>
-                  <p class="list-country__slogan">Джунгли зовут!</p>
-                </div>
-                <span class="list-country__price">18321</span>
-              </div>
-            </a>
-          </li>
-          <li class="list-country__item">
-            <a href="">
-              <img src="img/france-mobile.png" width="270" height="110" alt="Фото Франции">
-              <div class="list-country__item-desc">
-                <div>
-                  <strong>Франция</strong>
-                  <p class="list-country__slogan">Трэ бьен, манифик!</p>
-                </div>
-                <span class="list-country__price">12518</span>
-              </div>
-            </a>
-          </li>
+        <div class="directions__wrapper wrapper">
+          <div class="directions__text">
+            <h2 class="directions__title title">Направления</h2>
+            <p class="directions__slogan">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+          </div>
+          <ul class="directions__list-country list-country">
             <li class="list-country__item">
-              <a href="">
-                <img src="img/czech-mobile.png" width="270" height="110" alt="Фото Чехии">
+              <a class="list-country__block" href="">
+                <img class="list-country__image" src="img/thailand-mobile@1x.jpg" width="270" height="110" alt="Фото Таиланда">
                 <div class="list-country__item-desc">
                   <div>
-                    <strong>Чехия</strong>
-                    <p class="list-country__slogan">Джунгли зовут!</p>
+                    <span class="list-country__name text-bold">Таиланд</span>
+                    <p class="list-country__slogan text-bold">Джунгли зовут!</p>
                   </div>
-                  <span class="list-country__price">5326</span>
+                  <span class="list-country__price">18321</span>
                 </div>
               </a>
             </li>
-        </ul>
-        <button class="button-show button-show--yellow">
-          Показать все
-        </button>
+            <li class="list-country__item">
+              <a class="list-country__block" href="">
+                <img class="list-country__image" src="img/france-mobile@1x.jpg" width="270" height="110" alt="Фото Франции">
+                <div class="list-country__item-desc">
+                  <div>
+                    <span class="list-country__name text-bold">Франция</span>
+                    <p class="list-country__slogan">Трэ бьен, манифик!</p>
+                  </div>
+                  <span class="list-country__price">12518</span>
+                </div>
+              </a>
+            </li>
+              <li class="list-country__item">
+                <a class="list-country__block" href="">
+                  <img class="list-country__image"  src="img/czech-mobile@1x.jpg" width="270" height="110" alt="Фото Чехии">
+                  <div class="list-country__item-desc">
+                    <div>
+                      <span class="list-country__name text-bold">Чехия</span>
+                      <p class="list-country__slogan text-bold">Джунгли зовут!</p>
+                    </div>
+                    <span class="list-country__price">5326</span>
+                  </div>
+                </a>
+              </li>
+          </ul>
+          <button type="button" class="list-country__button button-show">
+            Показать все
+          </button>
+        </div>
       </section>
       <section class="fellow-travelers">
         <h2 class="fellow-travelers__title">Попутчики</h2>
@@ -328,5 +340,7 @@
         </svg>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
