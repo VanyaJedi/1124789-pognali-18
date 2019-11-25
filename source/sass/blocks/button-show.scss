@@ -1,18 +1,17 @@
 .button-show{
-  border:none;
+  border: none;
   border-radius: 10px;
   background-color: $main-yellow;
-  padding:22px 25px;
-  width:270px;
-  font-size:19px;
-  color:$text-color;
-  text-align:left;
+  padding: 22px 25px;
+  width: 270px;
+  font-size: 19px;
+  color: $text-color;
+  text-align: left;
   font-family:'bloggersans-bold','Arial', sans-serif;
 }
-
 @media (min-width:$tablet-width){
   .button-show{
-    width:629px;
+    width: 629px;
     font-size: 24px;
   }
 }

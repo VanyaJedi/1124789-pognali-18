@@ -183,10 +183,10 @@
       <h1 class="visually-hidden">Погнали - сайт про путешествия</h1>
       <section class="page-main__list">
         <ul class="steps wrapper">
-          <li class="steps__item steps__item--first">Выберите <br> Направления</li>
-          <li class="steps__item steps__item--second">Изучите идеи <br> путешественников</li>
-          <li class="steps__item steps__item--third">Находите тех, <br> кто похож на вас</li>
-          <li class="steps__item steps__item--fourth">Путешествуйте <br> вместе!</li>
+          <li class="steps__item steps__item--first"><p>Выберите Направления</p></li>
+          <li class="steps__item steps__item--second"><p>Изучите идеи путешественников</p></li>
+          <li class="steps__item steps__item--third"><p>Находите тех, кто&nbspпохож на вас</p></li>
+          <li class="steps__item steps__item--fourth"><p>Путешествуйте вместе!</p></li>
         </ul>
       </section>
 
@@ -201,7 +201,7 @@
         </div>
       </section>
 
-      <section class="directions">
+      <section class="page-main__directions directions">
         <div class="directions__wrapper wrapper">
           <div class="directions__text">
             <h2 class="directions__title title">Направления</h2>
@@ -245,86 +245,94 @@
                 </a>
               </li>
           </ul>
-          <button type="button" class="list-country__button button-show">
+          <button type="button" class="directions__button button-show">
             Показать все
           </button>
         </div>
       </section>
-      <section class="fellow-travelers">
-        <h2 class="fellow-travelers__title">Попутчики</h2>
-        <p class="fellow-travelers__slogan slogan--bold">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-        <p class="fellow-travelers__slogan slogan--normal">Теперь можно легко найти единомышленников!</p>
-        <ul class="fellow-travelers__tr-list traveler-list">
-          <li class="traveler-list__item">
-            <a class="traveler-list__link" href="">
-              <div class="traveler-list__sticker">
-                <span>99</span>
-                <span>level</span>
-              </div>
-              <img src="img/traveler-1.jpg" width="275" height="270" alt="Фото путешественника, девушка плавает на спине в бассейне">
-              <div class="traveler-list__item-desc">
-                <div class="traveler-list__flags"></div>
-                <p class="traveler-list__person-name">Таня Фирсова</p>
-                <p class="traveler-list__hashtag hashtag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-                <div class="traveler-list__icons">
-
+      <section class="page-main__fellow-travelers fellow-travelers">
+        <div class="fellow-travelers__wrapper wrapper">
+          <div class="fellow-travelers__text">
+            <h2 class="fellow-travelers__title title">Попутчики</h2>
+            <p class="fellow-travelers__slogan">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для&nbspхайкинга.</p>
+            <p class="fellow-travelers__slogan-2 text-bold">Теперь можно легко найти единомышленников!</p>
+          </div>
+          <ul class="fellow-travelers__tr-list traveler-list">
+            <li class="traveler-list__item">
+              <a class="traveler-list__link" href="">
+                <div class="traveler-list__sticker">
+                  <span class="traveler-list__lvl-num text-bold">99</span>
+                  <div class="traveler-list__line"></div>
+                  <span class="traveler-list__txt">level</span>
                 </div>
-              </div>
-            </a>
-          </li>
-          <li class="traveler-list__item">
-            <a class="traveler-list__link" href="">
-              <div class="traveler-list__sticker">
-                <span>80</span>
-                <span>level</span>
-              </div>
-              <img src="img/traveler-2.jpg" width="275" height="270" alt="Фото путешественника, девушка плавает на спине в бассейне">
-              <div class="traveler-list__item-desc">
-                <div class="traveler-list__flags"></div>
-                <p class="traveler-list__person-name">Петя Демин</p>
-                <p class="traveler-list__hashtag">#бургер #бар #футбол #концерт #крафт</p>
-                <div class="traveler-list__icons">
+                <img src="img/traveler-1.jpg" width="275" height="270" alt="Фото путешественника, девушка плавает на спине в бассейне">
+                <div class="traveler-list__item-desc">
+                  <div class="traveler-list__flags"></div>
+                  <p class="traveler-list__person-name text-bold">Таня Фирсова</p>
+                  <p class="traveler-list__hashtag hashtag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+                  <div class="traveler-list__icons">
 
+                  </div>
                 </div>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <button class="button-show button-show--yellow">
-          Показать все
-        </button>
+              </a>
+            </li>
+            <li class="traveler-list__item">
+              <a class="traveler-list__link" href="">
+                <div class="traveler-list__sticker">
+                  <span class="traveler-list__lvl-num text-bold">80</span>
+                  <div class="traveler-list__line"></div>
+                  <span class="traveler-list__txt">level</span>
+                </div>
+                <img src="img/traveler-2.jpg" width="275" height="270" alt="Фото путешественника, мужчина в очках на фоне снега">
+                <div class="traveler-list__item-desc">
+                  <div class="traveler-list__flags"></div>
+                  <p class="traveler-list__person-name">Петя Демин</p>
+                  <p class="traveler-list__hashtag">#бургер #бар #футбол #концерт #крафт</p>
+                  <div class="traveler-list__icons">
+
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <button class="fellow-travelers__button button-show button-show--yellow">
+            Показать все
+          </button>
+        </div>
       </section>
 
-      <section class="profile">
-        <header class="profile__header">
-          <h2 class="profile__title">Добавьте свой профиль</h2>
-          <img src="img/rates.png" widht="99" height="99">
-        </header>
-        <ul class="profile__list">
-          <li class="profile__list-item profile__list-item--first">
-              Базовое размещение Бесплатно
-          </li>
-          <li class="profile__list-item profile__list-item--second">
-              Вывод на первых позициях 99 руб./мес
-          </li>
-          <li class="profile__list-item profile__list-item--third">
-              Кастомный цвет карточки 59 руб./мес
-          </li>
-        </ul>
-        <button class="profile__button" type="button">
-          Показать тарифы для бизнеса
-        </button>
-        <div class="hidden-rates">
-          <h2 class="hidden-rates__title">Бизнес тарифы</h2>
-          <ul class="hidden-rates__list">
-            <li class="hidden-rates__list-item">Реклама у блоггера 300 000 руб./пост</li>
-            <li class="hidden-rates__list-item">Накрутка подписчиков от 1 руб./шт.</li>
-            <li class="hidden-rates__list-item">Лайки от ботов от 20 коп./лайк</li>
-            <li class="hidden-rates__list-item">Ваш продакт-плейсмент Индивидуально</li>
+      <section class="page-main__profile profile">
+        <div class="profile__wrapper wrapper">
+          <header class="profile__header">
+            <h2 class="profile__title title">Добавьте свой профиль</h2>
+            <img src="img/rates.png" widht="99" height="99">
+          </header>
+          <ul class="profile__list">
+            <li class="profile__list-item profile__list-item--first">
+                Базовое размещение Бесплатно
+            </li>
+            <li class="profile__list-item profile__list-item--second">
+                Вывод на первых позициях 99 руб./мес
+            </li>
+            <li class="profile__list-item profile__list-item--third">
+                Кастомный цвет карточки 59 руб./мес
+            </li>
           </ul>
-          <button class="hidden-rates__button" type="button">
+          <button class="profile__button" type="button">
             Показать тарифы для бизнеса
           </button>
+          <div class="hidden-rates">
+            <h2 class="hidden-rates__title">Бизнес тарифы</h2>
+            <ul class="hidden-rates__list">
+              <li class="hidden-rates__list-item">Реклама у блоггера 300 000 руб./пост</li>
+              <li class="hidden-rates__list-item">Накрутка подписчиков от 1 руб./шт.</li>
+              <li class="hidden-rates__list-item">Лайки от ботов от 20 коп./лайк</li>
+              <li class="hidden-rates__list-item">Ваш продакт-плейсмент Индивидуально</li>
+            </ul>
+            <button class="hidden-rates__button" type="button">
+              Показать тарифы для бизнеса
+            </button>
+          </div>
         </div>
       </section>
     </main>

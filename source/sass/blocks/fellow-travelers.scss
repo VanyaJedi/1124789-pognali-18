@@ -1,0 +1,45 @@
+.fellow-travelers {
+  background-color: #192144;
+  padding-top: 100px;
+  border-radius: 0 0 30px 30px;
+}
+
+.fellow-travelers__text {
+  padding: 34px 32px 86px 25px;
+}
+
+.fellow-travelers__slogan,
+.fellow-travelers__slogan-2 {
+  width: 215px;
+  margin-top: 23px;
+  color: #fff;
+}
+
+.fellow-travelers__button {
+  display: block;
+  margin: 0 auto;
+}
+
+.fellow-travelers__tr-list {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width){
+  .fellow-travelers {
+    border-radius: 0 0 60px 60px;
+  }
+
+  .fellow-travelers__slogan {
+    width: 433px;
+    font-size: 28px;
+    line-height: 33px;
+    margin-top: 68px;
+    margin-bottom: 39px;
+  }
+
+  .fellow-travelers__slogan-2 {
+    font-size: 21px;
+    line-height: 25px;
+    width: 265px;
+  }
+}

@@ -1,58 +1,98 @@
-.page-main__list{
+.page-main__list {
   background-color: #192144;
   margin-top: -80px;
   padding-bottom:39px;
 }
 
-.page-main__about{
-  background-color:#192144;
-  border-radius:0 0 30px 30px;
-  margin-bottom:70px;
+.page-main__about {
+  position: relative;
+  z-index: 2;
+  background-color: #192144;
+  border-radius: 0 0 30px 30px;
 }
 
-.page-main__about-wrapper{
-  padding:34px 32px 86px 25px;
+.page-main__about-wrapper {
+  padding: 34px 32px 86px 25px;
 }
 
 .page-main__about-slogan,
-.page-main__about-slogan-2{
-  margin-top:23px;
-  margin-bottom:20px;
-  color:#fff;
-  width:211px;
+.page-main__about-slogan-2 {
+  margin-top: 23px;
+  margin-bottom: 20px;
+  color: #fff;
+  width: 211px;
 }
 
-.page-main__about-button{
-  display:none;
+.page-main__about-button {
+  display: none;
 }
 
-@media (min-width:$tablet-width){
-  .page-main__about{
-    padding-left:35px;
+.page-main__directions {
+  position: relative;
+  margin-top: -30px;
+}
+
+.page-main__fellow-travelers {
+  margin-top: -30px;
+}
+
+.page-main__profile {
+  position: relative;
+  margin-top: -30px;
+}
+
+@media (min-width:$tablet-width) {
+  .page-main__about {
+    padding-left: 35px;
+    border-radius: 0 0 60px 60px;
   }
 
-  .page-main__about-wrapper{
-    min-height:685px;
+  .page-main__about-wrapper {
+    min-height: 685px;
+    padding: 34px 32px 104px 25px;
   }
 
-  .page-main__about-button{
-    display:block;
-    width:275px;
-    margin-top:47px;
+  .page-main__about-button {
+    display: block;
+    width: 275px;
+    margin-top: 47px;
   }
 
   .page-main__about-slogan,
-  .page-main__about-slogan-2{
-    width:310px;
+  .page-main__about-slogan-2 {
+    width: 310px;
   }
 
-  .page-main__about-slogan{
-    font-size:28px;
-    line-height:33px;
+  .page-main__about-slogan {
+    font-size: 28px;
+    line-height: 33px;
   }
-  .page-main__about-slogan-2{
-    font-size:21px;
+  .page-main__about-slogan-2 {
+    font-size: 21px;
   }
 
+  .page-main__directions {
+    margin-top: -60px;
+  }
 
+  .page-main__fellow-travelers {
+    margin-top: -60px;
+  }
+}
+
+@media (min-width:$desktop-width) {
+  .page-main__about {
+    padding-left: 69px;
+  }
+
+  .page-main__about-slogan {
+    width: 618px;
+    margin-top: 59px;
+  }
+
+  .page-main__about-slogan-2 {
+    width: 412px;
+    margin-top: 33px;
+    margin-bottom: 84px;
+  }
 }

@@ -1,24 +1,24 @@
-.button-auth{
+.button-auth {
   background-color: $main-yellow;
   width: 189px;
-  height:40px;
-  border:none;
+  height: 40px;
+  border: none;
   font-family:'bloggersans-bold', 'Arial', sans-serif;
   border-radius: 20px;
-  font-size:17px;
+  font-size: 17px;
   color: $prime-color;
   text-transform: uppercase;
 }
 
-.button-auth--big{
-  height:49px;
-  width:100%;
+.button-auth--big {
+  height: 49px;
+  width: 100%;
   border-radius: 25px;
 }
 
 @media (min-width:$tablet-width){
-  .button-auth{
-    height:50px;
+  .button-auth {
+    height: 50px;
     border-radius: 25px;
   }
 }
