@@ -245,9 +245,11 @@
                 </a>
               </li>
           </ul>
-          <button type="button" class="directions__button button-show">
-            Показать все
-          </button>
+          <div class="directions__button-container">
+            <button type="button" class="directions__button button-show">
+              Показать все
+            </button>
+          </div>
         </div>
       </section>
       <section class="page-main__fellow-travelers fellow-travelers">
@@ -295,57 +297,145 @@
               </a>
             </li>
           </ul>
-          <button class="fellow-travelers__button button-show button-show--yellow">
-            Показать все
-          </button>
+          <div class="fellow-travelers__button-container">
+            <button class="fellow-travelers__button button-show button-show--yellow">
+              Показать всеx
+            </button>
+          </div>
         </div>
       </section>
 
       <section class="page-main__profile profile">
         <div class="profile__wrapper wrapper">
-          <header class="profile__header">
+          <div class="profile__header">
             <h2 class="profile__title title">Добавьте свой профиль</h2>
-            <img src="img/rates.png" widht="99" height="99">
-          </header>
+          </div>
           <ul class="profile__list">
             <li class="profile__list-item profile__list-item--first">
-                Базовое размещение Бесплатно
+              <div class="profile__list-container">
+                <span class="profile__suggestion">Базовое размещение</span>
+                <span class="profile__condition">Бесплатно</span>
+              </div>
+              <div class="profile__num profile__num--first">
+                1
+              </div>
             </li>
             <li class="profile__list-item profile__list-item--second">
-                Вывод на первых позициях 99 руб./мес
+              <div class="profile__list-container">
+                <span class="profile__suggestion">Вывод на первых позициях</span>
+                <span class="profile__condition">99 руб./мес</span>
+              </div>
+              <div class="profile__num profile__num--second">
+                2
+              </div>
             </li>
             <li class="profile__list-item profile__list-item--third">
-                Кастомный цвет карточки 59 руб./мес
+              <div class="profile__list-container profile__list-container--last">
+                <span class="profile__suggestion">Кастомный цвет карточки</span>
+                <span class="profile__condition">59 руб./мес</span>
+              </div>
+              <div class="profile__num profile__num--third">
+                3
+              </div>
             </li>
           </ul>
-          <button class="profile__button" type="button">
-            Показать тарифы для бизнеса
+          <button class="profile__button text-bold" type="button">
+            <div class="profile__button-icon">
+              и
+            </div>
+            <span>Показать тарифы для бизнеса</span>
           </button>
-          <div class="hidden-rates">
-            <h2 class="hidden-rates__title">Бизнес тарифы</h2>
-            <ul class="hidden-rates__list">
-              <li class="hidden-rates__list-item">Реклама у блоггера 300 000 руб./пост</li>
-              <li class="hidden-rates__list-item">Накрутка подписчиков от 1 руб./шт.</li>
-              <li class="hidden-rates__list-item">Лайки от ботов от 20 коп./лайк</li>
-              <li class="hidden-rates__list-item">Ваш продакт-плейсмент Индивидуально</li>
-            </ul>
-            <button class="hidden-rates__button" type="button">
-              Показать тарифы для бизнеса
+        </div>
+        <div class="hidden-rates wrapper">
+          <h2 class="hidden-rates__title title">Бизнес тарифы</h2>
+          <ul class="hidden-rates__list">
+            <li class="hidden-rates__list-item">
+              <span>Реклама у блоггера</span>
+              <span>300 000 руб./пост</span>
+            </li>
+            <li class="hidden-rates__list-item">
+              <span>Накрутка подписчиков</span>
+              <span>от 1 руб./шт.</span>
+            </li>
+            <li class="hidden-rates__list-item">
+              <span>Лайки от ботов</span>
+              <span>от 20 коп./лайк</span>
+            </li>
+            <li class="hidden-rates__list-item">
+              <span>Ваш продакт-плейсмент</span>
+              <span>Индивидуально</span>
+            </li>
+          </ul>
+          <button class="hidden-rates__button text-bold" type="button">
+            Закрыть окно
+          </button>
+        </div>
+      </section>
+      <section class="interest">
+        <div class="interest__wrapper wrapper">
+          <h2 class="interest__title title">Заинтересовались?</h2>
+          <div class="interest__text">
+            Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="">авторизуйтесь.</a>
+          </div>
+          <form method="POST" action="https://echo.htmlacademy.ru" class="interest__form">
+            <input type="email" placeholder="E-mail" class="interest__input text-bold">
+            <button class="interest__auth-button" type="submit">
+              <span class="text-bold">Регистрация</span>
             </button>
+          </form>
+          <div class="interest__text-2">Остались вопросы? Мы с радостью на них ответим!</div>
+          <div class="interest__phone-email">
+            <div class="interest__contact">
+              <div class="interest__icon-wrapper">
+                <svg class="interest__contact-icon" aria-label="Позвонить" viewBox="0 0 36 36" width="36" height="36">
+                  <use xlink:href="#contacts-phone"></use>
+                </svg>
+              </div>
+              <a href ="tel:+78005558628">8 800 555-86-28</a>
+            </div>
+            <div class="interest__contact">
+              <div class="interest__icon-wrapper">
+                <svg class="interest__contact-icon" aria-label="Написать письмо" viewBox="0 0 36 36" width="36" height="36">
+                  <use xlink:href="#contacts-mail"></use>
+                </svg>
+              </div>
+              <a href="">mail@htmlacademy.ru</a>
+            </div>
           </div>
         </div>
       </section>
+      <section class="map">
+        <div class="map__top">
+          <div class="map__wrapper wrapper">
+            <div class="map__contact">
+              <div class="map__icon-wrapper">
+                <svg class="map__contact-icon" aria-label="Карта" viewBox="0 0 36 36" width="36" height="36">
+                  <use xlink:href="#contacts-mail"></use>
+                </svg>
+              </div>
+              <a href="">ул. Большая Конюшенная, 19/8</a>
+            </div>
+            <button class="map__button button-show button-show--border">
+              Проложить маршрут
+            </button>
+          </div>
+        </div>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779967!2d37.52742931573549!3d55.68703098053583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20119311!5e0!3m2!1sen!2sru!4v1570469252415!5m2!1sen!2sru"  allowfullscreen=""></iframe>
+      </section>
     </main>
     <footer class="page-footer">
-      <img src="img/logo-mobile-blue.png" width="100" height="19" alt="Логотип погнали">\
-      <div class="page-footer__icons">
+      <div class="page-footer__wrapper wrapper">
+        <img class="page-footer__logo-image page-footer__logo-image--mobile" src="img/logo-mobile-blue.png" width="100" height="19" alt="Логотип погнали">
+        <img class="page-footer__logo-image page-footer__logo-image--tablet" src="img/logo-tablet-blue@1x.png" width="166" height="42" alt="Логотип погнали">
+        <div class="page-footer__icons">
 
-      </div>
-      <div class="page-footer__low">
-        <span>Разработано</span>
-        <svg aria-label="Логотип htmlacademy" viewBox="0 0 60 60" width="27" height="34">
-            <use xlink:href="#htmlacademy"></use>
-        </svg>
+        </div>
+        <div class="page-footer__low">
+          <span>Разработано</span>
+          <svg aria-label="Логотип htmlacademy" viewBox="0 0 60 60" width="27" height="34">
+              <use xlink:href="#htmlacademy"></use>
+          </svg>
+        </div>
       </div>
     </footer>
 

@@ -1,6 +1,9 @@
 .directions {
+  position: relative;
+  z-index: 9;
   background-color: #edeff6;
   padding-top: 100px;
+  padding-bottom: 30px;
   border-radius: 0 0 30px 30px;
 }
 
@@ -22,6 +25,8 @@
 @media (min-width: $tablet-width) {
   .directions {
     border-radius: 0 0 60px 60px;
+    padding-top: 131px;
+    padding-bottom: 80px;
   }
   .directions__slogan {
     width: 375px;
@@ -32,9 +37,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .directions {
+    padding-top: 155px;
+    padding-bottom: 139px;
+  }
+
   .directions__wrapper {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-end;
     flex-wrap: wrap;
   }
 
@@ -43,12 +53,26 @@
   }
 
   .directions__text {
-    height: 100%;
-    width:50%;
+    width: 50%;
+    order: 2;
+    padding-left: 114px;
+    padding-bottom: 114px;
   }
 
   .directions__list-country{
     width:50%;
+    order: 1;
+    padding-left: 71px;
+  }
+
+  .directions__button-container {
+    width: 50%;
+    order: 3;
+    margin-top: -120px;
+    padding-left: 114px;
+  }
+  .directions__button {
+    margin: 0;
   }
 
 }

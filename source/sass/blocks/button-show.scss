@@ -1,4 +1,4 @@
-.button-show{
+.button-show {
   border: none;
   border-radius: 10px;
   background-color: $main-yellow;
@@ -7,11 +7,22 @@
   font-size: 19px;
   color: $text-color;
   text-align: left;
-  font-family:'bloggersans-bold','Arial', sans-serif;
+  font-family: 'bloggersans-bold', 'Arial', sans-serif;
+
+  &--border {
+    border: 3px solid $second-color;
+  }
 }
-@media (min-width:$tablet-width){
-  .button-show{
+@media (min-width:$tablet-width) {
+  .button-show {
     width: 629px;
     font-size: 24px;
+    border-radius: 20px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .button-show {
+    width: 275px;
+    height: 80px;
   }
 }
