@@ -1,0 +1,74 @@
+.traveler-list {
+  list-style: none;
+  a {
+    text-decoration: none;
+  }
+  img {
+    margin:0;
+  }
+}
+
+.traveler-list__item {
+  position: relative;
+  width: 270px;
+  margin: 0 auto;
+}
+.traveler-list__link {
+  display: block;
+}
+.traveler-list__sticker {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.traveler-list__lvl-num {
+  font-size: 24px;
+  color: #fff;
+}
+
+.traveler-list__line {
+  background-color: #fff;
+  width: 31px;
+  height: 1px;
+  margin: 1px 0;
+}
+
+.traveler-list__txt {
+  position:relative;
+  font-family: 'bloggersans', 'Arial', sans-serif;
+  color: #fff;
+}
+
+.traveler-list__item-desc {
+  background-color: #fff;
+  min-height: 157px;
+  padding: 27px 45px 19px 45px;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.traveler-list__person-name {
+  font-size: 21px;
+  color: $text-color;
+  margin-bottom: 14px;
+}
+
+.traveler-list__hashtag {
+  color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .traveler-list {
+    display: flex;
+  }
+}
+

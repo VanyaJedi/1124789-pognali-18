@@ -1,0 +1,157 @@
+.profile {
+  position: relative;
+  z-index: 7;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  background-color: #edeff6;
+  border-radius: 0 0 30px 30px;
+}
+
+.profile__wrapper {
+  position: relative;
+}
+
+.profile__header {
+  width: 104px;
+  margin-bottom: 42px;
+  padding-left: 25px;
+}
+
+.profile__list {
+  padding-left: 25px;
+  list-style: none;
+  color: #444444;
+  margin-bottom: 28px;
+}
+
+.profile__list-item {
+  display: flex;
+  height: 67px;
+}
+
+.profile__num {
+  display: flex;
+  margin-top: 3px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  color: #fff;
+  width: 34px;
+  height: 34px;
+  background-color: #ffa530;
+  border-radius: 50%;
+
+  &--second {
+    background-color: #ffbd30;
+  }
+
+  &--third {
+    background-color: #ffd74b;
+  }
+}
+
+.profile__list-container {
+  display: flex;
+  width: 200px;
+  padding: 12px 0;
+  flex-direction: column;
+  border-top: 1px solid #e1e3e9;
+
+  &--last {
+    border-bottom: 1px solid #e1e3e9;
+  }
+}
+
+.profile__button {
+  display: block;
+  border: none;
+  text-align: center;
+  background: transparent;
+  color: #192144;
+  margin: 0 auto;
+}
+
+.profile__button-icon {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .profile {
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .profile__header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 72px;
+    padding-left: 0;
+  }
+
+  .profile__list {
+    padding-left: 0;
+    padding-right: 33px;
+    margin-bottom: 35px;
+    font-size: 28px;
+  }
+
+  .profile__num {
+    order: 1;
+    width: 67px;
+    height: 67px;
+    font-size: 28px;
+    margin: 0;
+    margin-right: 24px;
+  }
+
+  .profile__list-container {
+    flex-direction: row;
+    justify-content: space-between;
+    order: 2;
+    width: 562px;
+    padding: 18px 0;
+  }
+
+  .profile__button {
+    height: 67px;
+    display: flex;
+    align-items: center;
+    color: #132576;
+    font-size: 20px;
+    margin: 0;
+    cursor: pointer;
+  }
+
+  .profile__button-icon {
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2e5f2;
+    width: 67px;
+    height: 67px;
+    margin-right: 23px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .profile {
+    padding-top: 157px;
+    padding-bottom: 161px;
+  }
+
+  .profile__list {
+    padding-left: 73px;
+
+  }
+
+  .profile__button {
+    padding-left: 73px;
+  }
+
+  .profile__list-container {
+    width: 813px;
+  }
+}

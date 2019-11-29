@@ -1,0 +1,10 @@
+.title{
+  color:$main-orange;
+  font-family:'bloggersans-bold','Arial', sans-serif;
+  font-size: 24px;
+}
+@media (min-width:$tablet-width){
+  .title{
+    font-size: 45px;
+  }
+}

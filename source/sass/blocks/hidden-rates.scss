@@ -1,0 +1,88 @@
+.hidden-rates {
+  position: absolute;
+  display:none;
+  flex-direction: column;
+  top:20px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index:20;
+  min-height: 443px;
+  border-radius: 20px;
+  padding-top: 32px;
+
+  &--show {
+    display: flex;
+  }
+}
+
+.hidden-rates__title {
+  text-align: center;
+}
+
+.hidden-rates__list {
+  margin-top: 33px;
+  padding: 0 26px;
+  list-style: none;
+}
+
+.hidden-rates__list-item {
+  padding-top: 13px;
+  height: 67px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #e1e3e9;
+
+  &:last-child {
+    border-bottom: 1px solid #e1e3e9;
+  }
+}
+
+.hidden-rates__button {
+  display: block;
+  height: 59px;
+  background-color: #f3f4f8;
+  border: none;
+  margin-top: auto;
+  border-radius: 0 0 20px 20px;
+  text-transform: uppercase;
+  color: $text-color;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .hidden-rates {
+    top: 48px;
+    padding-top: 52px;
+    min-height: 528px;
+  }
+
+  .hidden-rates__list {
+    padding: 0 92px;
+    margin-top: 52px;
+    font-size: 22px;
+  }
+
+  .hidden-rates__list-item {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 57px;
+    padding-top: 16px;
+  }
+
+  .hidden-rates__button {
+    height: 107px;
+    text-transform: none;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hidden-rates {
+    margin: 0;
+    width: 750px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

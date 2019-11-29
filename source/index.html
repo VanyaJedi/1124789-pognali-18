@@ -110,6 +110,7 @@
           </button>
         </div>
         <section class="page-header__menu drop-menu">
+          <div class="wrapper">
             <ul class="drop-menu__nav">
               <li><a href="">О сервисе</a></li>
               <li><a href="">Направления</a></li>
@@ -149,6 +150,7 @@
                 </svg>
               </li>
             </ul>
+          </div>
         </section>
 
         <div class="page-header__slogan">
@@ -179,154 +181,264 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Погнали - сайт про путешествия</h1>
-
-      <ul class="page-main-list steps">
-        <li class="steps__item steps__item--first">Выберите Направления</li>
-        <li class="steps__item steps__item--second">Изучите идеи путешественников</li>
-        <li class="steps__item steps__item--third">Находите тех, кто похож на вас</li>
-        <li class="steps__item steps__item--fourth">Путешествуйте вместе!</li>
-      </ul>
-
-      <section class="about">
-        <h2 class="about__title"> О сервисе</h2>
-        <p class="about__slogan text-bold">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
-        <p class="about__slogan text-normal">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+      <section class="page-main__list">
+        <ul class="steps wrapper">
+          <li class="steps__item steps__item--first"><p>Выберите Направления</p></li>
+          <li class="steps__item steps__item--second"><p>Изучите идеи путешественников</p></li>
+          <li class="steps__item steps__item--third"><p>Находите тех, кто&nbspпохож на вас</p></li>
+          <li class="steps__item steps__item--fourth"><p>Путешествуйте вместе!</p></li>
+        </ul>
       </section>
 
-      <section class="directions">
-        <h2 class="directions__title">Направления</h2>
-        <p class="directions__slogan text-bold">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
-        <ul class="directions__list-country list-country">
-          <li class="list-country__item">
-            <a href="">
-              <img src="img/thailand-mobile.png" width="270" height="110" alt="Фото Таиланда">
-              <div class="list-country__item-desc">
-                <div>
-                  <strong>Таиланд</strong>
-                  <p class="list-country__slogan">Джунгли зовут!</p>
-                </div>
-                <span class="list-country__price">18321</span>
-              </div>
-            </a>
-          </li>
-          <li class="list-country__item">
-            <a href="">
-              <img src="img/france-mobile.png" width="270" height="110" alt="Фото Франции">
-              <div class="list-country__item-desc">
-                <div>
-                  <strong>Франция</strong>
-                  <p class="list-country__slogan">Трэ бьен, манифик!</p>
-                </div>
-                <span class="list-country__price">12518</span>
-              </div>
-            </a>
-          </li>
-            <li class="list-country__item">
-              <a href="">
-                <img src="img/czech-mobile.png" width="270" height="110" alt="Фото Чехии">
-                <div class="list-country__item-desc">
-                  <div>
-                    <strong>Чехия</strong>
-                    <p class="list-country__slogan">Джунгли зовут!</p>
-                  </div>
-                  <span class="list-country__price">5326</span>
-                </div>
-              </a>
-            </li>
-        </ul>
-        <button class="button-show button-show--yellow">
-          Показать все
-        </button>
-      </section>
-      <section class="fellow-travelers">
-        <h2 class="fellow-travelers__title">Попутчики</h2>
-        <p class="fellow-travelers__slogan slogan--bold">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-        <p class="fellow-travelers__slogan slogan--normal">Теперь можно легко найти единомышленников!</p>
-        <ul class="fellow-travelers__tr-list traveler-list">
-          <li class="traveler-list__item">
-            <a class="traveler-list__link" href="">
-              <div class="traveler-list__sticker">
-                <span>99</span>
-                <span>level</span>
-              </div>
-              <img src="img/traveler-1.jpg" width="275" height="270" alt="Фото путешественника, девушка плавает на спине в бассейне">
-              <div class="traveler-list__item-desc">
-                <div class="traveler-list__flags"></div>
-                <p class="traveler-list__person-name">Таня Фирсова</p>
-                <p class="traveler-list__hashtag hashtag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-                <div class="traveler-list__icons">
-
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="traveler-list__item">
-            <a class="traveler-list__link" href="">
-              <div class="traveler-list__sticker">
-                <span>80</span>
-                <span>level</span>
-              </div>
-              <img src="img/traveler-2.jpg" width="275" height="270" alt="Фото путешественника, девушка плавает на спине в бассейне">
-              <div class="traveler-list__item-desc">
-                <div class="traveler-list__flags"></div>
-                <p class="traveler-list__person-name">Петя Демин</p>
-                <p class="traveler-list__hashtag">#бургер #бар #футбол #концерт #крафт</p>
-                <div class="traveler-list__icons">
-
-                </div>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <button class="button-show button-show--yellow">
-          Показать все
-        </button>
-      </section>
-
-      <section class="profile">
-        <header class="profile__header">
-          <h2 class="profile__title">Добавьте свой профиль</h2>
-          <img src="img/rates.png" widht="99" height="99">
-        </header>
-        <ul class="profile__list">
-          <li class="profile__list-item profile__list-item--first">
-              Базовое размещение Бесплатно
-          </li>
-          <li class="profile__list-item profile__list-item--second">
-              Вывод на первых позициях 99 руб./мес
-          </li>
-          <li class="profile__list-item profile__list-item--third">
-              Кастомный цвет карточки 59 руб./мес
-          </li>
-        </ul>
-        <button class="profile__button" type="button">
-          Показать тарифы для бизнеса
-        </button>
-        <div class="hidden-rates">
-          <h2 class="hidden-rates__title">Бизнес тарифы</h2>
-          <ul class="hidden-rates__list">
-            <li class="hidden-rates__list-item">Реклама у блоггера 300 000 руб./пост</li>
-            <li class="hidden-rates__list-item">Накрутка подписчиков от 1 руб./шт.</li>
-            <li class="hidden-rates__list-item">Лайки от ботов от 20 коп./лайк</li>
-            <li class="hidden-rates__list-item">Ваш продакт-плейсмент Индивидуально</li>
-          </ul>
-          <button class="hidden-rates__button" type="button">
-            Показать тарифы для бизнеса
+      <section class="page-main__about">
+        <div class="page-main__about-wrapper wrapper">
+          <h2 class="title"> О сервисе</h2>
+          <p class="page-main__about-slogan" >Любое путешествие веселее с&nbspпопутчиками, которые на одной волне с&nbspтобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
+          <p class="page-main__about-slogan-2 text-bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+          <button type="button" class="page-main__about-button button-show">
+            Подробнее
           </button>
         </div>
       </section>
+
+      <section class="page-main__directions directions">
+        <div class="directions__wrapper wrapper">
+          <div class="directions__text">
+            <h2 class="directions__title title">Направления</h2>
+            <p class="directions__slogan">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+          </div>
+          <ul class="directions__list-country list-country">
+            <li class="list-country__item">
+              <a class="list-country__block" href="">
+                <img class="list-country__image" src="img/thailand-mobile@1x.jpg" width="270" height="110" alt="Фото Таиланда">
+                <div class="list-country__item-desc">
+                  <div>
+                    <span class="list-country__name text-bold">Таиланд</span>
+                    <p class="list-country__slogan text-bold">Джунгли зовут!</p>
+                  </div>
+                  <span class="list-country__price">18321</span>
+                </div>
+              </a>
+            </li>
+            <li class="list-country__item">
+              <a class="list-country__block" href="">
+                <img class="list-country__image" src="img/france-mobile@1x.jpg" width="270" height="110" alt="Фото Франции">
+                <div class="list-country__item-desc">
+                  <div>
+                    <span class="list-country__name text-bold">Франция</span>
+                    <p class="list-country__slogan">Трэ бьен, манифик!</p>
+                  </div>
+                  <span class="list-country__price">12518</span>
+                </div>
+              </a>
+            </li>
+              <li class="list-country__item">
+                <a class="list-country__block" href="">
+                  <img class="list-country__image"  src="img/czech-mobile@1x.jpg" width="270" height="110" alt="Фото Чехии">
+                  <div class="list-country__item-desc">
+                    <div>
+                      <span class="list-country__name text-bold">Чехия</span>
+                      <p class="list-country__slogan text-bold">Джунгли зовут!</p>
+                    </div>
+                    <span class="list-country__price">5326</span>
+                  </div>
+                </a>
+              </li>
+          </ul>
+          <div class="directions__button-container">
+            <button type="button" class="directions__button button-show">
+              Показать все
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="page-main__fellow-travelers fellow-travelers">
+        <div class="fellow-travelers__wrapper wrapper">
+          <div class="fellow-travelers__text">
+            <h2 class="fellow-travelers__title title">Попутчики</h2>
+            <p class="fellow-travelers__slogan">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для&nbspхайкинга.</p>
+            <p class="fellow-travelers__slogan-2 text-bold">Теперь можно легко найти единомышленников!</p>
+          </div>
+          <ul class="fellow-travelers__tr-list traveler-list">
+            <li class="traveler-list__item">
+              <a class="traveler-list__link" href="">
+                <div class="traveler-list__sticker">
+                  <span class="traveler-list__lvl-num text-bold">99</span>
+                  <div class="traveler-list__line"></div>
+                  <span class="traveler-list__txt">level</span>
+                </div>
+                <img src="img/traveler-1.jpg" width="275" height="270" alt="Фото путешественника, девушка плавает на спине в бассейне">
+                <div class="traveler-list__item-desc">
+                  <div class="traveler-list__flags"></div>
+                  <p class="traveler-list__person-name text-bold">Таня Фирсова</p>
+                  <p class="traveler-list__hashtag hashtag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+                  <div class="traveler-list__icons">
+
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="traveler-list__item">
+              <a class="traveler-list__link" href="">
+                <div class="traveler-list__sticker">
+                  <span class="traveler-list__lvl-num text-bold">80</span>
+                  <div class="traveler-list__line"></div>
+                  <span class="traveler-list__txt">level</span>
+                </div>
+                <img src="img/traveler-2.jpg" width="275" height="270" alt="Фото путешественника, мужчина в очках на фоне снега">
+                <div class="traveler-list__item-desc">
+                  <div class="traveler-list__flags"></div>
+                  <p class="traveler-list__person-name">Петя Демин</p>
+                  <p class="traveler-list__hashtag">#бургер #бар #футбол #концерт #крафт</p>
+                  <div class="traveler-list__icons">
+
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="fellow-travelers__button-container">
+            <button class="fellow-travelers__button button-show button-show--yellow">
+              Показать всеx
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-main__profile profile">
+        <div class="profile__wrapper wrapper">
+          <div class="profile__header">
+            <h2 class="profile__title title">Добавьте свой профиль</h2>
+          </div>
+          <ul class="profile__list">
+            <li class="profile__list-item profile__list-item--first">
+              <div class="profile__list-container">
+                <span class="profile__suggestion">Базовое размещение</span>
+                <span class="profile__condition">Бесплатно</span>
+              </div>
+              <div class="profile__num profile__num--first">
+                1
+              </div>
+            </li>
+            <li class="profile__list-item profile__list-item--second">
+              <div class="profile__list-container">
+                <span class="profile__suggestion">Вывод на первых позициях</span>
+                <span class="profile__condition">99 руб./мес</span>
+              </div>
+              <div class="profile__num profile__num--second">
+                2
+              </div>
+            </li>
+            <li class="profile__list-item profile__list-item--third">
+              <div class="profile__list-container profile__list-container--last">
+                <span class="profile__suggestion">Кастомный цвет карточки</span>
+                <span class="profile__condition">59 руб./мес</span>
+              </div>
+              <div class="profile__num profile__num--third">
+                3
+              </div>
+            </li>
+          </ul>
+          <button class="profile__button text-bold" type="button">
+            <div class="profile__button-icon">
+              и
+            </div>
+            <span>Показать тарифы для бизнеса</span>
+          </button>
+        </div>
+        <div class="hidden-rates wrapper">
+          <h2 class="hidden-rates__title title">Бизнес тарифы</h2>
+          <ul class="hidden-rates__list">
+            <li class="hidden-rates__list-item">
+              <span>Реклама у блоггера</span>
+              <span>300 000 руб./пост</span>
+            </li>
+            <li class="hidden-rates__list-item">
+              <span>Накрутка подписчиков</span>
+              <span>от 1 руб./шт.</span>
+            </li>
+            <li class="hidden-rates__list-item">
+              <span>Лайки от ботов</span>
+              <span>от 20 коп./лайк</span>
+            </li>
+            <li class="hidden-rates__list-item">
+              <span>Ваш продакт-плейсмент</span>
+              <span>Индивидуально</span>
+            </li>
+          </ul>
+          <button class="hidden-rates__button text-bold" type="button">
+            Закрыть окно
+          </button>
+        </div>
+      </section>
+      <section class="interest">
+        <div class="interest__wrapper wrapper">
+          <h2 class="interest__title title">Заинтересовались?</h2>
+          <div class="interest__text">
+            Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда скорее <a href="">авторизуйтесь.</a>
+          </div>
+          <form method="POST" action="https://echo.htmlacademy.ru" class="interest__form">
+            <input type="email" placeholder="E-mail" class="interest__input text-bold">
+            <button class="interest__auth-button" type="submit">
+              <span class="text-bold">Регистрация</span>
+            </button>
+          </form>
+          <div class="interest__text-2">Остались вопросы? Мы с радостью на них ответим!</div>
+          <div class="interest__phone-email">
+            <div class="interest__contact">
+              <div class="interest__icon-wrapper">
+                <svg class="interest__contact-icon" aria-label="Позвонить" viewBox="0 0 36 36" width="36" height="36">
+                  <use xlink:href="#contacts-phone"></use>
+                </svg>
+              </div>
+              <a href ="tel:+78005558628">8 800 555-86-28</a>
+            </div>
+            <div class="interest__contact">
+              <div class="interest__icon-wrapper">
+                <svg class="interest__contact-icon" aria-label="Написать письмо" viewBox="0 0 36 36" width="36" height="36">
+                  <use xlink:href="#contacts-mail"></use>
+                </svg>
+              </div>
+              <a href="">mail@htmlacademy.ru</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="map">
+        <div class="map__top">
+          <div class="map__wrapper wrapper">
+            <div class="map__contact">
+              <div class="map__icon-wrapper">
+                <svg class="map__contact-icon" aria-label="Карта" viewBox="0 0 36 36" width="36" height="36">
+                  <use xlink:href="#contacts-mail"></use>
+                </svg>
+              </div>
+              <a href="">ул. Большая Конюшенная, 19/8</a>
+            </div>
+            <button class="map__button button-show button-show--border">
+              Проложить маршрут
+            </button>
+          </div>
+        </div>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779967!2d37.52742931573549!3d55.68703098053583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2sUlitsa%20Stroiteley%2C%2015%2C%20Moskva%2C%20119311!5e0!3m2!1sen!2sru!4v1570469252415!5m2!1sen!2sru"  allowfullscreen=""></iframe>
+      </section>
     </main>
     <footer class="page-footer">
-      <img src="img/logo-mobile-blue.png" width="100" height="19" alt="Логотип погнали">\
-      <div class="page-footer__icons">
+      <div class="page-footer__wrapper wrapper">
+        <img class="page-footer__logo-image page-footer__logo-image--mobile" src="img/logo-mobile-blue.png" width="100" height="19" alt="Логотип погнали">
+        <img class="page-footer__logo-image page-footer__logo-image--tablet" src="img/logo-tablet-blue@1x.png" width="166" height="42" alt="Логотип погнали">
+        <div class="page-footer__icons">
 
-      </div>
-      <div class="page-footer__low">
-        <span>Разработано</span>
-        <svg aria-label="Логотип htmlacademy" viewBox="0 0 60 60" width="27" height="34">
-            <use xlink:href="#htmlacademy"></use>
-        </svg>
+        </div>
+        <div class="page-footer__low">
+          <span>Разработано</span>
+          <svg aria-label="Логотип htmlacademy" viewBox="0 0 60 60" width="27" height="34">
+              <use xlink:href="#htmlacademy"></use>
+          </svg>
+        </div>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
