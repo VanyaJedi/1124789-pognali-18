@@ -24,10 +24,24 @@
 }
 
 .page-footer__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 37px;
-  width: 134px;
-  border: 1px solid red;
-  height: 50px;
+  width: 180px;
+  list-style: none;
+
+
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: $main-yellow;
+    border-radius: 50%;
+  }
+
 }
 
 .page-footer__low {

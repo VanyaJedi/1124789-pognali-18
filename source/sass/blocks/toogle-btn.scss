@@ -4,7 +4,12 @@
 }
 .toogle-btn__svg{
   fill:#fff;
+
+  &--gray {
+   fill: #cccccc;
+  }
 }
+
 
 @media (min-width: $desktop-width){
   .toogle-btn{

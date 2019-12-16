@@ -18,7 +18,7 @@
 }
 
 .directions__button{
-  display:block;
+  display:flex;
   margin:0 auto;
 }
 
@@ -28,6 +28,27 @@
     padding-top: 131px;
     padding-bottom: 80px;
   }
+
+  .directions__wrapper {
+    position: relative;
+    background-image: url('/img/flags-back@1x.png');
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 52px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: 340px;
+      left: 0;
+      width: 141px;
+      height: 141px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+    }
+  }
+
   .directions__slogan {
     width: 375px;
     font-size: 28px;
@@ -43,9 +64,15 @@
   }
 
   .directions__wrapper {
+    min-height: 575px;
+    background-position-y: 0;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+
+    &::after {
+      top: -50px;
+    }
   }
 
   .directions__slogan {

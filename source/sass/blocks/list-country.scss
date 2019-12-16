@@ -12,24 +12,41 @@
 }
 
 .list-country__image{
-  position:relative;
-  border-radius:10px 10px 0 0;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 270px;
+  height: 110px;
+  border-radius: 10px 10px 0 0;
 }
 
 .list-country__item-desc{
-  width:100%;
+  width:270px;
   position:relative;
   z-index:10;
   display:flex;
   justify-content: space-between;
   background-color:#fff;
-  padding:30px 24px;
-  height:90px;
-  border-radius:10px;
-  margin-top:-15px;
+  padding: 30px 24px;
+  height: 90px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: -15px;
+
+  &--last {
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(237,239,246,1) 73%, rgba(237,239,246,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(73%, rgba(237,239,246,1)), color-stop(100%, rgba(237,239,246,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(237,239,246,1) 73%, rgba(237,239,246,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(237,239,246,1) 73%, rgba(237,239,246,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(237,239,246,1) 73%, rgba(237,239,246,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(237,239,246,1) 73%, rgba(237,239,246,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#edeff6', GradientType=0 );
+  }
 }
 
-.list-country__name{
+
+.list-country__name {
   color:$text-color;
   font-size:21px;
 }
@@ -41,19 +58,60 @@
   color:#c7c7c7;
 }
 
+.list-country__icon {
+  fill: #e8e8ec;
+  width: 11px;
+  height: 11px;
+}
+
+.list-country__icon-flag {
+  position: absolute;
+  top: -12px;
+  left: 25px;
+  width: 35px;
+  height: 24px;
+}
+
 @media (min-width:$tablet-width){
   .list-country__block{
     display:flex;
+    flex-direction: row-reverse;
+    width: 620px;
+    margin: 0 auto;
   }
+
   .list-country__image{
-    order:2;
+    margin: 0;
+    width: 186px;
+    height: 140px;
     border-radius: 0 10px 10px 0;
   }
+
   .list-country__item-desc{
-    display:flex;
+    display: flex;
+    width: 432px;
     flex-direction: column;
-    order:1;
-    margin-top:0;
-    height:140px;
+    margin: 0;
+    height: 140px;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .list-country__slogan,
+  .list-country__price {
+    font-size:20px;
+  }
+
+  .list-country__icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .list-country__icon-flag {
+    position: absolute;
+    top: 16px;
+    left: auto;
+    right: -35px;
+    width: 70px;
+    height: 47px;
   }
 }

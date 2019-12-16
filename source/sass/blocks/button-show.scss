@@ -1,4 +1,7 @@
 .button-show {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: none;
   border-radius: 10px;
   background-color: $main-yellow;
@@ -13,9 +16,14 @@
     border: 3px solid $second-color;
   }
 }
+
+.button-show__icon {
+  fill: #1d2e5b;
+}
+
 @media (min-width:$tablet-width) {
   .button-show {
-    width: 629px;
+    //width: 629px;
     font-size: 24px;
     border-radius: 20px;
   }

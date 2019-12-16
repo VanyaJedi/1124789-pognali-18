@@ -1,13 +1,14 @@
 .drop-menu {
   display: none;
   position: absolute;
+  z-index: 99;
   left: 0;
-  top: 73px;
+  top: 0;
   width: 100%;
-  height: 520px;
-  padding-top: 70px;;
+  height: 568px;
   background-color: #fff;
   align-items: center;
+
   a {
     color: $prime-color;
     text-decoration: none;
@@ -15,6 +16,20 @@
     text-transform: uppercase;
     line-height: 36px;
   }
+}
+
+.drop-menu__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.drop-menu__logo-toogle {
+  width: 100%;
+  display: flex;
+  order: 1;
+  align-items: center;
+  justify-content: space-between;
+  height: 73px;
 }
 
 .drop-menu--active {
@@ -27,22 +42,42 @@
 }
 
 .drop-menu__nav {
+  width: 100%;
   padding: 0;
+  order: 2;
   list-style: none;
   text-align: center;
-  margin-bottom:54px;
+  margin-bottom: 54px;
+
   a {
-    font-size:30px;
+    font-size: 30px;
   }
 }
 
 .drop-menu__auth-btn {
+  background-color: $main-yellow;
+  height: 50px;
+  border: none;
+  font-family:'bloggersans-bold', 'Arial', sans-serif;
+  border-radius: 25px;
+  font-size: 17px;
+  color: $prime-color;
+  text-transform: uppercase;
+  margin: 0 auto;
+  width: 270px;
   margin-bottom: 49px;
+  order: 3;
+}
+
+.drop-menu__contacts {
+  width: 100%;
+  order: 4;
 }
 
 .drop-menu__contact {
   display: flex;
   align-items: center;
+
   a {
     font-family: 'bloggersans-bold', 'Arial', sans-serif;
     font-size: 16px;
@@ -56,7 +91,7 @@
 }
 
 .drop-menu__icon-wrapper {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 14px;
@@ -67,6 +102,7 @@
 }
 
 .drop-menu__social {
+  order:5;
   width: 106px;
   margin: 0 auto;
   list-style: none;
@@ -77,34 +113,48 @@
 }
 
 .drop-menu__svg {
-  stroke: #cccccc;
+  stroke: #cfcfcf;
 }
 
 @media (min-width:$tablet-width){
   .drop-menu {
-    top:132px;
-    height:823px;
+    height:912px;
     align-items: flex-start;
     width:100%;
   }
+
+  .drop-menu__logo-toogle {
+    width: 50%;
+    height: 132px;
+  }
+
+  .drop-menu__auth-btn {
+    width: 189px;
+    order: 2;
+    margin: 0;
+    margin-top: 40px;
+    margin-left: auto;
+  }
+
   .drop-menu__nav {
+    order: 3;
     text-align: left;
-    margin-left:59px;
-    margin-bottom:139px;
+    margin-left: 59px;
+    margin-bottom: 139px;
+
       a {
-        font-size:60px;
+        font-size: 60px;
         line-height: 71px;
       }
   }
 
-  .drop-menu__auth-btn {
-    display:none;
-  }
 
   .drop-menu__contact {
-    margin-left:59px;
+    width: 100%;
+    margin-left: 59px;
+
       a {
-        font-size:28px;
+        font-size: 28px;
       }
   }
 
@@ -130,15 +180,23 @@
   .drop-menu {
     position: static;
     display: flex;
-    height: 132px;
+    height: 107px;
     padding: 0;
     width: 700px;
     background-color: $prime-color;
     align-items: center;
   }
 
+  .drop-menu__logo-toogle {
+    display: none;
+  }
+
   .drop-menu__contact{
     display:none;
+  }
+
+  .drop-menu__auth-btn {
+    display: none;
   }
 
   .drop-menu__social {

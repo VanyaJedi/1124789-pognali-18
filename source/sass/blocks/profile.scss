@@ -9,6 +9,16 @@
 
 .profile__wrapper {
   position: relative;
+  background-image: url('/img/rates@1x.png');
+  background-repeat: no-repeat;
+  background-size: 99px 99px;
+  background-position-x: 100%;
+}
+
+@media (min-resolution: $retina-dppx) {
+  .profile__wrapper {
+    background-image: url('/img/rates@2x.png');
+  }
 }
 
 .profile__header {
@@ -74,13 +84,27 @@
 .profile__button-icon {
   display: none;
 }
-
+.profile__icon {
+  fill: currentColor;
+}
 @media (min-width: $tablet-width) {
   .profile {
     position: relative;
     padding-top: 120px;
     padding-bottom: 80px;
     border-radius: 0 0 60px 60px;
+  }
+
+  .profile__wrapper {
+    min-height: 441px;
+    background-position-x: 90%;
+    background-position-y: 100%;
+  }
+
+  @media (min-resolution: $retina-dppx) {
+    .profile__wrapper {
+      background-image: url('/img/rates@2x.png');
+    }
   }
 
   .profile__header {
@@ -95,6 +119,18 @@
     padding-right: 33px;
     margin-bottom: 35px;
     font-size: 28px;
+
+    &::after {
+      content:'';
+      position: absolute;
+      z-index: -1;
+      top: 71px;
+      right: 0;
+      width: 198px;
+      height: 285px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+    }
   }
 
   .profile__num {
@@ -142,9 +178,26 @@
     padding-bottom: 161px;
   }
 
+  .profile__wrapper {
+    background-size: 198px 198px;
+    background-position-x: 95%;
+    background-position-y: 50%;
+  }
+
   .profile__list {
     padding-left: 73px;
 
+    &::after {
+      content:'';
+      position: absolute;
+      z-index: -1;
+      top: 71px;
+      right: 189px;
+      width: 444px;
+      height: 300px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+    }
   }
 
   .profile__button {
