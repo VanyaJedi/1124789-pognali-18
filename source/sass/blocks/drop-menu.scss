@@ -18,6 +18,13 @@
   }
 }
 
+.drop-menu--nojs {
+  display: block;
+  position: relative;
+  top: auto;
+  left: auto;
+}
+
 .drop-menu__container {
   display: flex;
   flex-wrap: wrap;

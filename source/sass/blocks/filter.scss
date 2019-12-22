@@ -1,0 +1,171 @@
+.filter {
+  background-color: #e2e5f2;
+  padding-top: 40px;
+  min-height: 773px;
+  border-radius: 0 0 20px 20px;
+}
+
+.filter__wrapper {
+  display: flex;
+  height: 773px;
+  flex-direction: column;
+}
+
+.filter__menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filter__btn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+
+  span {
+    display: none;
+  }
+}
+
+.filter__title-icon {
+  display: flex;
+  align-items: center;
+}
+
+.filter__title {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $second-color;
+  margin-left: 15px;
+}
+
+.filter__icon {
+  fill: $second-color;
+}
+
+.filter__close-filter {
+  display: none;
+}
+
+.filter__region-list {
+  width: 100%;
+  list-style: none;
+  padding-left: 26px;
+  margin-top: 31px;
+  margin-bottom: 22px;
+}
+
+.filter__region-list-item {
+  text-transform: uppercase;
+  color: $second-color;
+  opacity: 0.3;
+  margin-bottom: 7px;
+
+  &--active {
+    opacity: 1;
+  }
+}
+
+.filter__close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #d6daed;
+  border-radius: 20px;
+  height: 40px;
+  margin-top: auto;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: $prime-color;
+
+    svg {
+      margin-right: 10px;
+    }
+}
+
+@media (min-width: $tablet-width) {
+
+  .filter {
+    padding-top: 80px;
+    min-height: 830px;
+  }
+
+  .filter__menu {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .filter__title-icon {
+    display: none;
+  }
+
+  .filter__region-list {
+    width: auto;
+    display: flex;
+    order: 1;
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .filter__region-list-item {
+    margin-right: 26px;
+    margin-bottom: 0;
+  }
+
+  .filter__btn {
+    order: 2;
+    margin-right: 37px;
+
+    span {
+      display: block;
+      text-transform: uppercase;
+      font-size: 20px;
+      color: $second-color;
+      margin-right: 63px;
+    }
+  }
+
+  .filter__close-btn {
+    height: 100px;
+    border-radius: 20px;
+    margin-top: 65px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+
+  .filter {
+    min-height: 2507px;
+  }
+
+  .filter__title-icon {
+    position: relative;
+    left: -20px;
+    display: flex;
+  }
+
+  .filter__title {
+    font-size: 20px;
+  }
+
+  .filter__btn {
+    position: relative;
+    right: -20px;
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .filter__close-btn {
+    display: block;
+    height: 100px;
+    border-radius: 20px;
+    margin-top: 65px;
+    width: 100%
+  }
+}

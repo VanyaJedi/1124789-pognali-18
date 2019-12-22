@@ -61,6 +61,10 @@
   margin-top: -30px;
 }
 
+.page-main__filter {
+  margin-top: -20px;
+}
+
 @media (min-width:$tablet-width) {
   .page-main__steps-list {
     margin-top: -140px;
@@ -115,6 +119,10 @@
   }
 
   .page-main__fellow-travelers {
+    margin-top: -60px;
+  }
+
+  .page-main__filter {
     margin-top: -60px;
   }
 }
