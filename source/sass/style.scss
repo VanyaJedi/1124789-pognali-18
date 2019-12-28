@@ -2,6 +2,7 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "blocks/title.scss";
+@import "blocks/sticker.scss";
 @import "blocks/wrapper.scss";
 @import "blocks/page-header.scss";
 @import "blocks/drop-menu.scss";
@@ -21,5 +22,9 @@
 @import "blocks/interest.scss";
 @import "blocks/map.scss";
 @import "blocks/filter.scss";
+@import "blocks/transport-list.scss";
 @import "blocks/country-list.scss";
+@import "blocks/fellow-filter.scss";
+@import "blocks/choose-fellow-travelers.scss";
+@import "blocks/call-person.scss";
 @import "blocks/page-footer.scss";

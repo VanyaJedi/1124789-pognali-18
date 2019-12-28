@@ -2,7 +2,7 @@
   position: relative;
   padding-bottom: 112px;
   background-color: $prime-color;
-  min-height: 762px;
+  height: 762px;
 
   &::after {
     content: '';
@@ -21,14 +21,25 @@
   }
 
   &--non-main {
-    min-height: 143px;
+    height: 143px;
     padding-bottom: 0;
     border-radius: 0 0 20px 20px;
+    display: flex;
+    z-index: 200;
 
     &::after {
       display: none;
     }
   }
+}
+
+.page-header__section--non-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__bottom {
+  margin-top: auto;
 }
 
 @media (min-resolution: $retina-dppx) {
@@ -48,6 +59,10 @@
   height: 73px;
   display: flex;
   justify-content: space-between;
+
+  &--non-main {
+    margin-bottom: 0;
+  }
 }
 
 .page-header__logo {
@@ -134,7 +149,7 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    min-height: 994px;
+    height: 994px;
     background-color: #182044;
 
     &::after {
@@ -150,7 +165,7 @@
     }
 
     &--non-main {
-      min-height: 352px;
+      height: 352px;
       border-radius: 0 0 60px 60px;
       background-color: $prime-color;
 
@@ -179,6 +194,9 @@
     }
   }
 
+  .page-header__section--non-main {
+    flex-direction: row;
+  }
   .page-header__logo-toogle {
     order: 1;
     padding: 0;
@@ -260,7 +278,7 @@
 
 @media (min-width:$desktop-width) {
   .page-header {
-    min-height: 750px;
+    height: 750px;
     background-color: #161c34;
 
     &::after {
@@ -274,7 +292,7 @@
     }
 
     &--non-main {
-      min-height: 352px;
+      height: 352px;
 
       &::after {
         display: none;

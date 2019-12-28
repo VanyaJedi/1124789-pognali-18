@@ -1,0 +1,40 @@
+.transport-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 130px;
+}
+
+.transport-list__transport-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 32.25px;
+  height: 32.35px;
+  border-radius: 50%;
+
+  &--grey {
+    background-color: #edeff6;
+  }
+}
+
+.transport-list__transport-icon {
+  fill: #1d2e5b;
+  cursor: pointer;
+
+  &--nonactive {
+    opacity: 0.15;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .transport-list {
+
+    &--call {
+      width: 60px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

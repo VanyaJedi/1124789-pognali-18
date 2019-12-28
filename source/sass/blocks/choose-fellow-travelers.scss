@@ -1,0 +1,48 @@
+.choose-fellow-travelers {
+  background-color: #edeff6;
+  //padding-top: 24px; 
+}
+
+.choose-fellow-travelers__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.choose-fellow-travelers__filter {
+  margin-bottom: 26px;
+}
+
+.choose-fellow-travelers__persons {
+  list-style: none;
+}
+
+.choose-fellow-travelers__form {
+  margin: 0 auto;
+}
+
+.choose-fellow-travelers__person {
+  margin-bottom: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .choose-fellow-travelers__person {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .choose-fellow-travelers__wrapper {
+    flex-direction: row;
+    align-items: start;
+  }
+
+  .choose-fellow-travelers__filter {
+    order: 2;
+  }
+
+  .choose-fellow-travelers__list {
+    order: 1;
+  }
+
+
+}

@@ -14,7 +14,7 @@
     </div>
     <header class="page-header page-header--non-main">
       <div class="page-header__section page-header__section--non-main wrapper">
-        <div class="page-header__logo-toogle">
+        <div class="page-header__logo-toogle page-header__logo-toogle--non-main">
           <a href="index.html" class="page-header__logo">
             <picture>
               <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-tablet-white@1x.webp 1x, img/logo-tablet-white@2x.webp 2x">
@@ -114,8 +114,8 @@
       </div>
     </header>
 
-    <main class="page-main">
-      <section class="page-main__filter filter">
+    <main class="page-main page-main--filter">
+      <section class="page-main__filter filter filter--hidden">
         <div class="filter__wrapper wrapper">
           <div class="filter__menu">
             <div class="filter__title-icon">
@@ -446,149 +446,549 @@
         </div>
       </section>
 
-      <section class="choose-fellow-travelers">
-        <form class="fellow-filter" method="POST" action="https://echo.htmlacademy.ru">
-          <h3>Подберите идеального попутчика</h3>
-          <ul class="fellow-filter__list">
-            <li class="fellow-filter__list-category">Хобби</li>
-            <li class="fellow-filter__list-category fellow-music">Музыка
-              <ul class="fellow-music__items">
-                <li class="fellow-music__item">Тяжелый рок</li>
-                <li class="fellow-music__item">Русский рэп</li>
-                <li class="fellow-music__item">Евроденс</li>
-              </ul>
-            </li>
-            <li class="fellow-filter__list-category">Еда</li>
-            <li class="fellow-filter__list-category fellow-transp">Транспорт
-              <ul class="fellow-transp__items transport-list">
-                <li class="transport-list__item"></li>
-                <li class="transport-list__item"></li>
-                <li class="transport-list__item transport-list__item--active"></li>
-                <li class="transport-list__item"></li>
-              </ul>
-            </li>
-            <li class="fellow-filter__list-category">Левел</li>
-          </ul>
-          <button class="button-show button-show--form" type="submit">Показать</button>
-        </form>
+      <section class="page-main__choose-fellow-travelers choose-fellow-travelers">
+        <div class="choose-fellow-travelers__wrapper wrapper">
+          <form class="choose-fellow-travelers__filter fellow-filter" method="POST" action="https://echo.htmlacademy.ru">
+            <h3 class="text-bold">Подберите идеального попутчика</h3>
+            <ul class="fellow-filter__list text-bold">
+              <li class="fellow-filter__list-category">
+                <div class="fellow-filter__open">
+                  <span>Хобби</span>
+                  <svg class="fellow-filter__icon" aria-label="Открыть список хобби" width="8" height="4">
+                    <use xlink:href="#dropdown"></use>
+                  </svg>
+                </div>
+                <ul class="fellow-filter__list-items">
+                  <li class="fellow-filter__list-item">
+                    <input class="visually-hidden fellow-filter__checkbox" type="checkbox" id="gym" checked>
+                    <label class="fellow-filter__label" for="gym">Спортзал</label>
+                  </li>
+                  <li class="fellow-filter__list-item">
+                    <input class="visually-hidden fellow-filter__checkbox" type="checkbox" id="smoke">
+                    <label class="fellow-filter__label" for="smoke">Кальян</label>
+                  </li>
+                  <li class="fellow-filter__list-item">
+                    <input class="visually-hidden fellow-filter__checkbox" type="checkbox" id="sofa">
+                    <label class="fellow-filter__label" for="sofa">Диван</label>
+                  </li>
+                </ul>
+              </li>
+              <li class="fellow-filter__list-category">
+                <div class="fellow-filter__open fellow-filter__open--opened">
+                  <span>Музыка</span>
+                  <svg class="fellow-filter__icon" aria-label="Открыть список с музыкой" width="8" height="4">
+                    <use xlink:href="#dropdown"></use>
+                  </svg>
+                </div>
+                <ul class="fellow-filter__list-items">
+                  <li class="fellow-filter__list-item">
+                    <input class="visually-hidden fellow-filter__checkbox" type="checkbox" id="heavy-music" checked>
+                    <label class="fellow-filter__label" for="heavy-music">Тяжелый рок</label>
+                  </li>
+                  <li class="fellow-filter__list-item">
+                    <input class="visually-hidden fellow-filter__checkbox" type="checkbox" id="rus-rap">
+                    <label class="fellow-filter__label" for="rus-rap">Русский рэп</label>
+                  </li>
+                  <li class="fellow-filter__list-item">
+                    <input class="visually-hidden fellow-filter__checkbox" type="checkbox" id="eurodance">
+                    <label class="fellow-filter__label" for="eurodance">Евроденс</label>
+                  </li>
+                </ul>
+              </li>
+              <li class="fellow-filter__list-category">
+                <div class="fellow-filter__open">
+                  <span>Еда</span>
+                  <svg class="fellow-filter__icon" aria-label="Открыть список с едой" width="8" height="4">
+                    <use xlink:href="#dropdown"></use>
+                  </svg>
+                </div>
+                <ul class="fellow-filter__list-items">
+                  <li class="fellow-filter__list-item">
+                    <input class="visually-hidden fellow-filter__checkbox" type="checkbox" id="meat" checked>
+                    <label class="fellow-filter__label" for="meat">Мясоед</label>
+                  </li>
+                  <li class="fellow-filter__list-item">
+                    <input class="visually-hidden fellow-filter__checkbox" type="checkbox" id="pp">
+                    <label class="fellow-filter__label" for="pp">Сидит на ПП</label>
+                  </li>
+                  <li class="fellow-filter__list-item">
+                    <input class="visually-hidden fellow-filter__checkbox" type="checkbox" id="vegan">
+                    <label class="fellow-filter__label" for="vegan">Веган-сыроед</label>
+                  </li>
+                </ul>
+              </li>
+              <li class="fellow-filter__list-category">
+                <div class="fellow-filter__open">
+                  <span>Транспорт</span>
+                  <svg class="fellow-filter__icon" aria-label="Открыть список транспорта" width="8" height="4">
+                    <use xlink:href="#dropdown"></use>
+                  </svg>
+                </div>
+                <ul class="fellow-filter__list-items-transp transport-list">
+                  <li class="transport-list__transport-item">
+                    <svg class="transport-list__transport-icon transport-list__transport-icon--active" aria-label="Самолет" width="14" height="16">
+                      <use xlink:href="#plane"></use>
+                    </svg>
+                  </li>
+                  <li class="transport-list__transport-item">
+                    <svg class="transport-list__transport-icon transport-list__transport-icon--active" aria-label="Автобус" width="13" height="16">
+                      <use xlink:href="#bus"></use>
+                    </svg>
+                  </li>
+                  <li class="transport-list__transport-item">
+                    <svg class="transport-list__transport-icon transport-list__transport-icon--nonactive" aria-label="Байк" width="19" height="17">
+                      <use xlink:href="#bike"></use>
+                    </svg>
+                  </li>
+                  <li class="transport-list__transport-item">
+                    <svg class="transport-list__transport-icon transport-list__transport-icon--active" aria-label="Пешком" width="15" height="17">
+                      <use xlink:href="#run"></use>
+                    </svg>
+                  </li>
+                </ul>
+              </li>
+              <li class="fellow-filter__list-category">
+                <div class="fellow-filter__open">
+                  <span>Левел</span>
+                  <svg class="fellow-filter__icon" aria-label="Открыть диапозон уровней" width="8" height="4">
+                    <use xlink:href="#dropdown"></use>
+                  </svg>
+                </div>
+                <div class="fellow-filter__level">
+                  <div class="fellow-filter__level-num">
+                    <span>30</span>
+                    <span>100</span>
+                    <div class="fellow-filter__dec-rect"></div>
+                  </div>
+                  <div class="fellow-filter__range">
+                    <div class="fellow-filter__bar">
+                      <div class="fellow-filter__rangebtn"></div>
+                      <div class="fellow-filter__rangebtn"></div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button class="fellow-filter__button text-bold" type="submit">Показать</button>
+          </form>
 
-        <ul class="fellow-list">
-          <li class="fellow-list__item">
-            <form class="person" method="POST" action="">
-              <img class="person__photo" src="https://via.placeholder.com/150x150">
-              <span class="person__name">Таня Фирсова</span>
-              <p class="hashtag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-              <span class="person__wanted">Хочет посетить:</span>
-              <ul class="person__countries list-counry">
-                <li class="list-county-item">Шри-ланка</li>
-                <li class="list-county-item">Тайланд</li>
-                <li class="list-county-item">Сейшелы</li>
-              </ul>
-              <ul class="person-transp__items transport-list">
-                <li class="transport-list__item"></li>
-                <li class="transport-list__item"></li>
-                <li class="transport-list__item transport-list__item--active"></li>
-                <li class="transport-list__item"></li>
-              </ul>
-              <div class="level">
-                <span class="level-num">99</span>
-              </div>
-              <div class="like">like</div>
-              <span>1,5 M</span>
-              <button type="submit" class="button-follow"> Позвать </button>
-            </form>
-          </li>
-          <li class="fellow-list__item">
-            <form class="person" method="POST" action="">
-              <img class="person__photo" src="https://via.placeholder.com/150x150">
-              <span class="person__name">Петя Демин</span>
-              <p class="hashtag">#бургер #бар #футбол #концерт #крафт</p>
-              <span class="person__wanted">Хочет посетить:</span>
-              <ul class="person__countries list-counry">
-                <li class="list-county-item">Бельгия</li>
-                <li class="list-county-item">Чехия</li>
-              </ul>
-              <ul class="person-transp__items transport-list">
-                <li class="transport-list__item"></li>
-                <li class="transport-list__item"></li>
-                <li class="transport-list__item transport-list__item--active"></li>
-                <li class="transport-list__item"></li>
-              </ul>
-              <div class="level">
-                <span class="level-num">80</span>
-              </div>
-              <div class="like">like</div>
-              <span>150</span>
-              <button type="submit" class="button-follow"> Позвать </button>
-            </form>
-          </li>
-          <li class="fellow-list__item">
-            <form class="person" method="POST" action="">
-              <img class="person__photo" src="https://via.placeholder.com/150x150">
-              <span class="person__name">Марк Смолов</span>
-              <p class="hashtag">#рэп #тату #хайпбист #кроссовки #суприм</p>
-              <span class="person__wanted">Хочет посетить:</span>
-              <ul class="person__countries list-counry">
-                <li class="list-county-item">США</li>
-                <li class="list-county-item">Австралия</li>
-                <li class="list-county-item">Доменикана</li>
-              </ul>
-              <ul class="person-transp__items transport-list">
-                <li class="transport-list__item"></li>
-                <li class="transport-list__item"></li>
-                <li class="transport-list__item transport-list__item--active"></li>
-                <li class="transport-list__item"></li>
-              </ul>
-              <div class="level">
-                <span class="level-num">25</span>
-              </div>
-              <div class="like">like</div>
-              <span>1700</span>
-              <button type="submit" class="button-follow"> Позвать </button>
-            </form>
-          </li>
-          <li class="fellow-list__item">
-            <form class="person" method="POST" action="">
-              <img class="person__photo" src="https://via.placeholder.com/150x150">
-              <span class="person__name">Лариса Роговая</span>
-              <p class="hashtag">#образование #карьера #учеба #линкедин</p>
-              <span class="person__wanted">Хочет посетить:</span>
-              <ul class="person__countries list-counry">
-                <li class="list-county-item">Великобритания</li>
-                <li class="list-county-item">Германия</li>
-              </ul>
-              <ul class="person-transp__items transport-list">
-                <li class="transport-list__item"></li>
-                <li class="transport-list__item"></li>
-                <li class="transport-list__item transport-list__item--active"></li>
-                <li class="transport-list__item"></li>
-              </ul>
-              <div class="level">
-                <span class="level-num">50</span>
-              </div>
-              <div class="like">like</div>
-              <span>23</span>
-              <button type="submit" class="button-follow"> Позвать </button>
-            </form>
-          </li>
-        </ul>
-        <button class="button-hide-show button-hide-show--show">Показать еще</button>
-        <div class="pagination">
-          <button class="pagination__prev"></button>
-          <button class="pagination__next"></button>
-        </div>
-      </section>
+          <div class="choose-fellow-travelers__list">
+            <ul class="choose-fellow-travelers__persons">
+              <li class="choose-fellow-travelers__person">
+                <form class="choose-fellow-travelers__form call-person" method="POST" action="">
+                  <div class="call-person__picture-name">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-destop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x" >
+
+                      <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-destop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
+                      <img class="call-person__image" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Фото путешественника, девушка плавает в бассейне на спине">
+                    </picture>
+                    <p class="call-person__name text-bold">
+                      <span>Таня Фирсова</span>
+                    </p>
+                    <p class="call-person__hashtag">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+                  </div>
+                  <div class="call-person__wanted">
+                    <span class="call-person__want-text">Хочет посетить:</span>
+                    <ul class="call-person__countries">
+                      <li class="call-person__country">
+                        <svg class="call-person__flag" aria-label="Флаг Шри-Ланки" viewbox="0 0 71 48">
+                          <use xlink:href="#flag-sri-lanka"></use>
+                        </svg>
+                        Шри-ланка
+                      </li>
+                      <li class="call-person__country">
+                        <svg class="call-person__flag" aria-label="Флаг Тайланда" viewbox="0 0 71 48">
+                          <use xlink:href="#flag-thailand"></use>
+                        </svg>
+                        Тайланд
+                      </li>
+                      <li class="call-person__country">
+                        <svg class="call-person__flag" aria-label="Флаг Сейшел" viewbox="0 0 71 48">
+                          <use xlink:href="#flag-seychelles"></use>
+                        </svg>
+                        Сейшелы
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="call-person__tranport">
+                    <div class="call-person__transp-list-block">
+                      <span class="call-person__want-text call-person__transp-text">Транспорт:</span>
+                      <ul class="call-person__transport-list transport-list transport-list--call">
+                        <li class="transport-list__transport-item transport-list__transport-item--grey">
+                          <svg class="transport-list__transport-icon transport-list__transport-icon--active" aria-label="Самолет" width="14" height="16">
+                            <use xlink:href="#plane"></use>
+                          </svg>
+                        </li>
+                        <li class="transport-list__transport-item transport-list__transport-item--grey">
+                          <svg class="transport-list__transport-icon transport-list__transport-icon--nonactive" aria-label="Автобус" width="13" height="16">
+                            <use xlink:href="#bus"></use>
+                          </svg>
+                        </li>
+                        <li class="transport-list__transport-item transport-list__transport-item--grey">
+                          <svg class="transport-list__transport-icon transport-list__transport-icon--nonactive" aria-label="Байк" width="19" height="17">
+                            <use xlink:href="#bike"></use>
+                          </svg>
+                        </li>
+                        <li class="transport-list__transport-item transport-list__transport-item--grey">
+                          <svg class="transport-list__transport-icon transport-list__transport-icon--nonactive" aria-label="Пешком" width="15" height="17">
+                            <use xlink:href="#run"></use>
+                          </svg>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="call-person__level">
+                      <span class="call-person__level-text">Левел:</span>
+                      <div class="sticker sticker--white">
+                        <span class="sticker__lvl-num sticker__lvl-num--blue text-bold">99</span>
+                        <div class="sticker__line sticker__line--white"></div>
+                        <span class="sticker__txt sticker__txt--white">level</span>
+                        <svg class="sticker__progress-bar sticker__progress-bar--white" viewbox="-1 -2 63 63">
+                          <circle cx="30" cy="30" r="30"></circle>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="call-person__button-block">
+                  <button type="submit" class="call-person__btn button-show button-show--filter"> Позвать! </button>
+                    <div class="call-person__like-sub">
+                      <div class="call-person__like call-person__like--liked">
+                        <svg class="call-person__like-icon call-person__like-icon-nonactive" aria-label="Лайк">
+                          <use xlink:href="#heart"></use>
+                        </svg>
+                        <svg class="call-person__like-icon call-person__like-icon-active" aria-label="Лайк">
+                          <use xlink:href="#heart-active"></use>
+                        </svg>
+                      </div>
+                      <span class="call-person__subs text-bold">1,5 M</span>
+                    </div>
+                  </div>
+                </form>
+              </li>
+              <li class="choose-fellow-travelers__person">
+                <form class="choose-fellow-travelers__form call-person" method="POST" action="">
+                  <div class="call-person__picture-name">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-destop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/demin-mobile@1x.webp 1x, img/demin-mobile@2x.webp 2x" >
+
+                      <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-destop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
+                      <img class="call-person__image" src="img/demin-mobile@1x.jpg" srcset="img/demin-mobile@2x.jpg 2x" alt="Фото путешественника, мужчина в очках на фоне снего">
+                    </picture>
+                    <p class="call-person__name text-bold">
+                      <span>Петя Демин</span>
+                    </p>
+                    <p class="call-person__hashtag">#бургер #бар #футбол #концерт #крафт</p>
+                  </div>
+
+                  <div class="call-person__wanted">
+                    <span class="call-person__want-text">Хочет посетить:</span>
+                    <ul class="call-person__countries">
+                      <li class="call-person__country">
+                        <svg class="call-person__flag" aria-label="Флаг Бельгии" viewbox="0 0 71 48">
+                          <use xlink:href="#flag-belgium"></use>
+                        </svg>
+                        Бельгия
+                      </li>
+                      <li class="call-person__country">
+                        <svg class="call-person__flag" aria-label="Флаг Чехии" viewbox="0 0 71 48">
+                          <use xlink:href="#flag-czech"></use>
+                        </svg>
+                        Чехия
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="call-person__tranport">
+                    <div class="call-person__transp-list-block">
+                      <span class="call-person__want-text call-person__transp-text">Транспорт:</span>
+                      <ul class="call-person__transport-list transport-list transport-list--call">
+                        <li class="transport-list__transport-item transport-list__transport-item--grey">
+                          <svg class="transport-list__transport-icon transport-list__transport-icon--active" aria-label="Самолет" width="14" height="16">
+                            <use xlink:href="#plane"></use>
+                          </svg>
+                        </li>
+                        <li class="transport-list__transport-item transport-list__transport-item--grey">
+                          <svg class="transport-list__transport-icon transport-list__transport-icon--active" aria-label="Автобус" width="13" height="16">
+                            <use xlink:href="#bus"></use>
+                          </svg>
+                        </li>
+                        <li class="transport-list__transport-item transport-list__transport-item--grey">
+                          <svg class="transport-list__transport-icon transport-list__transport-icon--nonactive" aria-label="Байк" width="19" height="17">
+                            <use xlink:href="#bike"></use>
+                          </svg>
+                        </li>
+                        <li class="transport-list__transport-item transport-list__transport-item--grey">
+                          <svg class="transport-list__transport-icon transport-list__transport-icon--active" aria-label="Пешком" width="15" height="17">
+                            <use xlink:href="#run"></use>
+                          </svg>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="call-person__level">
+                      <span class="call-person__level-text">Левел:</span>
+                      <div class="sticker sticker--white">
+                        <span class="sticker__lvl-num sticker__lvl-num--blue text-bold">80</span>
+                        <div class="sticker__line sticker__line--white"></div>
+                        <span class="sticker__txt sticker__txt--white">level</span>
+                        <svg class="sticker__progress-bar sticker__progress-bar--white sticker__progress-bar--80" viewbox="-1 -2 63 63">
+                          <circle cx="30" cy="30" r="30"></circle>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="call-person__button-block">
+                  <button type="submit" class="call-person__btn button-show button-show--filter"> Позвать! </button>
+                    <div class="call-person__like-sub">
+                      <div class="call-person__like call-person__like">
+                        <svg class="call-person__like-icon call-person__like-icon-nonactive" aria-label="Лайк">
+                          <use xlink:href="#heart"></use>
+                        </svg>
+                        <svg class="call-person__like-icon call-person__like-icon-active" aria-label="Лайк">
+                          <use xlink:href="#heart-active"></use>
+                        </svg>
+                      </div>
+                      <span class="call-person__subs text-bold">150</span>
+                    </div>
+                  </div>
+
+
+                </form>
+              </li>
+              <li class="choose-fellow-travelers__person">
+                <form class="choose-fellow-travelers__form call-person" method="POST" action="">
+                  <div class="call-person__picture-name">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.webp 1x, img/smolov-destop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp 1x, img/smolov-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x" >
+
+                      <source media="(min-width: 1440px)" srcset="img/smolov-desktop@1x.jpg 1x, img/smolov-destop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg 1x, img/smolov-tablet@2x.jpg 2x">
+                      <img class="call-person__image" src="img/smolov-mobile@1x.jpg" srcset="img/smolov-mobile@2x.jpg 2x" alt="Фото путешественника, девушка плавает в бассейне на спине">
+                    </picture>
+                    <p class="call-person__name text-bold">
+                      <span>Марк Смолов</span>
+                    </p>
+                    <p class="call-person__hashtag">#рэп #тату #хайпбист #кроссовки #суприм</p>
+                  </div>
+
+                  <div class="call-person__wanted">
+                    <span class="call-person__want-text">Хочет посетить:</span>
+                    <ul class="call-person__countries">
+                      <li class="call-person__country">
+                        <svg class="call-person__flag" aria-label="Флаг США" viewbox="0 0 71 48">
+                          <use xlink:href="#flag-usa"></use>
+                        </svg>
+                        США
+                      </li>
+                      <li class="call-person__country">
+                        <svg class="call-person__flag" aria-label="Флаг Австралии" viewbox="0 0 71 48">
+                          <use xlink:href="#flag-australia"></use>
+                        </svg>
+                        Австралия
+                      </li>
+                      <li class="call-person__country">
+                        <svg class="call-person__flag" aria-label="Флаг Доминиканы" viewbox="0 0 71 48">
+                          <use xlink:href="#flag-dominica"></use>
+                        </svg>
+                        Доминикана
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="call-person__tranport">
+                    <div class="call-person__transp-list-block">
+                      <span class="call-person__want-text call-person__transp-text">Транспорт:</span>
+                      <ul class="call-person__transport-list transport-list transport-list--call">
+                        <li class="transport-list__transport-item transport-list__transport-item--grey">
+                          <svg class="transport-list__transport-icon transport-list__transport-icon--active" aria-label="Самолет" width="14" height="16">
+                            <use xlink:href="#plane"></use>
+                          </svg>
+                        </li>
+                        <li class="transport-list__transport-item transport-list__transport-item--grey">
+                          <svg class="transport-list__transport-icon transport-list__transport-icon--nonactive" aria-label="Автобус" width="13" height="16">
+                            <use xlink:href="#bus"></use>
+                          </svg>
+                        </li>
+                        <li class="transport-list__transport-item transport-list__transport-item--grey">
+                          <svg class="transport-list__transport-icon transport-list__transport-icon--active" aria-label="Байк" width="19" height="17">
+                            <use xlink:href="#bike"></use>
+                          </svg>
+                        </li>
+                        <li class="transport-list__transport-item transport-list__transport-item--grey">
+                          <svg class="transport-list__transport-icon transport-list__transport-icon--nonactive" aria-label="Пешком" width="15" height="17">
+                            <use xlink:href="#run"></use>
+                          </svg>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="call-person__level">
+                      <span class="call-person__level-text">Левел:</span>
+                      <div class="sticker sticker--white">
+                        <span class="sticker__lvl-num sticker__lvl-num--blue text-bold">25</span>
+                        <div class="sticker__line sticker__line--white"></div>
+                        <span class="sticker__txt sticker__txt--white">level</span>
+                        <svg class="sticker__progress-bar sticker__progress-bar--white sticker__progress-bar--25" viewbox="-1 -2 63 63">
+                          <circle cx="30" cy="30" r="30"></circle>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="call-person__button-block">
+                  <button type="submit" class="call-person__btn button-show button-show--filter"> Позвать! </button>
+                    <div class="call-person__like-sub">
+                      <div class="call-person__like call-person__like">
+                        <svg class="call-person__like-icon call-person__like-icon-nonactive" aria-label="Лайк">
+                          <use xlink:href="#heart"></use>
+                        </svg>
+                        <svg class="call-person__like-icon call-person__like-icon-active" aria-label="Лайк">
+                          <use xlink:href="#heart-active"></use>
+                        </svg>
+                      </div>
+                      <span class="call-person__subs text-bold">1700</span>
+                    </div>
+                  </div>
+
+
+                </form>
+              </li>
+              <li class="choose-fellow-travelers__person">
+                <form class="choose-fellow-travelers__form call-person" method="POST" action="">
+                  <div class="call-person__picture-name">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-destop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/smolov-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x" >
+
+                      <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-destop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">
+                      <img class="call-person__image" src="img/rogovaya-mobile@1x.jpg" srcset="img/rogovaya-mobile@2x.jpg 2x" alt="Фото путешественника, девушка в деловом костюме">
+                    </picture>
+                    <p class="call-person__name call-person__name--online text-bold">
+                      <span>Лариса Роговая</span>
+                    </p>
+                    <p class="call-person__hashtag">#образование #карьера #учеба #линкедин</p>
+                  </div>
+
+                  <div class="call-person__wanted">
+                    <span class="call-person__want-text">Хочет посетить:</span>
+                    <ul class="call-person__countries">
+                      <li class="call-person__country">
+                        <svg class="call-person__flag" aria-label="Флаг Великобритании" viewbox="0 0 71 48">
+                          <use xlink:href="#flag-united-kingdom"></use>
+                        </svg>
+                        Великобритания
+                      </li>
+                      <li class="call-person__country">
+                        <svg class="call-person__flag" aria-label="Флаг Германии" viewbox="0 0 71 48">
+                          <use xlink:href="#flag-germany"></use>
+                        </svg>
+                        Германия
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="call-person__tranport">
+                    <div class="call-person__transp-list-block">
+                      <span class="call-person__transport-list call-person__want-text call-person__transp-text">Транспорт:</span>
+                      <ul class="transport-list transport-list--call">
+                        <li class="transport-list__transport-item transport-list__transport-item--grey">
+                          <svg class="transport-list__transport-icon transport-list__transport-icon--active" aria-label="Самолет" width="14" height="16">
+                            <use xlink:href="#plane"></use>
+                          </svg>
+                        </li>
+                        <li class="transport-list__transport-item transport-list__transport-item--grey">
+                          <svg class="transport-list__transport-icon transport-list__transport-icon--active" aria-label="Автобус" width="13" height="16">
+                            <use xlink:href="#bus"></use>
+                          </svg>
+                        </li>
+                        <li class="transport-list__transport-item transport-list__transport-item--grey">
+                          <svg class="transport-list__transport-icon transport-list__transport-icon--nonactive" aria-label="Байк" width="19" height="17">
+                            <use xlink:href="#bike"></use>
+                          </svg>
+                        </li>
+                        <li class="transport-list__transport-item transport-list__transport-item--grey">
+                          <svg class="transport-list__transport-icon transport-list__transport-icon--nonactive" aria-label="Пешком" width="15" height="17">
+                            <use xlink:href="#run"></use>
+                          </svg>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="call-person__level">
+                      <span class="call-person__level-text">Левел:</span>
+                      <div class="sticker sticker--white">
+                        <span class="sticker__lvl-num sticker__lvl-num--blue text-bold">50</span>
+                        <div class="sticker__line sticker__line--white"></div>
+                        <span class="sticker__txt sticker__txt--white">level</span>
+                        <svg class="sticker__progress-bar sticker__progress-bar--white sticker__progress-bar--50" viewbox="-1 -2 63 63">
+                          <circle cx="30" cy="30" r="30"></circle>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="call-person__button-block">
+                  <button type="submit" class="call-person__btn button-show button-show--filter"> Позвать! </button>
+                    <div class="call-person__like-sub">
+                      <div class="call-person__like call-person__like">
+                        <svg class="call-person__like-icon call-person__like-icon-nonactive" aria-label="Лайк">
+                          <use xlink:href="#heart"></use>
+                        </svg>
+                        <svg class="call-person__like-icon call-person__like-icon-active" aria-label="Лайк">
+                          <use xlink:href="#heart-active"></use>
+                        </svg>
+                      </div>
+                      <span class="call-person__subs text-bold">23</span>
+                    </div>
+                  </div>
+
+
+                </form>
+              </li>
+            </ul>
+            <button class="button-hide-show button-hide-show--show">Показать еще</button>
+            <div class="pagination">
+              <button class="pagination__prev"></button>
+              <button class="pagination__next"></button>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="page-footer">
-      <img src="img/logo-mobile-blue.png" width="100" height="19" alt="Логотип погнали">\
-      <div class="page-footer__icons">
-
-      </div>
-      <div class="page-footer__low">
-        <span>Разработано</span>
-        <svg aria-label="Логотип htmlacademy" viewBox="0 0 60 60" width="27" height="34">
-          <use xlink:href="#htmlacademy"></use>
-        </svg>
+      <div class="page-footer__wrapper wrapper">
+        <img class="page-footer__logo-image page-footer__logo-image--mobile" src="img/logo-mobile-blue.png" width="100" height="19" alt="Логотип погнали">
+        <img class="page-footer__logo-image page-footer__logo-image--tablet" src="img/logo-tablet-blue@1x.png" width="166" height="42" alt="Логотип погнали">
+        <ul class="page-footer__icons">
+          <li>
+            <svg class="page-footer__icon" aria-label="иконка фейсбук"  width="11" height="21">
+              <use xlink:href="#facebook"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="page-footer__icon" aria-label="иконка вконтакте"   viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve"  width="23" height="12">
+              <use xlink:href="#vk"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="page-footer__icon" aria-label="иконка инстаграмм" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve"  width="18" height="18">
+              <use xlink:href="#instagram"></use>
+            </svg>
+          </li>
+        </ul>
+        <div class="page-footer__low">
+          <span>Разработано</span>
+          <svg aria-label="Логотип htmlacademy" viewBox="0 0 60 60" width="27" height="34">
+              <use xlink:href="#htmlacademy"></use>
+          </svg>
+        </div>
       </div>
     </footer>
   <script src="js/script.js"></script>

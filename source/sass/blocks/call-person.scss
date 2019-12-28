@@ -1,0 +1,319 @@
+.call-person {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  //height: 415px;
+  width: 270px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding-bottom: 22px;
+}
+
+.call-person__picture-name {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #edeff6;
+}
+
+.call-person__image {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+.call-person__name {
+  display: flex;
+  margin-left: 17px;
+
+  span {
+    font-size: 20px;
+    color: $text-color;
+    width: 88px;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 6px;
+    margin-left: 40px;
+    margin-top: 5px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #f97676;
+  }
+
+  &--online {
+    &::after {
+      background-color: #81e31e;
+    }
+  }
+}
+
+.call-person__hashtag {
+  width: 180px;
+  color: #444444;
+  margin-top: 15px;
+}
+
+.call-person__wanted {
+  width: 100%;
+  margin-top: -13px;
+  padding-left: 20px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #edeff6;
+}
+
+.call-person__want-text {
+  display: inline-block;
+  padding: 0 11px;
+  background-color: #fff;
+  color: #444444;
+  font-size: 15px;
+  margin-left: -11px;
+  text-transform: lowercase;
+  margin-bottom: 15px;
+}
+
+.call-person__countries {
+  list-style: none;
+}
+
+.call-person__country {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: 'bloggersans-medium', 'Arial', sans-serif;
+  font-size: 15px;
+  color: $text-color;
+}
+
+
+.call-person__flag {
+  width: 26px;
+  height: 18px;
+  margin-right: 15px;
+}
+
+.call-person__tranport {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: -13px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 15px;
+}
+
+.call-person__level {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.call-person__level-text {
+  display: inline-block;
+  padding: 0 11px;
+  background-color: #fff;
+  color: #444444;
+  font-size: 15px;
+  text-transform: lowercase;
+  margin-bottom: 10px;
+}
+
+.call-person__button-block {
+  display: flex;
+  width: 100%;
+}
+
+.call-person__like-sub {
+  position: absolute;
+  top: 58px;
+  left: 69px;
+  display: flex;
+  align-items: center;
+}
+
+.call-person__like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  background-color: #edeff6;
+  cursor: pointer;
+
+  .call-person__like-icon {
+    width: 13px;
+    height: 11px;
+  }
+
+  .call-person__like-icon-active {
+    display: none;
+  }
+
+  .call-person__like-icon-nonactive {
+    opacity: 0.3;
+  }
+
+  &--liked {
+    background-color: #f9eaea;
+
+    .call-person__like-icon {
+     fill: #f02323;
+    }
+
+    .call-person__like-icon-active {
+      display: block;
+    }
+
+    .call-person__like-icon-nonactive {
+      display: none;
+    }
+  }
+}
+
+.call-person__subs {
+  display: inline-block;
+  font-size: 14px;
+  color: $prime-color;
+  margin-left: 8px;
+}
+
+.call-person__btn {
+  margin: 0 auto;
+}
+
+
+@media (min-width: $tablet-width) {
+  .call-person {
+    width: 688px;
+  }
+
+  .call-person__image {
+    border-radius: 20px;
+    width: 190px;
+    height: 190px;
+  }
+
+  .call-person__picture-name {
+    width: 514px;
+    align-items: flex-start;
+    padding-top: 35px;
+    padding-left: 36px;
+    padding-bottom: 0;
+    border: none;
+    margin-bottom: 31px;
+  }
+
+  .call-person__name {
+    display: flex;
+    align-items: center;
+    margin-left: 26px;
+
+    span {
+      font-size: 30px;
+      width: 222px;
+    }
+
+    &::after {
+      margin-left: 22px;
+    }
+  }
+
+  .call-person__wanted {
+    order: 4;
+    border-bottom: none;
+    padding-top: 26px;
+    padding-left: 36px;
+    border-top: 1px solid #edeff6;
+  }
+
+  .call-person__countries {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .call-person__country {
+    font-size: 20px;
+    margin-right: 28px;
+  }
+
+  .call-person__flag {
+    width: 35px;
+    height: 24px;
+  }
+
+  .call-person__want-text {
+    display: block;
+    width: 119px;
+    margin: 0;
+    margin-top: -36px;
+    margin-left: 45px;
+    margin-bottom: 18px;
+  }
+
+  .call-person__tranport {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 2;
+    width:60px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: 25px;
+    padding-top: 35px;
+  }
+
+  .call-person__transport-list {
+    margin-bottom: 10px;
+  }
+
+  .call-person__transp-text, .call-person__level-text {
+    display: none;
+  }
+
+  .call-person__button-block {
+    order: 3;
+    margin: 0;
+    margin-top: -80px;
+    margin-left: 256px;
+    width: 260px;
+  }
+
+  .call-person__hashtag {
+    margin-top: -150px;
+    font-size: 20px;
+    width: 241px;
+    margin-left: calc(256px - 36px);
+  }
+
+  .call-person__like-sub {
+    position: static;
+  }
+
+  .call-person__like {
+    width: 50px;
+    height: 50px;
+
+    .call-person__like-icon {
+      width: 20px;
+      height: 17px;
+    }
+  }
+
+  .call-person__subs {
+    font-size: 20px;
+  }
+
+  .call-person__btn {
+    margin:0;
+  }
+
+}

@@ -1,8 +1,27 @@
 .filter {
+  position: absolute;
+  width: 100%;
   background-color: #e2e5f2;
   padding-top: 40px;
-  min-height: 773px;
   border-radius: 0 0 20px 20px;
+
+  .filter__open-filter {
+    display: none;
+  }
+
+  &--hidden {
+    position: relative;
+    height: 74px;
+    overflow: hidden;
+
+    .filter__open-filter {
+      display: flex;
+    }
+
+    .filter__close-filter {
+    display: none;
+    }
+  }
 }
 
 .filter__wrapper {
@@ -44,10 +63,6 @@
 
 .filter__icon {
   fill: $second-color;
-}
-
-.filter__close-filter {
-  display: none;
 }
 
 .filter__region-list {
@@ -92,12 +107,20 @@
 
   .filter {
     padding-top: 80px;
-    min-height: 830px;
+    border-radius: 0 0 60px 60px;
+
+    &--hidden {
+      height:198px;
+    }
+  }
+
+  .filter__wrapper {
+    height: 830px;
   }
 
   .filter__menu {
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 65px;
   }
 
   .filter__title-icon {
@@ -110,6 +133,7 @@
     order: 1;
     font-size: 20px;
     margin: 0;
+    padding-left: 36px;
   }
 
   .filter__region-list-item {
@@ -141,8 +165,14 @@
 @media (min-width: $desktop-width) {
 
   .filter {
-    min-height: 2507px;
+    position: relative;
+    min-height: auto;
   }
+
+  .filter__wrapper {
+    height: auto;
+  }
+
 
   .filter__title-icon {
     position: relative;
