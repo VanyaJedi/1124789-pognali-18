@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded',function(){
   var filter = document.querySelector('.filter');
   var open_filter = document.querySelector('.filter__open-filter');
   var close_filter = document.querySelector('.filter__close-filter');
+  var close_filter_btn = document.querySelector('.filter__close-btn');
   var fellow_filter = document.querySelector('.fellow-filter');
 
   tgl_btn.addEventListener('click',function(){
@@ -52,9 +53,12 @@ document.addEventListener('DOMContentLoaded',function(){
     });
   }
 
-  if (close_filter) {
+  if (close_filter || close_filter_btn) {
     close_filter.addEventListener('click', function(){
       filter.classList.add('filter--hidden');
+    });
+    close_filter_btn.addEventListener('click', function(){
+    filter.classList.add('filter--hidden');
     });
   }
 
