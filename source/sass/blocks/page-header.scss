@@ -71,15 +71,31 @@
 }
 
 .page-header__icon {
+  cursor: pointer;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: #ffbd30;
   border: none;
-}
 
-.page-header__icon--orange {
-  background-color: #ff8d30;
+  &:hover, &:focus  {
+    background-color: #ff8d30;
+  }
+
+  &:active {
+    .page-header__icon-svg {
+      opacity: 0.3;
+    }
+  }
+
+  &--orange {
+    background-color: #ff8d30;
+
+    &:hover,     &:focus {
+        background-color: #f26926;
+      }
+    }
+
 }
 
 .page-header__return {
@@ -93,6 +109,10 @@
   svg {
     fill: currentColor;
     margin-left: 30px;
+  }
+
+  &--form {
+    display: none;
   }
 
 }
@@ -217,9 +237,12 @@
   }
 
   .page-header__return {
-
     display: flex;
     align-self: flex-start;
+
+    &--form {
+      display: none;
+    }
   }
 
   .page-header__slogan {

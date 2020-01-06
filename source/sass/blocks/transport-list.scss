@@ -65,6 +65,8 @@
 
       .transport-list__transport-item {
         background-color: #ffffff;
+        width: 43px;
+        height: 43px;
       }
 
       .transport-list__transport-icon {
@@ -89,6 +91,12 @@
           height: 21px;
         }
       }
+    }
+
+    &--row {
+      width: 196px;
+      flex-direction: row;
+
     }
   }
 }

@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded',function(){
     });
   }
 
-  if (close_filter || close_filter_btn) {
+  if ((close_filter) || (close_filter_btn)) {
     close_filter.addEventListener('click', function(){
       filter.classList.add('filter--hidden');
     });

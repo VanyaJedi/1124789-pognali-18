@@ -1,4 +1,5 @@
 .button-auth {
+  cursor: pointer;
   background-color: $main-yellow;
   width: 189px;
   height: 40px;
@@ -8,6 +9,14 @@
   font-size: 17px;
   color: $prime-color;
   text-transform: uppercase;
+
+  &:hover, &:focus {
+    background-color: #ffbd30;
+  }
+
+  &:active span {
+    opacity: 0.3;
+  }
 }
 
 .button-auth--big {
