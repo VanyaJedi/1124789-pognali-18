@@ -1,0 +1,292 @@
+.plan-list {
+  list-style: none;
+}
+
+.plan-list__item {
+  padding: 23px 26px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.plan-list__item-top {
+  margin-bottom: 24px;
+}
+
+.plan-list__item-header {
+  font-size: 20px;
+  color: $text-color;
+  margin-bottom: 26px;
+}
+
+.plan-list__item-header-step {
+  display: block;
+}
+
+.plan-list__item-info {
+  color: #444444;
+}
+
+.plan-list__steps-btns {
+  display: none;
+}
+
+.plan-list__block-cnt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.plan-list__block-cnt-name, .plan-list__block-cnt-um {
+  font-family: 'bloggersans-medium', arial, sans-serif;
+  text-transform: uppercase;
+  color: $text-color;
+}
+
+.plan-list__block-cnt-um {
+  opacity: 0.3;
+}
+
+.plan-list__counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  width: 100%;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  margin-top: 9px;
+
+  button {
+    background-color: transparent;
+    border: none;
+  }
+
+  svg {
+    width: 14px;
+    height: 14px;
+    opacity: 0.3;
+  }
+}
+
+.plan-list__num {
+  font-family: 'bloggersans-medium', arial, sans-serif;
+  text-transform: uppercase;
+  color: $text-color;
+  font-size: 15px;
+}
+
+.plan-list__ischild {
+  margin-bottom: 20px;
+}
+
+.plan-list__ischild-label {
+   display: flex;
+   align-items: center;
+   font-size: 15px;
+   color: #444444;
+
+  &::before {
+    content:'';
+    display: inline-block;
+    margin-right: 13px;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #cbced9;
+    border-radius: 4px;
+  }
+}
+
+.plan-list__ischild-box:checked + .plan-list__ischild-label::before {
+  background-image: url('../img/tick.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 9px 9px;
+}
+
+.plan-list__next-step-btn {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: $main-yellow;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: $prime-color;
+  margin: 0 auto;
+}
+
+.calendar__first-day {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+
+  .plan-list {
+    padding: 0 33px;
+  }
+
+  .plan-list__item-info {
+    font-size: 20px;
+  }
+
+  .plan-list__middle {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+
+  .plan-list__block-cnt-name, .plan-list__block-cnt-um, .plan-list__num  {
+    font-size: 20px;
+  }
+
+  .plan-list__fellows-cnt {
+    order: 1;
+    padding-top: 20px;
+    border-top: 1px solid #cbced9;
+  }
+
+  .plan-list__timing {
+    order: 3;
+    margin-bottom: 0;
+  }
+
+  .plan-list__ischild {
+    order: 2;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #cbced9;
+  }
+
+  .plan-list__ischild-label {
+    font-family: 'bloggersans-medium';
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $text-color;
+
+    &::before {
+      margin-right: 24px;
+    }
+  }
+
+  .plan-list__item {
+    padding: 50px 42px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border-radius: 30px;
+  }
+
+  .plan-list__item-header {
+    font-size: 36px;
+    margin-bottom: 42px;
+  }
+
+  .plan-list__item-header-step {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .plan-list__item {
+    padding: 89px  164px;
+  }
+
+  .plan-list__item-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .plan-list__item-step-info {
+    width: 600px;
+  }
+
+  .plan-list__middle {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .plan-list__block-cnt {
+    display: flex;
+    width: 50%;
+    border: none;
+    padding: 0;
+    align-items: center;
+  }
+
+  .plan-list__block-cnt-name {
+    order: 1;
+    width: 200px;
+  }
+
+  .plan-list__block-cnt-um {
+    order: 3;
+    opacity: 1;
+    width: 46px;
+    margin-left: 10px;
+  }
+
+  .plan-list__counter {
+    order: 2;
+    width: 181px;
+    height: 70px;
+  }
+
+  .plan-list__ischild {
+    display: flex;
+    padding: 0;
+    justify-content: flex-end;
+    align-items: center;
+    border: none;
+    width: 50%;
+  }
+
+  .plan-list__steps-btns {
+    display: block;
+    list-style: none;
+  }
+
+  .plan-list__step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+
+    .plan-list__step-btn {
+      background-color: transparent;
+      border: none;
+      font-size: 20px;
+      color: rgba(0,0,0,0.6);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      margin-right: 37px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: $text-color;
+      opacity: 0.3;
+    }
+
+    &--active {
+      .plan-list__step-btn {
+        color: rgba(0,0,0,1);
+      }
+
+      &::before {
+        opacity: 1;
+      }
+
+    }
+  }
+
+  .plan-list__item-header-step {
+    display: inline;
+  }
+
+  .calendar__first-day {
+    display: inline;
+  }
+}

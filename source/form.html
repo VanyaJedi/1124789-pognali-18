@@ -151,12 +151,12 @@
                 </picture>
               </div>
               <button class="form-directions__btn" type="button">
-                <span class="text-bold">Сменить фото</span>
+                <span class="text-bold"><span class="form-directions__btn-hide-span">Сменить</span> фото</span>
               </button>
 
               <div class="form-directions__block form-directions__hashtag">
                 <span class="form-directions__block-name text-bold">Тэги</span>
-                <p class="">#бургер #бар #футбол #концерт #крафт</p>
+                <p>#бургер #бар #футбол #концерт #крафт</p>
               </div>
               <div class="form-directions__block form-directions__transport">
                 <span class="form-directions__block-name text-bold">Транспорт</span>
@@ -183,11 +183,9 @@
                   </li>
                 </ul>
               </div>
-
-
-
             </div>
           </section>
+
           <section class="form-directions__my-plan">
             <div class="form-directions__my-plan-wrapper wrapper">
               <div сlass="form-directions__section-header">
@@ -196,23 +194,214 @@
               <ul class="form-directions__plan-cards-list">
                 <li class="form-directions__plan-card">
                   <p class="form-directions__plan-country text-bold">
-                    1. Франция, Италия
+                    <span class="form-directions__plan-num">1.</span><span class="text-bold">Франция, Италия</span>
                   </p>
-                  <p class="form-directions__plan-how">
-                    <div>
-                      <span>3 попутчика</span>
-                    </div>
-                    <div>
-                      <span>26 мар</span>
-                      <span>29 мар</span>
-                    </div>
+                  <p class="form-directions__plan-count">
+                    3 попутчика
+                  </p>
+                  <p class="form-directions__plan-date">
+                    26 мар - 29 мар
+                  </p>
+                  <button class="form-directions__plan-btn">
+                    <span>Изменить</span>
+                  </button>
+                </li>
+
+                <li class="form-directions__plan-card">
+                  <p class="form-directions__plan-country text-bold">
+                    <span class="form-directions__plan-num">2.</span><span class="text-bold">Таиланд, Индонезия</span>
+                  </p>
+                  <p class="form-directions__plan-count">
+                    1 попутчик
+                  </p>
+                  <p class="form-directions__plan-date">
+                    1 июл - 15 июл
                   </p>
                   <button class="form-directions__plan-btn">
                     <span>Изменить</span>
                   </button>
                 </li>
               </ul>
+            </div>
+          </section>
+          <section class="form-direction__add-plan">
+            <div class="form-directions__add-plan-wrapper wrapper">
+              <div сlass="form-directions__section-header">
+                <h3 class="form-directions__section-name text-bold">Добавить план:</h3>
+                <ul class="form-directions__plan-steps-btns">
+                  <li>
+                    <button class="form-direction__step-btn form-direction__step-btn--active"></button>
+                  </li>
+                  <li>
+                    <button class="form-direction__step-btn"></button>
+                  </li>
+                  <li>
+                    <button class="form-direction__step-btn"></button>
+                  </li>
+                </ul>
+              </div>
+              <ul class="form-direction__plan-list plan-list ">
+                <li class="plan-list__item">
+                  <div class="plan-list__item-top">
+                    <div class="plan-list__item-step-info">
+                      <div class="plan-list__item-header text-bold">
+                        <span class="plan-list__item-header-step">Шаг 1.</span>
+                        <span>Даты пребывания</span>
+                      </div>
+                      <p class="plan-list__item-info">
+                        Укажите предпочтительное количество попутчиков, которых вы&nbspхотели бы
+                         позвать в поездку и ее предполагаемую длительность.
+                      </p>
+                    </div>
+                    <ul class="plan-list__steps-btns">
+                      <li class="plan-list__step plan-list__step--active">
+                        <button class="plan-list__step-btn" type="button">
+                          Даты
+                        </button>
+                      </li>
+                      <li class="plan-list__step">
+                        <button class="plan-list__step-btn" type="button">
+                          Маршрут
+                        </button>
+                      </li>
+                      <li class="plan-list__step">
+                        <button class="plan-list__step-btn" type="button">
+                          Развлечения
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="plan-list__middle">
+                    <div class="plan-list__block-cnt plan-list__fellows-cnt">
+                      <span class="plan-list__block-cnt-name">Ищу попутчиков:</span>
+                      <span class="plan-list__block-cnt-um" >Чел.</span>
+                      <div class="plan-list__counter">
+                        <button class="plan-list__minus" type="button">
+                          <svg aria-label="Уменьшить кол-во">
+                            <use xlink:href="#qty-minus"></use>
+                          </svg>
+                        </button>
+                        <span class="plan-list__num">2</span>
+                        <button type="button">
+                          <svg class="plan-list_plus" aria-label="Увеличить кол-во">
+                            <use xlink:href="#qty-plus"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="plan-list__block-cnt plan-list__timing">
+                      <span class="plan-list__block-cnt-name">Длительность:</span>
+                      <span class="plan-list__block-cnt-um" >Дн.</span>
+                      <div class="plan-list__counter">
+                        <button class="plan-list__minus" type="button">
+                          <svg aria-label="Уменьшить кол-во">
+                            <use xlink:href="#qty-minus"></use>
+                          </svg>
+                        </button>
+                        <span class="plan-list__num">2</span>
+                        <button type="button">
+                          <svg class="plan-list_plus" aria-label="Увеличить кол-во">
+                            <use xlink:href="#qty-plus"></use>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="plan-list__ischild">
+                      <input class="plan-list__ischild-box visually-hidden" type="checkbox" id="ischiid" checked>
+                      <label class="plan-list__ischild-label" for="ischiid">Можно с детьми</label>
+                    </div>
+                  </div>
 
+                  <div class="plan-list__calendar calendar">
+                    <div class="calendar__month">
+                      <button type="button" class="calendar__btn">
+                        <svg class="calendar__icon" aria-label="Предыдующий месяц">
+                          <use xlink:href="#month-arrow-left"></use>
+                        </svg>
+                      </button>
+                      <span class="calendar__month-value text-bold">Март 2019</span>
+                      <button type="button" class="calendar__btn">
+                        <svg class="calendar__icon" aria-label="Следующий месяц">
+                          <use xlink:href="#month-arrow-right"></use>
+                        </svg>
+                      </button>
+                    </div>
+
+                    <div class="calendar__table">
+                      <ul class="calendar__table-days-of-week">
+                        <li>п<span>н</span></li>
+                        <li>в<span>т</span></li>
+                        <li>с<span>р</span></li>
+                        <li>ч<span>т</span></li>
+                        <li>п<span>т</span></li>
+                        <li>с<span>б</span></li>
+                        <li>в<span>с</span></li>
+                      </ul>
+                      <ul class="calendar__table-days">
+                        <li class="calendar__day calendar__day--past">23</li>
+                        <li class="calendar__day calendar__day--past">24</li>
+                        <li class="calendar__day calendar__day--past">25</li>
+                        <li class="calendar__day calendar__day--past">26</li>
+                        <li class="calendar__day calendar__day--past">27</li>
+                        <li class="calendar__day calendar__day--past">28</li>
+                        <li class="calendar__day calendar__day--past">1 <span class="calendar__first-day">мар</span></li>
+                      </ul>
+                      <ul class="calendar__table-days">
+                        <li class="calendar__day calendar__day--past">2</li>
+                        <li class="calendar__day calendar__day--past">3</li>
+                        <li class="calendar__day calendar__day--past">4</li>
+                        <li class="calendar__day calendar__day--past">5</li>
+                        <li class="calendar__day calendar__day--past">6</li>
+                        <li class="calendar__day calendar__day--past">7</li>
+                        <li class="calendar__day calendar__day--past">8</li>
+                      </ul>
+                      <ul class="calendar__table-days">
+                        <li class="calendar__day calendar__day--past">9</li>
+                        <li class="calendar__day calendar__day--past">10</li>
+                        <li class="calendar__day calendar__day--past">11</li>
+                        <li class="calendar__day calendar__day--past">12</li>
+                        <li class="calendar__day calendar__day--past">13</li>
+                        <li class="calendar__day calendar__day--past">14</li>
+                        <li class="calendar__day calendar__day--past">15</li>
+                      </ul>
+                      <ul class="calendar__table-days">
+                        <li class="calendar__day calendar__day--past">16</li>
+                        <li class="calendar__day calendar__day--past">17</li>
+                        <li class="calendar__day calendar__day--past">18</li>
+                        <li class="calendar__day calendar__day--past">19</li>
+                        <li class="calendar__day calendar__day--past">20</li>
+                        <li class="calendar__day calendar__day--past">21</li>
+                        <li class="calendar__day calendar__day--past">22</li>
+                      </ul>
+                      <ul class="calendar__table-days">
+                        <li class="calendar__day calendar__day--past">23</li>
+                        <li class="calendar__day calendar__day--past">24</li>
+                        <li class="calendar__day calendar__day--past">25</li>
+                        <li class="calendar__day calendar__day--active calendar__day--start">26</li>
+                        <li class="calendar__day calendar__day--active">27</li>
+                        <li class="calendar__day calendar__day--active calendar__day--end">28</li>
+                        <li class="calendar__day calendar__day--next">29</li>
+                      </ul>
+                      <ul class="calendar__table-days">
+                        <li class="calendar__day calendar__day--next">30</li>
+                        <li class="calendar__day calendar__day--next">31</li>
+                        <li class="calendar__day calendar__day--next">1 <span class="calendar__first-day">апр</span></li>
+                        <li class="calendar__day calendar__day--next">2</li>
+                        <li class="calendar__day calendar__day--next">3</li>
+                        <li class="calendar__day calendar__day--next">4</li>
+                        <li class="calendar__day calendar__day--next">5</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <button type="button" class="plan-list__button-show button-show button-show--plan">
+                    <span>Следующий шаг</span>
+                    <svg class="button-show__icon button-show__icon--plan" aria-label="Следующий"  width="10" height="14">
+                      <use xlink:href="#triangle-arrow-right"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
             </div>
           </section>
         </form>

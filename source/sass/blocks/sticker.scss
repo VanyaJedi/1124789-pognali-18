@@ -153,6 +153,7 @@
       background-color: #444444;
       opacity: 0.4;
     }
+
   }
 
   .sticker__txt {
@@ -161,6 +162,31 @@
       display: block;
       color: #444444;
       opacity: 0.4;
+    }
+}
+}
+
+@media (min-width: $desktop-width) {
+
+
+  .sticker__line {
+
+    &--big {
+      background-color: #ffffff;
+    }
+  }
+
+  .sticker__lvl-num {
+
+    &--big {
+      color: #ffffff;
+    }
+  }
+
+  .sticker__txt {
+
+    &--big {
+      color: #ffffff;
     }
 }
 }
