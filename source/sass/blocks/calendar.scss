@@ -92,6 +92,10 @@
   }
 }
 
+.calendar__first-day {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
 
   .calendar__month {
@@ -137,6 +141,7 @@
 }
 
 
+
 @media (min-width: $desktop-width) {
   .calendar__day {
     width: 144px;
@@ -164,5 +169,9 @@
         letter-spacing: 1px;
       }
     }
+  }
+
+  .calendar__first-day {
+    display: inline;
   }
 }

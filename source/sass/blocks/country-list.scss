@@ -5,6 +5,35 @@
   width: 226px;
   list-style: none;
   margin: 0 auto;
+
+  &--form {
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 210;
+    top: 42px;
+    left: 1px;
+
+    .country-list__name-list {
+      background-color: #ffffff;
+      top: 204px;
+      left: -1px;
+      width: 221px;
+      height: 270px;
+      border: 1px solid #cbced9;
+      padding: 56px 17px 21px 17px;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .country-list__letter {
+
+      &--active {
+        border: 1px solid #cbced9;
+        background-color: #edeff6;
+        color: $text-color;
+      }
+    }
+
+  }
 }
 
 .country-list__letter {

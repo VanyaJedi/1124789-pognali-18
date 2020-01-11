@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var close_filter = document.querySelector('.filter__close-filter');
   var close_filter_btn = document.querySelector('.filter__close-btn');
   var fellow_filter = document.querySelector('.fellow-filter');
+  var choose_country_block = document.querySelector('.country-to-go__item--non-choose');
+  var choose_country = document.querySelector('.country-to-go__drop--non-choose');
 
   tgl_btn.addEventListener('click',function(){
     drop_menu.classList.add('drop-menu--active');
@@ -67,6 +69,12 @@ document.addEventListener('DOMContentLoaded',function(){
       if (event.target.classList.contains('fellow-filter__open')) {
         event.target.classList.toggle('fellow-filter__open--opened');
       }
+    });
+  }
+
+  if (choose_country) {
+    choose_country.addEventListener('click', function(target){
+      choose_country_block.classList.toggle('country-to-go__item--non-choose-active');
     });
   }
 

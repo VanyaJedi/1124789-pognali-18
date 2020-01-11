@@ -6,6 +6,7 @@
   padding: 23px 26px;
   background-color: #ffffff;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .plan-list__item-top {
@@ -116,8 +117,30 @@
   margin: 0 auto;
 }
 
-.calendar__first-day {
-  display: none;
+.plan-list__country-to-go {
+  margin: 0 auto;
+}
+
+.plan-list__button-show {
+  display: block;
+  width: 230px;
+  height: 40px;
+  border: none;
+  background-color: $main-yellow;
+  border-radius: 20px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: $prime-color;
+  margin-bottom: 10px;
+
+  svg {
+    display: none;
+  }
+
+  &--back {
+    background-color: #ffffff;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -182,6 +205,40 @@
 
   .plan-list__item-header-step {
     margin-bottom: 10px;
+  }
+}
+
+.plan-list__buttons-next-prev {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan-list__button-show {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 32px;
+  width: 285px;
+  height: 81px;
+  border-radius: 20px;
+  margin: 0;
+  text-transform: none;
+  font-size: 24px;
+  color: $text-color;
+
+  svg {
+    display: block;
+  }
+
+  &--back {
+    padding: 0;
+    width: 180px;
+    background-color: #ffffff;
+    flex-direction: row-reverse;
+
+    svg {
+      transform: rotate(180deg);
+    }
   }
 }
 
@@ -283,10 +340,6 @@
   }
 
   .plan-list__item-header-step {
-    display: inline;
-  }
-
-  .calendar__first-day {
     display: inline;
   }
 }
