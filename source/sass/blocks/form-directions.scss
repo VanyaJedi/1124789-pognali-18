@@ -2,7 +2,6 @@
   display: block;
   min-height: 400px;
   background-color: #edeff6;
-  padding-bottom: 100px;
 }
 
 .test {
@@ -87,8 +86,9 @@
 
 .form-directions__section-header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 29px;
-  border: 1px solid red;
 }
 
 .form-directions__section-name {
@@ -153,6 +153,7 @@
   background-color: #d4d9eb;
   margin-top: -30px;
   padding-top: 25px;
+  padding-bottom: 100px;
 }
 
 .form-directions__plan-steps-btns {

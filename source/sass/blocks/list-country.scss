@@ -27,11 +27,11 @@
   display:flex;
   justify-content: space-between;
   background-color:#fff;
-  padding: 30px 24px;
+  padding: 25px 24px;
   height: 90px;
   border-radius: 10px;
   margin: 0 auto;
-  margin-top: -15px;
+  margin-top: -11px;
 
   &--last {
     background: rgba(255,255,255,1);
@@ -66,7 +66,7 @@
 
 .list-country__icon-flag {
   position: absolute;
-  top: -12px;
+  top: -11px;
   left: 25px;
   width: 35px;
   height: 24px;
@@ -94,6 +94,11 @@
     margin: 0;
     height: 140px;
     border-radius: 10px 0 0 10px;
+    padding: 30px 0 20px 30px;
+  }
+
+  .list-country__name {
+    letter-spacing: 1.5px;
   }
 
   .list-country__slogan,
@@ -101,9 +106,14 @@
     font-size:20px;
   }
 
+  .list-country__slogan {
+    margin-top: 2px;
+  }
+
   .list-country__icon {
     width: 20px;
     height: 20px;
+    margin-right: 2px;
   }
 
   .list-country__icon-flag {
@@ -114,4 +124,25 @@
     width: 70px;
     height: 47px;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .list-country__block{
+    width: 559px;
+  }
+
+  .list-country__image {
+    border-radius: 0 20px 20px 0;
+  }
+
+  .list-country__item-desc{
+    border-radius: 20px 0 0 20px;
+    padding: 22px 0 23px 32px;
+  }
+
+  .list-country__icon-flag {
+    top: 23px;
+  }
+
+
 }

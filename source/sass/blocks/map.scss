@@ -3,7 +3,7 @@
 }
 
 .map__top {
-  padding-top: 57px;
+  padding-top: 62px;
   z-index: 5;
   position: relative;
   background-color: $main-yellow;
@@ -12,14 +12,13 @@
 }
 
 .map__button {
-  display: block;
   margin: 0 auto;
 }
 
 .map__contact {
   display: flex;
   align-items: center;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 
   a {
     display: block;
@@ -27,6 +26,7 @@
     color: $second-color;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 0.7px;
   }
 }
 
@@ -40,7 +40,7 @@
   display:flex;
   justify-content: center;
   align-items: center;
-  margin-right: 14px;
+  margin-right: 16px;
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -61,9 +61,9 @@
   }
 
   .map__top {
-    padding-top: 104px;
+    padding-top: 107px;
     border-radius: 0 0 60px 60px;
-    padding-bottom: 54px;
+    padding-bottom: 87px;
   }
 
   .map__contact {
@@ -78,6 +78,7 @@
       font-family:'bloggersans-bold','Arial', sans-serif;
       font-size: 28px;
       width: 450px;
+      letter-spacing: 0px;
     }
   }
 
@@ -85,18 +86,28 @@
     width: 68px;
     height: 68px;
     font-size: 28px;
+    margin-right: 25px;
   }
 
   .map__contact-icon {
     width: 27px;
     height: 27px;
   }
+
+  .map__iframe {
+    height: 523px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .map__wrapper {
     display: flex;
-    justify-content: center;
+    padding-left: 229px;
+  }
+
+  .map__top {
+    padding-top: 114px;
+    padding-bottom: 55px;
   }
 
   .map__contact {
@@ -106,6 +117,8 @@
   .map__button {
     width: 324px;
     margin: 0;
+    margin-left: 75px;
+    margin-top: 5px;
   }
 
   .map__icon-wrapper {
@@ -116,5 +129,9 @@
   .map__contact-icon {
     width: 36px;
     height: 36px;
+  }
+
+  .map__iframe {
+    height: 484px;
   }
 }

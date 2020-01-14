@@ -130,7 +130,7 @@
     </header>
 
     <main class="page-main">
-        <form method="POST" class="form-directions">
+        <form method="post" class="form-directions">
           <section class="form-directions__person-info">
             <div class="form-directions__person-info-wrapper wrapper">
               <div class="form-directions__sticker sticker sticker--big">
@@ -188,7 +188,7 @@
 
           <section class="form-directions__my-plan">
             <div class="form-directions__my-plan-wrapper wrapper">
-              <div сlass="form-directions__section-header">
+              <div class="form-directions__section-header">
                 <h3 class="form-directions__section-name text-bold">Мои планы:</h3>
               </div>
               <ul class="form-directions__plan-cards-list">
@@ -226,7 +226,7 @@
           </section>
           <section class="form-direction__add-plan">
             <div class="form-directions__add-plan-wrapper wrapper">
-              <div сlass="form-directions__section-header">
+              <div class="form-directions__section-header">
                 <h3 class="form-directions__section-name text-bold">
                   Добавить план:
                 </h3>
@@ -479,6 +479,11 @@
                         <svg aria-label="Выпадающий список" viewBox="0 0 17 9" class="country-to-go__icon-arrow country-to-go__icon-arrow--non-choose">
                           <use xlink:href="#dropdown-form"></use>
                         </svg>
+                        <svg aria-label="Удалить страну" class="country-to-go__icon-close country-to-go__icon-close--tablet-view">
+                          <use xlink:href="#small-cross"></use>
+                        </svg>
+                      </div>
+                      <div class="country-to-go__flag">
                       </div>
                       <div class="country-to-go__close">
                         <svg aria-label="Удалить страну" class="country-to-go__icon-close">
@@ -784,12 +789,79 @@
                           <use xlink:href="#qty-plus-mobile"></use>
                         </svg>
                       </div>
+                      <div class="country-to-go__flag">
+                      </div>
                     </li>
                   </ul>
 
                   <div class="plan-list__buttons-next-prev">
                     <button type="button" class="plan-list__button-show text-bold">
                       <span>Следующий шаг</span>
+                      <svg class="button-show__icon button-show__icon--plan" aria-label="Следующий"  width="10" height="14">
+                        <use xlink:href="#triangle-arrow-right"></use>
+                      </svg>
+                    </button>
+                    <button type="button" class="plan-list__button-show plan-list__button-show--back text-bold">
+                      <span>На шаг назад</span>
+                      <svg class="button-show__icon button-show__icon--plan" aria-label="Следующий"  width="10" height="14">
+                        <use xlink:href="#triangle-arrow-right"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </li>
+                <li class="plan-list__item">
+                  <div class="plan-list__item-top">
+                    <div class="plan-list__item-step-info">
+                      <div class="plan-list__item-header text-bold">
+                        <span class="plan-list__item-header-step">Шаг 3.</span>
+                        <span>Развлечения</span>
+                      </div>
+                      <p class="plan-list__item-info">
+                        Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
+                      </p>
+                    </div>
+                    <ul class="plan-list__steps-btns">
+                      <li class="plan-list__step">
+                        <button class="plan-list__step-btn" type="button">
+                          Даты
+                        </button>
+                      </li>
+                      <li class="plan-list__step">
+                        <button class="plan-list__step-btn" type="button">
+                          Маршрут
+                        </button>
+                      </li>
+                      <li class="plan-list__step plan-list__step--active">
+                        <button class="plan-list__step-btn" type="button">
+                          Развлечения
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <ul class="plan-list__about-country">
+                    <li class="plan-list__about-country-item">
+                      <div class="plan-list__about-country-name">
+                        <span>Босния и герцеговина</span>
+                        <svg aria-label="Флаг Боснии>" viewbox="0 0 71 48">
+                          <use xlink:href="#flag-bosnia"></use>
+                        </svg>
+                      </div>
+                      <textarea class="plan-list__about-country-textarea" placeholder="План действий"></textarea>
+                    </li>
+                    <li class="plan-list__about-country-item">
+                      <div class="plan-list__about-country-name">
+                        <span>Чехия</span>
+                        <svg aria-label="Флаг Чехии>" viewbox="0 0 71 48">
+                          <use xlink:href="#flag-czech"></use>
+                        </svg>
+                      </div>
+                      <textarea class="plan-list__about-country-textarea" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+                      </textarea>
+                    </li>
+                  </ul>
+                  <div class="plan-list__buttons-next-prev">
+                    <button type="submit" class="plan-list__button-show text-bold">
+                      <span>Отправить</span>
                       <svg class="button-show__icon button-show__icon--plan" aria-label="Следующий"  width="10" height="14">
                         <use xlink:href="#triangle-arrow-right"></use>
                       </svg>
@@ -809,7 +881,7 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper wrapper">
-        <img class="page-footer__logo-image page-footer__logo-image--desktop" src="img/logo-desktop-blue.png" width="100" height="19" alt="Логотип погнали">
+        <img class="page-footer__logo-image page-footer__logo-image--mobile" src="img/logo-mobile-blue.png" width="100" height="19" alt="Логотип погнали">
         <img class="page-footer__logo-image page-footer__logo-image--tablet" src="img/logo-tablet-blue@1x.png" width="166" height="42" alt="Логотип погнали">
         <ul class="page-footer__icons">
           <li>

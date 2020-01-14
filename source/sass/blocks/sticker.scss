@@ -1,8 +1,8 @@
 .sticker {
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  //justify-content: center;
+  //align-items: center;
   flex-direction: column;
   width: 60px;
   height: 60px;
@@ -37,7 +37,7 @@
   stroke-linecap: round;
   stroke-dasharray: 182;
   stroke-dashoffset: calc(182 - (182 * 99 / 100));
-  transform: rotate(-90deg);
+  transform: rotate(-86deg);
 
   &--white {
     width: 45px;
@@ -73,6 +73,7 @@
   z-index: 10;
   font-size: 24px;
   color: #fff;
+  margin-top: 9px;
 
   &--blue {
     color: $text-color;
@@ -110,6 +111,8 @@
   z-index: 10;
   font-family: 'bloggersans', 'Arial', sans-serif;
   color: #fff;
+  font-size: 14px;
+  margin-top: -4px;
 
   &--white {
     display: none;

@@ -21,12 +21,12 @@
 
 .page-main__about {
   min-height: 352px;
-  padding-top: 30px;
+  padding-top: 28px;
   position: relative;
   z-index: 10;
   background-color: #192144;
   border-radius: 0 0 30px 30px;
-  background-image: url('/img/about-mobile@1x.png'), url('/img/blue-back-mobile.png') ;
+  background-image: url('../img/about-mobile@1x.png'), url('../img/blue-back-mobile.png') ;
   background-repeat: no-repeat, no-repeat;
   background-position-x: center, 0;
   background-position-y: 100%, 0;
@@ -34,19 +34,20 @@
 
 @media (min-resolution: $retina-dppx) {
   .page-main__about {
-    background-image: url('/img/about-mobile@2x.png'), url('/img/blue-back-mobile.png') ;
+    background-image: url('../img/about-mobile@2x.png'), url('../img/blue-back-mobile.png') ;
     background-size: 277px 352px, auto;
   }
 }
 
 .page-main__about-wrapper {
+  padding-top: 2px;
   padding-right: 32px;
   padding-left: 25px;
 }
 
 .page-main__about-slogan,
 .page-main__about-slogan-2 {
-  margin-top: 23px;
+  margin-top: 20px;
   margin-bottom: 20px;
   color: #fff;
   width: 211px;
@@ -86,18 +87,23 @@
   }
 
   .page-main__about {
-    padding-left: 35px;
+    padding-top: 71px;
+    padding-left: 9px;
     border-radius: 0 0 60px 60px;
-    background-image: url('/img/about-tablet@1x.png'), url('/img/blue-back-big.png') ;
+    background-image: url('../img/about-tablet@1x.png'), url('../img/blue-back-big.png') ;
     background-repeat: no-repeat, no-repeat;
     background-size: auto, auto;
     background-position-x: 98%, 40px;
-    background-position-y: 52px, 0;
+    background-position-y: 103px, 56px;
+
+    span {
+      display: block;
+    }
   }
 
   @media (min-resolution: $retina-dppx) {
     .page-main__about {
-      background-image: url('/img/about-tablet@2x.png'), url('/img/blue-back-big.png');
+      background-image: url('../img/about-tablet@2x.png'), url('../img/blue-back-big.png');
       background-size: 376px 548px, auto;
     }
   }
@@ -107,13 +113,13 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 548px;
-    padding: 34px 32px 104px 25px;
+    padding: 34px 32px 89px 25px;
   }
 
   .page-main__about-button {
     display: flex;
     width: 275px;
-    margin-top: 47px;
+    margin-top: 33px;
   }
 
   .page-main__about-slogan,
@@ -123,10 +129,13 @@
 
   .page-main__about-slogan {
     font-size: 28px;
+    margin-top: 51px;
     line-height: 33px;
+    margin-bottom: 12px;
   }
   .page-main__about-slogan-2 {
     font-size: 21px;
+    line-height: 25px;
   }
 
   .page-main__directions {
@@ -143,6 +152,9 @@
 }
 
 @media (min-width:$desktop-width) {
+  .page-main__steps-list {
+    margin-top: -230px;
+  }
 
   .page-main__list {
     padding-bottom: 0;
@@ -150,28 +162,36 @@
 
   .page-main__about {
     min-height: 750px;
-    padding-left: 69px;
-    background-image: url('/img/about-desktop@1x.png'), url('/img/blue-back-big-rect.png');
+    background-image: url('../img/about-desktop@1x.png'), url('../img/blue-back-big-rect.png');
     background-repeat: no-repeat, no-repeat;
     background-size: 630px 665px, auto;
     background-position-x: calc(84.37% + (100% - 84.37%) / 2), 60px;
     background-position-y: 100%, 71px;
+    padding: 0;
+  }
+
+  .page-main__about-wrapper {
+    padding: 138px 32px 89px 69px;
   }
 
   @media (min-resolution: $retina-dppx) {
     .page-main__about {
-      background-image: url('/img/about-desktop@2x.png'), url('/img/blue-back-big-rect.png');
+      background-image: url('../img/about-desktop@2x.png'), url('../img/blue-back-big-rect.png');
     }
   }
 
   .page-main__about-slogan {
     width: 618px;
-    margin-top: 59px;
+    margin-top: 68px;
+
+    span {
+      display: inline;
+    }
   }
 
   .page-main__about-slogan-2 {
     width: 412px;
-    margin-top: 33px;
-    margin-bottom: 84px;
+    margin-top: 28px;
+    margin-bottom: 53px;
   }
 }

@@ -2,13 +2,26 @@
   width: 84.37%;
   margin: 0 auto;
 }
+
 @media (min-width: $tablet-width){
   .wrapper{
-    width:89.58%;
+    width: 89.58%;
   }
 }
+
 @media (min-width: $tablet-width){
   .wrapper{
-    width:89.47%;
+    width: 89.47%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .wrapper {
+    width: 91.66%;
+
+    &--wrapper {
+      margin: 0;
+      width: 100%;
+    }
   }
 }

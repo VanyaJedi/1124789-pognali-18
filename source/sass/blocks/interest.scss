@@ -17,10 +17,14 @@
   text-align: center;
   color: #fff;
   margin: 0 auto;
-  margin-top: 24px;
+  margin-top: 20px;
 
   a {
     color: $main-yellow;
+  }
+
+  span {
+    display: block;
   }
 }
 
@@ -30,7 +34,7 @@
   border-radius: 10px;
   width: 270px;
   height: 62px;
-  margin: 27px auto;
+  margin: 29px auto;
   background-color: #fff;
 }
 
@@ -39,11 +43,16 @@
   padding-left: 24px;
   color: #c7c7c7;
   border-radius: 10px;
+  font-size: 18px;
+  color: #444444;
 
+  &::placeholder {
+    opacity: 0.3;
+  }
 }
 
 .interest__auth-button {
-  display:block;
+  display: block;
   width: 60px;
   height: 100%;
   border-radius: 10px;
@@ -56,17 +65,27 @@
   }
 }
 
+.interest__auth-icon {
+  fill: $text-color;
+  margin-right: -3px;
+}
+
 .interest__text-2 {
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   width: 217px;
   text-align: center;
   color: #fff;
+
+  span {
+    display: block;
+  }
 }
 
 .interest__contact {
   display: flex;
   align-items: center;
+
   a {
     font-family: 'bloggersans-bold', 'Arial', sans-serif;
     font-size: 16px;
@@ -83,10 +102,10 @@
 }
 
 .interest__icon-wrapper {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 14px;
+  margin-right: 16px;
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -95,18 +114,22 @@
 
 @media (min-width: $tablet-width) {
   .interest {
-    padding-top: 127px;
-    padding-bottom: 60px;
+    padding-top: 144px;
+    padding-bottom: 29px;
     margin-top: -60px;
     border-radius: 0 0 60px 60px;
   }
 
   .interest__text {
-    margin-top: 63px;
-    margin-bottom: 61px;
+    margin-top: 67px;
+    margin-bottom: 68px;
     width: 610px;
     font-size: 28px;
     line-height: 33px;
+
+    span {
+      display: inline;
+    }
   }
 
   .interest__input {
@@ -121,14 +144,23 @@
     border-radius: 20px;
   }
 
+  .interest__input {
+    padding-left: 34px;
+    width: 90%;
+  }
+
   .interest__auth-button {
-    width: 80px;
+    width: 86px;
     border-radius: 0 20px 20px 0;
   }
 
   .interest__text-2 {
     width: 610px;
     font-size: 28px;
+
+    span {
+      display: inline;
+    }
   }
 
   .interest__contact {
@@ -142,38 +174,71 @@
     width: 68px;
     height: 68px;
     font-size: 28px;
+    margin-right: 23px;
   }
 
   .interest__contact-icon {
     width: 27px;
     height: 27px;
   }
+
+  .interest__phone-email {
+    padding: 30px 34px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+
+  .interest {
+    padding-top: 172px;
+    padding-bottom: 74px;
+  }
+
   .interest__form {
     width: 1174px;
   }
 
   .interest__auth-button {
+    display: flex;
     width: 327px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
 
     span {
       display: block;
+      color: $text-color;
     }
   }
 
+  .interest__text {
+    margin-bottom: 61px;
+  }
+
+  .interest__form {
+    margin-bottom: 72px;
+  }
+
+  .interest__input {
+    width: 73%;
+  }
+
   .interest__text-2 {
-    margin-bottom: 48px;
+    margin-bottom: 19px;
   }
 
   .interest__contact {
-    margin-left: 110px;
+    margin-left: 54px;
+    margin-right: 66px;
+    justify-content: space-between;
+    margin: 0;
+    margin-right: 110px;
   }
 
   .interest__icon-wrapper {
     width: 90px;
     height: 90px;
+    margin-right: 32px;
   }
 
   .interest__contact-icon {
@@ -183,6 +248,7 @@
 
   .interest__phone-email {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 223px;
   }
 }

@@ -2,14 +2,14 @@
   position: relative;
   z-index: 8;
   background-color: #192144;
-  padding-top: 100px;
+  padding-top: 68px;
   padding-bottom: 30px;
   border-radius: 0 0 30px 30px;
   background-image: url('/img/rogovaya-back-mobile@1x.png'), url('/img/blue-back-mobile.png'), url('/img/smolov-back-desktop@1x.png');
   background-repeat: no-repeat;
   background-size: 71px 71px, auto, 143px 143px;
-  background-position-x: 0, 0, 90%;
-  background-position-y: 373px, 69px, 69px;
+  background-position-x: -10px, 0, 86%;
+  background-position-y: 342px, 69px, 69px;
 }
 
 @media (min-resolution: $retina-dppx) {
@@ -19,13 +19,13 @@
 }
 
 .fellow-travelers__text {
-  padding: 34px 32px 86px 25px;
+  padding: 32px 32px 57px 26px;
 }
 
 .fellow-travelers__slogan,
 .fellow-travelers__slogan-2 {
   width: 215px;
-  margin-top: 23px;
+  margin-top: 21px;
   color: #fff;
 }
 
@@ -38,16 +38,20 @@
   margin-bottom: 20px;
 }
 
+.fellow-travelers__title {
+  margin-left: -1px;
+}
+
 @media (min-width: $tablet-width) {
   .fellow-travelers {
     border-radius: 0 0 60px 60px;
     padding-top: 131px;
-    padding-bottom: 80px;
+    padding-bottom: 85px;
     background-image: url('/img/rogovaya-back-desktop@1x.png'), url('/img/blue-back-big-rect.png'), url('/img/smolov-back-desktop@1x.png');
     background-repeat: no-repeat;
     background-size: 285px 285px, 213px 213px, 143px 143px;
-    background-position-x: 90%, calc((100% - 84.37%) / 2), calc((100% - 84.37%) / 2);
-    background-position-y: 145px, 145px, 487px;
+    background-position-x: 84%, calc((100% - 84.37%) / 2), calc((100% - 84.37%) / 2 - 9px);
+    background-position-y: 140px, 140px, 487px;
   }
 
   @media (min-resolution: $retina-dppx) {
@@ -62,22 +66,38 @@
     line-height: 33px;
     margin-top: 68px;
     margin-bottom: 39px;
+
+    span {
+      display: block;
+    }
   }
 
   .fellow-travelers__slogan-2 {
     font-size: 21px;
     line-height: 25px;
     width: 265px;
+
+    span {
+      display: block;
+    }
   }
+
+  .fellow-travelers__button-container {
+    margin-top: 76px;
+  }
+
+  .fellow-travelers__text {
+    padding: 77px 32px 57px 33px;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
   .fellow-travelers {
-    min-height: 821px;
-    padding-bottom: 134px;
-    padding-top: 155px;
-    background-position-x: 193px, calc((100% - 84.37%) / 2), 551px;
-    background-position-y: 443px, 145px, 191px;
+    padding-bottom: 111px;
+    padding-top: 196px;
+    background-position-x: 193px, calc((100% - 91.66%) / 2), 548px;
+    background-position-y: 443px, 128px, 194px;
   }
 
   .fellow-travelers__wrapper {
@@ -99,7 +119,7 @@
 
   .fellow-travelers__button-container {
     width: 50%;
-    margin-top: -100px;
+    margin-top: -103px;
     padding-left: 71px;
   }
 
