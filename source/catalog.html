@@ -29,7 +29,7 @@
             </svg>
           </button>
         </div>
-        <section class="page-header__menu drop-menu">
+        <section class="page-header__menu drop-menu drop-menu--form">
           <div class="drop-menu__container wrapper">
             <div class="drop-menu__logo-toogle">
               <a href="index.html" class="drop-menu__logo">
@@ -130,11 +130,11 @@
     </header>
 
     <main class="page-main page-main--filter">
-      <section class="page-main__filter filter filter--hidden">
+      <section class="page-main__filter filter">
         <div class="filter__wrapper wrapper">
           <div class="filter__menu">
             <div class="filter__title-icon">
-              <svg class="filter__icon" aria-label="Назад на главную" width="15" height="10">
+              <svg class="filter__icon" aria-label="Назад на главную">
                 <use xlink:href="#filter"></use>
               </svg>
               <h2 class="filter__title text-bold">
@@ -453,7 +453,7 @@
             </li>
           </ul>
           <button class="filter__close-btn text-bold">
-            <svg class="filter__icon" aria-label=" Открыть расширенный фильтр" width="12" height="12">
+            <svg class="filter__icon-show" aria-label=" Открыть расширенный фильтр" width="12" height="12">
               <use xlink:href="#small-cross"></use>
             </svg>
             Свернуть
@@ -533,37 +533,37 @@
                 </ul>
               </li>
               <li class="fellow-filter__list-category">
-                <div class="fellow-filter__open">
+                <div class="fellow-filter__open fellow-filter__open--opened">
                   <span>Транспорт</span>
                   <svg class="fellow-filter__icon" aria-label="Открыть список транспорта" width="8" height="4">
                     <use xlink:href="#dropdown"></use>
                   </svg>
                 </div>
-                <ul class="fellow-filter__list-items-transp transport-list">
+                <ul class="fellow-filter__list-items-transp transport-list transport-list--fellow-filter">
                   <li class="transport-list__transport-item">
-                    <svg class="transport-list__transport-icon transport-list__transport-icon--active" aria-label="Самолет" width="14" height="16">
+                    <svg class="transport-list__transport-icon transport-list__transport-icon--plane transport-list__transport-icon--active" aria-label="Самолет">
                       <use xlink:href="#plane"></use>
                     </svg>
                   </li>
                   <li class="transport-list__transport-item">
-                    <svg class="transport-list__transport-icon transport-list__transport-icon--active" aria-label="Автобус" width="13" height="16">
+                    <svg class="transport-list__transport-icon transport-list__transport-icon--bus transport-list__transport-icon--active" aria-label="Автобус">
                       <use xlink:href="#bus"></use>
                     </svg>
                   </li>
                   <li class="transport-list__transport-item">
-                    <svg class="transport-list__transport-icon transport-list__transport-icon--nonactive" aria-label="Байк" width="19" height="17">
+                    <svg class="transport-list__transport-icon transport-list__transport-icon--bike transport-list__transport-icon--nonactive" aria-label="Байк">
                       <use xlink:href="#bike"></use>
                     </svg>
                   </li>
                   <li class="transport-list__transport-item">
-                    <svg class="transport-list__transport-icon transport-list__transport-icon--active" aria-label="Пешком" width="15" height="17">
+                    <svg class="transport-list__transport-icon transport-list__transport-icon--run transport-list__transport-icon--active" aria-label="Пешком">
                       <use xlink:href="#run"></use>
                     </svg>
                   </li>
                 </ul>
               </li>
               <li class="fellow-filter__list-category">
-                <div class="fellow-filter__open">
+                <div class="fellow-filter__open fellow-filter__open--opened">
                   <span>Левел</span>
                   <svg class="fellow-filter__icon" aria-label="Открыть диапозон уровней" width="8" height="4">
                     <use xlink:href="#dropdown"></use>
@@ -571,8 +571,8 @@
                 </div>
                 <div class="fellow-filter__level">
                   <div class="fellow-filter__level-num">
-                    <span>30</span>
-                    <span>100</span>
+                    <div class="fellow-filter__input-block"><input type="text" value="30"></div>
+                    <div class="fellow-filter__input-block"><input type="text" value="100"></div>
                     <div class="fellow-filter__dec-rect"></div>
                   </div>
                   <div class="fellow-filter__range">
@@ -881,7 +881,7 @@
                     <picture>
                       <source type="image/webp" media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
-                      <source type="image/webp" srcset="img/smolov-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x" >
+                      <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x" >
 
                       <source media="(min-width: 1440px)" srcset="img/rogovaya-desktop@1x.jpg 1x, img/rogovaya-destop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg 1x, img/rogovaya-tablet@2x.jpg 2x">

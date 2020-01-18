@@ -27,7 +27,6 @@
     font-size: 16px;
     color: $text-color;
   }
-
 }
 
 .fellow-filter__open {
@@ -127,22 +126,28 @@
   display: flex;
   position: relative;
   margin-bottom: 25px;
+}
 
-  span {
-    display: flex;
+.fellow-filter__input-block {
+   display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #cbced9;
     width: 111px;
     height: 35px;
     background-color: #ffffff;
-    font-family: 'bloggersans-medium', 'Arial', sans-serif;
-    font-size: 15px;
+
+    input {
+      width: 29px;
+      border: none;
+      font-family: 'bloggersans-medium', 'Arial', sans-serif;
+      font-size: 15px;
+      text-align: center;
+    }
 
     &:nth-child(2) {
       margin-left: -1px;
     }
-  }
 }
 
 .fellow-filter__dec-rect {
@@ -202,7 +207,7 @@
 
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) and (max-width: $predesktop-width) {
   .fellow-filter {
     width: 688px;
     padding: 35px;
@@ -222,6 +227,7 @@
     padding: 33px 0;
     margin-bottom: 36px;
   }
+
   .fellow-filter__icon {
     display: none;
   }
@@ -241,6 +247,7 @@
   .fellow-filter__level-num {
     order: 2;
     margin: 0;
+    margin-bottom: 25px;
     width: 150px;
 
     span {
@@ -288,7 +295,80 @@
   .fellow-filter__button {
     width: 100%;
   }
+}
 
+@media (min-width: $desktop-width) {
+  .fellow-filter {
+    width: 285px;
+    padding: 44px 47px;
 
+    h3 {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+
+  .fellow-filter__list-category {
+
+    span {
+      font-size: 20px;
+    }
+  }
+
+  .fellow-filter__label {
+    font-size: 20px;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+      margin-right: 14px;
+    }
+  }
+
+  .fellow-filter__list-items {
+    margin-top: 22px;
+  }
+
+  .fellow-filter__list-item {
+    margin-bottom: 14px;
+  }
+
+  .fellow-filter__list-items-transp {
+    margin-top: 17px;
+    margin-bottom: 11px;
+  }
+
+  .fellow-filter__level {
+    margin-top: 19px;
+  }
+
+  .fellow-filter__level-num {
+    width: 192px;
+    margin-bottom: 37px;
+  }
+
+  .fellow-filter__input-block {
+    height: 46px;
+
+    input {
+      width: 38px;
+      font-size: 20px;
+    }
+  }
+
+  .fellow-filter__range {
+    width: 192px;
+    margin-bottom: 34px;
+  }
+
+  .fellow-filter__bar {
+    left: 62px;
+    width: 119px;
+  }
+
+  .fellow-filter__button {
+    width: 196px;
+    height: 50px;
+  }
 
 }

@@ -22,13 +22,16 @@
     }
   }
 }
+
 @media (min-width:$tablet-width){
   .title{
     font-size: 45px;
+
     &--main {
+      font-size: 60px;
 
       &::after {
-        margin-top: 77px;
+        margin-top: 86px;
       }
     }
   }

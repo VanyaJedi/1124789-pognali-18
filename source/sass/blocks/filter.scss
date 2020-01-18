@@ -2,8 +2,12 @@
   position: absolute;
   width: 100%;
   background-color: #e2e5f2;
-  padding-top: 40px;
+  padding-top: 36px;
   border-radius: 0 0 20px 20px;
+
+  & + section {
+    padding-top: 77px;
+  }
 
   .filter__open-filter {
     display: none;
@@ -15,12 +19,20 @@
     list-style: none;
     padding-left: 26px;
     margin-top: 31px;
-    margin-bottom: 22px;
+    margin-bottom: 19px;
   }
 
   &--hidden {
     position: relative;
     height: 69px;
+
+    & + section {
+      padding-top: 30px;
+    }
+
+    .filter__wrapper {
+      min-height: auto;
+    }
 
     .filter__open-filter {
       display: flex;
@@ -46,8 +58,8 @@
 
 .filter__wrapper {
   display: flex;
-  height: 773px;
   flex-direction: column;
+  min-height: 730px;
 }
 
 .filter__menu {
@@ -63,6 +75,7 @@
   border: none;
   background-color: transparent;
   margin-left: auto;
+  margin-right: 7px;
 
   span {
     display: none;
@@ -78,11 +91,13 @@
   font-size: 16px;
   text-transform: uppercase;
   color: $second-color;
-  margin-left: 15px;
+  margin-left: 13px;
 }
 
 .filter__icon {
   fill: $second-color;
+  width: 15px;
+  height: 10px;
 }
 
 
@@ -90,7 +105,7 @@
   text-transform: uppercase;
   color: $second-color;
   opacity: 0.3;
-  margin-bottom: 7px;
+  margin-bottom: 4px;
 
   &--active {
     opacity: 1;
@@ -122,17 +137,25 @@
     padding-top: 80px;
     border-radius: 0 0 60px 60px;
 
+    & + section {
+      padding-top: 166px;
+    }
+
     .filter__region-list {
       width: auto;
       display: flex;
       order: 1;
       font-size: 20px;
       margin: 0;
-      padding-left: 36px;
+      padding-left: 33px;
     }
 
     &--hidden {
       height:198px;
+
+      & + section {
+        padding-top: 30px;
+      }
 
       .filter__region-list {
         display: flex;
@@ -141,12 +164,12 @@
   }
 
   .filter__wrapper {
-    height: 830px;
+    min-height: 752px;
   }
 
   .filter__menu {
-    margin-top: 40px;
-    margin-bottom: 65px;
+    margin-top: 37px;
+    margin-bottom: 75px;
   }
 
   .filter__title-icon {
@@ -171,10 +194,22 @@
     }
   }
 
+  .filter__icon {
+    width: 18px;
+    height: 18px;
+  }
+
   .filter__close-btn {
     height: 100px;
     border-radius: 20px;
-    margin-top: 65px;
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 618px;
+    font-size: 20px;
+
+    svg {
+      margin-right: 24px;
+    }
   }
 
 }
@@ -184,35 +219,62 @@
   .filter {
     position: relative;
     min-height: auto;
+
+    & + section {
+      padding-top: 151px;
+    }
+
+    .filter__region-list {
+      padding-left: 39px;
+    }
   }
 
   .filter__wrapper {
     height: auto;
   }
 
+  .filter__icon {
+    width: 23px;
+    height: 15px;
+  }
+
+  .filter__menu {
+    padding-left: 20px;
+    margin-bottom: 88px;
+  }
 
   .filter__title-icon {
     position: relative;
-    left: -20px;
     display: flex;
   }
 
   .filter__title {
     font-size: 20px;
+    margin-left: 20px;
   }
 
   .filter__btn {
     position: relative;
-    right: -20px;
     margin: 0;
     margin-left: auto;
+    margin-right: 127px;
+
+    span {
+      margin: 0;
+      margin-right: 1px;
+    }
   }
 
   .filter__close-btn {
     display: block;
     height: 100px;
     border-radius: 20px;
-    margin-top: 65px;
+    margin-top: 0;
     width: 100%
+  }
+
+  .filter__icon-show {
+    width: 18px;
+    height: 18px;
   }
 }

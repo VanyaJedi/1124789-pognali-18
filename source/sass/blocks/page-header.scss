@@ -64,6 +64,7 @@
 
   &--non-main {
     margin-bottom: 0;
+    height: 54px;
   }
 }
 
@@ -240,8 +241,8 @@
   .page-header__bottom {
     order: 5;
     display: flex;
-    margin-top: auto;
-    padding: 0 38px;
+    margin-top: 78px;
+    padding: 0 33px;
     justify-content: space-between;
     width: 100%;
   }
@@ -249,6 +250,7 @@
   .page-header__return {
     display: flex;
     align-self: flex-start;
+    margin-top: 4px;
 
     &--form {
       display: none;
@@ -339,6 +341,11 @@
 
   .page-header__logo-toogle {
     width: 222px;
+  }
+
+  .page-header__bottom {
+    padding-left: 65px;
+    padding-right: 64px;
   }
 
   .page-header__logo-image {

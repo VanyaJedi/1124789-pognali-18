@@ -5,6 +5,7 @@
   width: 226px;
   list-style: none;
   margin: 0 auto;
+  padding-left: 4px;
 
   &--form {
     position: absolute;
@@ -61,14 +62,15 @@
     }
   }
 }
+
 .country-list__name-list {
   display: none;
   flex-direction: column;
   flex-wrap: wrap;
   list-style: none;
   position: absolute;
-  left: 0;
-  top: 250px;
+  left: 4px;
+  top: 252px;
   height: 250px;
   width: 100%;
 }
@@ -153,11 +155,16 @@
     flex-wrap: wrap;
     list-style: none;
     left: auto;
-    right: -449px;
-    top: 0;
+    right: -478px;
+    top: -16px;
     height: 250px;
     width: 100%;
     height: 400px;
+    font-size: 20px;
+
+    li {
+      margin-bottom: 8px;
+    }
   }
 }
 
@@ -220,6 +227,7 @@
   .country-list__letter {
     justify-content: start;
     opacity: 1;
+    height: 77px;
 
     &--active {
       background-color: transparent;
@@ -235,7 +243,7 @@
   .country-list__name-list {
     position: static;
     display: flex;
-
+    height: auto;
+    margin-bottom: 65px;
   }
 }
-

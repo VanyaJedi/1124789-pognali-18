@@ -13,9 +13,9 @@
 .call-person__picture-name {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 15px;
-  padding-left: 20px;
-  padding-bottom: 24px;
+  padding-top: 17px;
+  padding-left: 18px;
+  padding-bottom: 22px;
   border-bottom: 1px solid #edeff6;
 }
 
@@ -28,6 +28,7 @@
 .call-person__name {
   display: flex;
   margin-left: 17px;
+  margin-top: -4px;
 
   span {
     font-size: 20px;
@@ -39,8 +40,8 @@
     content: '';
     display: block;
     width: 6px;
-    margin-left: 40px;
-    margin-top: 5px;
+    margin-left: 49px;
+    margin-top: 12px;
     height: 6px;
     border-radius: 50%;
     background-color: #f97676;
@@ -54,28 +55,30 @@
 }
 
 .call-person__hashtag {
-  width: 180px;
+  width: 200px;
   color: #444444;
-  margin-top: 15px;
+  margin-top: 8px;
+  line-height: 18px;
+  padding-left: 7px;
 }
 
 .call-person__wanted {
   width: 100%;
   margin-top: -13px;
   padding-left: 20px;
-  padding-bottom: 24px;
+  padding-bottom: 19px;
   border-bottom: 1px solid #edeff6;
 }
 
 .call-person__want-text {
   display: inline-block;
-  padding: 0 11px;
+  padding: 0 18px;
   background-color: #fff;
   color: #444444;
   font-size: 15px;
   margin-left: -11px;
   text-transform: lowercase;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 .call-person__countries {
@@ -89,8 +92,9 @@
   font-family: 'bloggersans-medium', 'Arial', sans-serif;
   font-size: 15px;
   color: $text-color;
+  padding-left: 4px;
+  margin-bottom: 4px;
 }
-
 
 .call-person__flag {
   width: 26px;
@@ -113,6 +117,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: -8px;
 }
 
 .call-person__level-text {
@@ -122,7 +127,7 @@
   color: #444444;
   font-size: 15px;
   text-transform: lowercase;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .call-person__button-block {
@@ -133,8 +138,8 @@
 
 .call-person__like-sub {
   position: absolute;
-  top: 58px;
-  left: 69px;
+  top: 57px;
+  left: 67px;
   display: flex;
   align-items: center;
 }
@@ -166,7 +171,7 @@
     background-color: #f9eaea;
 
     .call-person__like-icon {
-     fill: #f02323;
+      fill: #f02323;
     }
 
     .call-person__like-icon-active {
@@ -183,17 +188,22 @@
   display: inline-block;
   font-size: 14px;
   color: $prime-color;
-  margin-left: 8px;
+  margin-left: 5px;
 }
 
 .call-person__btn {
   margin: 0 auto;
 }
 
+.call-person__transport-list {
+  margin-left: 4px;
+}
+
 
 @media (min-width: $tablet-width) {
   .call-person {
     width: 688px;
+    padding-bottom: 3px;
   }
 
   .call-person__image {
@@ -209,29 +219,38 @@
     padding-left: 36px;
     padding-bottom: 0;
     border: none;
-    margin-bottom: 31px;
+    margin-bottom: 38px;
   }
 
   .call-person__name {
     display: flex;
     align-items: center;
-    margin-left: 26px;
+    margin-top: 1px;
+    margin-left: 32px;
 
     span {
+      display: inline-block;
+      width: auto;
       font-size: 30px;
-      width: 222px;
     }
 
     &::after {
       margin-left: 22px;
+      margin-top: 0;
+      width: 7px;
+      height: 7px;
     }
+  }
+
+  .call-person__level {
+    margin-top: -3px;
   }
 
   .call-person__wanted {
     order: 4;
     border-bottom: none;
-    padding-top: 26px;
-    padding-left: 36px;
+    padding-top: 22px;
+    padding-left: 33px;
     border-top: 1px solid #edeff6;
   }
 
@@ -242,12 +261,13 @@
 
   .call-person__country {
     font-size: 20px;
-    margin-right: 28px;
+    margin-right: 24px;
   }
 
   .call-person__flag {
     width: 35px;
     height: 24px;
+    margin-right: 10px;
   }
 
   .call-person__want-text {
@@ -255,8 +275,11 @@
     width: 119px;
     margin: 0;
     margin-top: -36px;
-    margin-left: 45px;
+    margin-left: 31px;
     margin-bottom: 18px;
+    font-size: 15px;
+    letter-spacing: 0;
+    white-space: nowrap;
   }
 
   .call-person__tranport {
@@ -267,9 +290,9 @@
     width:60px;
     margin: 0;
     margin-left: auto;
-    margin-right: 25px;
+    margin-right: 32px;
     padding: 0;
-    padding-top: 35px;
+    padding-top: 34px;
   }
 
   .call-person__transport-list {
@@ -283,16 +306,16 @@
   .call-person__button-block {
     order: 3;
     margin: 0;
-    margin-top: -80px;
+    margin-top: -93px;
     margin-left: 256px;
     width: 260px;
   }
 
   .call-person__hashtag {
-    margin-top: -150px;
+    margin-top: -148px;
     font-size: 20px;
     width: 241px;
-    margin-left: calc(256px - 36px);
+    margin-left: calc(256px - 38px);
   }
 
   .call-person__like-sub {
@@ -328,21 +351,26 @@
 
   .call-person__picture-name {
     margin: 0;
-    margin-right: 50px;
+    margin-right: 44px;
     padding: 0;
     height: 100%;
     width: 626px;
   }
 
   .call-person__name {
-    padding-top: 50px;
+    padding-top: 47px;
     flex-direction: row-reverse;
+    margin-left: 12px;
 
     span {
-      margin-left: 15px;
+      margin-left: 18px;
     }
   }
-  
+
+  .call-person__flag {
+    margin-right: 19px;
+  }
+
   .call-person__image {
     display: block;
     width: 285px;
@@ -390,25 +418,19 @@
   }
 
   .call-person__hashtag  {
-    margin: 0;
-    margin-left: 350px;
-    margin-top: -200px;
+    margin: -190px 0 0 340px;
   }
 
-   .call-person__button-block {
-     order: 3;
-     margin: 0;
-     margin-right: 50px;
-     width: 266px;
-     height: 50px;
-     align-items: center;
-     margin-left: 350px;
-     margin-top: -100px;
-   }
+  .call-person__button-block {
+    order: 3;
+    width: 266px;
+    height: 50px;
+    align-items: center;
+    margin: -100px 50px 0 340px;
+  }
 
-   .call-person__btn {
+  .call-person__btn {
     height: 50px;
     width: 148px;
-  }
-
+}
 }

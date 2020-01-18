@@ -50,7 +50,31 @@
         height: 17px;
       }
     }
+  }
 
+  &--fellow-filter {
+    .transport-list__transport-icon {
+
+      &--plane {
+        width: 14px;
+        height: 16px;
+      }
+
+      &--bus {
+        width: 13px;
+        height: 16px;
+      }
+
+      &--bike {
+        width: 19px;
+        height: 17px;
+      }
+
+      &--run {
+        width: 15px;
+        height: 17px;
+      }
+    }
   }
 }
 
@@ -66,7 +90,7 @@
       .transport-list__transport-item {
         background-color: #ffffff;
         width: 43px;
-        height: 43px;
+        height: 32px;
       }
 
       .transport-list__transport-icon {
@@ -103,13 +127,44 @@
 
 @media (min-width: $desktop-width) {
 
-   .transport-list {
+  .transport-list {
 
     &--call {
       width: 162px;
       flex-direction: row;
       align-items: center;
+    }
 
+    &--fellow-filter {
+      width: 173px;
+
+      .transport-list__transport-item {
+        width: 43px;
+        height: 43px;
+      }
+
+      .transport-list__transport-icon {
+
+        &--plane {
+          width: 19px;
+          height: 21px;
+        }
+
+        &--bus {
+          width: 17px;
+          height: 21px;
+        }
+
+        &--bike {
+          width: 24px;
+          height: 21px;
+        }
+
+        &--run {
+          width: 20px;
+          height: 21px;
+        }
+      }
     }
   }
 }

@@ -8,7 +8,7 @@
   width: 220px;
   justify-content: center;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 
   &::after {
     content: '';
@@ -136,6 +136,7 @@
     width: 129px;
     overflow: hidden;
     order: 1;
+    letter-spacing: 1.4px;
   }
 
   &::after {
@@ -239,7 +240,7 @@
     }
 
     &:last-child {
-      padding-bottom: 42px;
+      padding-bottom: 34px;
     }
 
     &--non-choose {
@@ -311,18 +312,22 @@
     height: 70px;
     font-size: 20px;
     padding: 0 22px;
+    padding-right: 26px;
     letter-spacing: 2px;
     margin-right: 0;
 
     span {
       width: 300px;
+      margin-left: 2px;
+      letter-spacing: 2px;
     }
 
     &::after {
       top: auto;
-      right: -38px;
+      right: -35px;
       width: 15px;
       height: 15px;
+      margin-top: -3px;
     }
   }
 
@@ -336,7 +341,7 @@
     border-radius: 0;
     width: 70px;
     height: 47px;
-    margin-left: 55px;
+    margin-left: 53px;
   }
 
   .country-to-go__icon-flag {
@@ -367,7 +372,15 @@
     width: 997px;
 
     &::after {
-    left: 776px;
+    left: 772px;
+    }
+  }
+
+  .country-to-go__item {
+    margin-bottom: 17px;
+
+    &:first-child {
+      padding-top: 60px;
     }
   }
 
@@ -375,12 +388,14 @@
     width: 730px;
 
     &::after {
-      right: -57px;
+      right: -51px;
+      top: 29px;
     }
   }
 
   .country-to-go__flag {
     width: 170px;
+    margin-left: 32px;
   }
 
   .country-to-go__item {
@@ -400,6 +415,4 @@
       }
     }
   }
-
 }
-

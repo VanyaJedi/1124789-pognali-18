@@ -191,6 +191,25 @@
     width: 700px;
     background-color: $prime-color;
     align-items: center;
+
+    &--form {
+      .drop-menu__container {
+        margin-top: 41px;
+        margin-left: -8px;
+      }
+
+      .drop-menu__nav {
+
+        li {
+          margin: 0;
+          margin-right: 35px;
+        }
+
+        &::before {
+          margin-right: 44px;
+        }
+      }
+    }
   }
 
   .drop-menu__logo-toogle {

@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded',function(){
       filter.classList.add('filter--hidden');
     });
     close_filter_btn.addEventListener('click', function(){
-    filter.classList.add('filter--hidden');
+      filter.classList.add('filter--hidden');
     });
   }
 

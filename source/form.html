@@ -29,7 +29,7 @@
             </svg>
           </button>
         </div>
-        <section class="page-header__menu drop-menu">
+        <section class="page-header__menu drop-menu drop-menu--form">
           <div class="drop-menu__container wrapper">
             <div class="drop-menu__logo-toogle">
               <a href="index.html" class="drop-menu__logo">
@@ -226,7 +226,7 @@
           </section>
           <section class="form-direction__add-plan">
             <div class="form-directions__add-plan-wrapper wrapper">
-              <div class="form-directions__section-header">
+              <div class="form-directions__section-header form-directions__section-header--add">
                 <h3 class="form-directions__section-name text-bold">
                   Добавить план:
                 </h3>
@@ -251,8 +251,7 @@
                         <span>Даты пребывания</span>
                       </div>
                       <p class="plan-list__item-info">
-                        Укажите предпочтительное количество попутчиков, которых вы&nbspхотели бы
-                         позвать в поездку и ее предполагаемую длительность.
+                        Укажите предпочтительное количество попутчиков, которых<span></span> вы&nbspхотели бы позвать в поездку и ее предполагаемую длительность.
                       </p>
                     </div>
                     <ul class="plan-list__steps-btns">
@@ -278,14 +277,14 @@
                       <span class="plan-list__block-cnt-name">Ищу попутчиков:</span>
                       <span class="plan-list__block-cnt-um" >Чел.</span>
                       <div class="plan-list__counter">
-                        <button class="plan-list__minus" type="button">
-                          <svg aria-label="Уменьшить кол-во">
+                        <button class="plan-list__minus-btn" type="button">
+                          <svg class="plan-list__minus" aria-label="Уменьшить кол-во">
                             <use xlink:href="#qty-minus"></use>
                           </svg>
                         </button>
-                        <span class="plan-list__num">2</span>
+                        <input type="text" class="plan-list__num" value="2">
                         <button type="button">
-                          <svg class="plan-list_plus" aria-label="Увеличить кол-во">
+                          <svg class="plan-list__plus" aria-label="Увеличить кол-во">
                             <use xlink:href="#qty-plus"></use>
                           </svg>
                         </button>
@@ -295,14 +294,14 @@
                       <span class="plan-list__block-cnt-name">Длительность:</span>
                       <span class="plan-list__block-cnt-um" >Дн.</span>
                       <div class="plan-list__counter">
-                        <button class="plan-list__minus" type="button">
-                          <svg aria-label="Уменьшить кол-во">
+                        <button class="plan-list__minus-btn" type="button">
+                          <svg class="plan-list__minus" aria-label="Уменьшить кол-во">
                             <use xlink:href="#qty-minus"></use>
                           </svg>
                         </button>
-                        <span class="plan-list__num">2</span>
+                        <input type="text" class="plan-list__num" value="2">
                         <button type="button">
-                          <svg class="plan-list_plus" aria-label="Увеличить кол-во">
+                          <svg class="plan-list__plus" aria-label="Увеличить кол-во">
                             <use xlink:href="#qty-plus"></use>
                           </svg>
                         </button>
@@ -407,14 +406,14 @@
 
                 </li>
                 <li class="plan-list__item">
-                  <div class="plan-list__item-top">
+                  <div class="plan-list__item-top plan-list__item-top--2">
                     <div class="plan-list__item-step-info">
                       <div class="plan-list__item-header text-bold">
                         <span class="plan-list__item-header-step">Шаг 2.</span>
                         <span>Маршрут</span>
                       </div>
                       <p class="plan-list__item-info">
-                        Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.
+                        Укажите страны, которые вы хотели по посетить. <span></span> Это может быть одна или сразу несколько.
                       </p>
                     </div>
                     <ul class="plan-list__steps-btns">
@@ -810,14 +809,14 @@
                   </div>
                 </li>
                 <li class="plan-list__item">
-                  <div class="plan-list__item-top">
+                  <div class="plan-list__item-top plan-list__item-top--3">
                     <div class="plan-list__item-step-info">
                       <div class="plan-list__item-header text-bold">
                         <span class="plan-list__item-header-step">Шаг 3.</span>
                         <span>Развлечения</span>
                       </div>
                       <p class="plan-list__item-info">
-                        Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
+                        Наконец, расскажите о своих планах времяпровождения. <span></span> Можно писать в свободной форме и ставить тэги.
                       </p>
                     </div>
                     <ul class="plan-list__steps-btns">
@@ -846,7 +845,9 @@
                           <use xlink:href="#flag-bosnia"></use>
                         </svg>
                       </div>
-                      <textarea class="plan-list__about-country-textarea" placeholder="План действий"></textarea>
+                      <div class="plan-list__textarea-block">
+                        <textarea class="plan-list__about-country-textarea" placeholder="План действий"></textarea>
+                      </div>
                     </li>
                     <li class="plan-list__about-country-item">
                       <div class="plan-list__about-country-name">
@@ -855,8 +856,10 @@
                           <use xlink:href="#flag-czech"></use>
                         </svg>
                       </div>
-                      <textarea class="plan-list__about-country-textarea" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
-                      </textarea>
+                      <div class="plan-list__textarea-block">
+                        <textarea class="plan-list__about-country-textarea" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+                        </textarea>
+                      </div>
                     </li>
                   </ul>
                   <div class="plan-list__buttons-next-prev">
@@ -879,30 +882,30 @@
           </section>
         </form>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--form">
       <div class="page-footer__wrapper wrapper">
         <img class="page-footer__logo-image page-footer__logo-image--mobile" src="img/logo-mobile-blue.png" width="100" height="19" alt="Логотип погнали">
         <img class="page-footer__logo-image page-footer__logo-image--tablet" src="img/logo-tablet-blue@1x.png" width="166" height="42" alt="Логотип погнали">
         <ul class="page-footer__icons">
           <li>
-            <svg class="page-footer__icon" aria-label="иконка фейсбук"  width="11" height="21">
+            <svg class="page-footer__icon page-footer__icon--fb" aria-label="иконка фейсбук">
               <use xlink:href="#facebook"></use>
             </svg>
           </li>
           <li>
-            <svg class="page-footer__icon" aria-label="иконка вконтакте"   viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve"  width="23" height="12">
+            <svg class="page-footer__icon page-footer__icon--vk" aria-label="иконка вконтакте"   viewBox="0 0 30 15.8" style="enable-background:new 0 0 30 15.8;" xml:space="preserve">
               <use xlink:href="#vk"></use>
             </svg>
           </li>
           <li>
-            <svg class="page-footer__icon" aria-label="иконка инстаграмм" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve"  width="18" height="18">
+            <svg class="page-footer__icon page-footer__icon--inst" aria-label="иконка инстаграмм" viewBox="0 0 23 23" style="enable-background:new 0 0 23 23;" xml:space="preserve">
               <use xlink:href="#instagram"></use>
             </svg>
           </li>
         </ul>
         <div class="page-footer__low">
           <span>Разработано</span>
-          <svg aria-label="Логотип htmlacademy" viewBox="0 0 60 60" width="27" height="34">
+          <svg aria-label="Логотип htmlacademy" viewBox="0 0 27 34">
               <use xlink:href="#htmlacademy"></use>
           </svg>
         </div>
