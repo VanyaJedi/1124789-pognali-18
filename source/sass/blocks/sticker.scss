@@ -19,7 +19,7 @@
   }
 
   &--big {
-    background:transparent;
+    background: transparent;
     width: 100px;
     height: 100px;
     align-items: center;
@@ -29,7 +29,6 @@
 
 .sticker__progress-bar {
   position: absolute;
-  z-index: 10;
   top: 0;
   left: 0;
   z-index: 2;
@@ -55,7 +54,7 @@
     stroke-width: 6;
   }
 
-  &--big-80{
+  &--big-80 {
     stroke-dashoffset: calc(628 - (628 * 80 / 100));
   }
 
@@ -76,7 +75,7 @@
   position: relative;
   z-index: 10;
   font-size: 24px;
-  color: #fff;
+  color: #ffffff;
   margin-top: 9px;
 
   &--blue {
@@ -94,7 +93,7 @@
 .sticker__line {
   position: relative;
   z-index: 10;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 31px;
   height: 1px;
   margin: 1px 0;
@@ -113,10 +112,10 @@
 }
 
 .sticker__txt {
-  position:relative;
+  position: relative;
   z-index: 10;
-  font-family: 'bloggersans', 'Arial', sans-serif;
-  color: #fff;
+  font-family: "bloggersans", "Arial", sans-serif;
+  color: #ffffff;
   font-size: 14px;
   margin-top: -4px;
 
@@ -158,46 +157,38 @@
   }
 
   .sticker__line {
-
     &--white {
       display: block;
       background-color: #444444;
       opacity: 0.4;
     }
-
   }
 
   .sticker__txt {
-
     &--white {
       display: block;
       color: #444444;
       opacity: 0.4;
     }
-}
+  }
 }
 
 @media (min-width: $desktop-width) {
-
-
   .sticker__line {
-
     &--big {
       background-color: #ffffff;
     }
   }
 
   .sticker__lvl-num {
-
     &--big {
       color: #ffffff;
     }
   }
 
   .sticker__txt {
-
     &--big {
       color: #ffffff;
     }
-}
+  }
 }

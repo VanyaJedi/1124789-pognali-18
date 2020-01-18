@@ -12,6 +12,7 @@
   margin: 0 auto;
   margin-bottom: 10px;
 }
+
 .traveler-list__link {
   display: block;
 }
@@ -63,7 +64,7 @@
 
 .traveler-list__item-desc {
   border: 1px solid transparent;
-  background-color: #fff;
+  background-color: #ffffff;
   min-height: 157px;
   padding: 27px 44px 19px 44px;
   text-align: center;
@@ -81,7 +82,7 @@
   margin-left: -16px;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     margin-right: 10px;
     width: 5px;
@@ -118,6 +119,7 @@
     opacity: 0.15;
   }
 }
+
 @media (min-width: $tablet-width) {
   .traveler-list {
     display: flex;

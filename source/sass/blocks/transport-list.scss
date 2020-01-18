@@ -29,7 +29,6 @@
 
   &--call {
     .transport-list__transport-icon {
-
       &--plane {
         width: 14px;
         height: 16px;
@@ -54,7 +53,6 @@
 
   &--fellow-filter {
     .transport-list__transport-icon {
-
       &--plane {
         width: 14px;
         height: 16px;
@@ -81,7 +79,6 @@
 
 @media (min-width: $tablet-width) {
   .transport-list {
-
     &--call {
       width: 60px;
       flex-direction: column;
@@ -94,7 +91,6 @@
       }
 
       .transport-list__transport-icon {
-
         &--plane {
           width: 19px;
           height: 21px;
@@ -120,15 +116,12 @@
     &--row {
       width: 196px;
       flex-direction: row;
-
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-
   .transport-list {
-
     &--call {
       width: 162px;
       flex-direction: row;
@@ -144,7 +137,6 @@
       }
 
       .transport-list__transport-icon {
-
         &--plane {
           width: 19px;
           height: 21px;

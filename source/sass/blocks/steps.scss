@@ -1,5 +1,5 @@
 .steps {
-  font-family: 'bloggersans-bold', 'Arial', sans-serif;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
   list-style: none;
@@ -23,17 +23,17 @@
 .steps__item--first {
   &::after {
     content: "1";
-    color: #fff;
+    color: #ffffff;
   }
 }
 
-.steps__item--second{
+.steps__item--second {
   background-color: #ffa530;
   margin-top: -10px;
 
-  &::after{
+  &::after {
     content: "2";
-    color: #fff;
+    color: #ffffff;
   }
 }
 
@@ -41,9 +41,9 @@
   background-color: #ffbd30;
   margin-top: -10px;
 
-  &::after{
+  &::after {
     content: "3";
-    color: #fff;
+    color: #ffffff;
   }
 }
 
@@ -55,17 +55,17 @@
 
   &::after {
     content: "4";
-    color: #fff;
+    color: #ffffff;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .steps{
+  .steps {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .steps__item{
+  .steps__item {
     width: 50%;
     margin: 0;
     min-height: 140px;
@@ -146,5 +146,4 @@
       width: 25%;
     }
   }
-
 }

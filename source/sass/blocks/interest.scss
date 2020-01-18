@@ -15,7 +15,7 @@
 .interest__text {
   width: 210px;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   margin: 0 auto;
   margin-top: 20px;
 
@@ -35,13 +35,12 @@
   width: 270px;
   height: 62px;
   margin: 29px auto;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .interest__input {
   border: none;
   padding-left: 24px;
-  color: #c7c7c7;
   border-radius: 10px;
   font-size: 18px;
   color: #444444;
@@ -75,7 +74,7 @@
   margin-bottom: 18px;
   width: 217px;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
 
   span {
     display: block;
@@ -87,7 +86,7 @@
   align-items: center;
 
   a {
-    font-family: 'bloggersans-bold', 'Arial', sans-serif;
+    font-family: "bloggersans-bold", "Arial", sans-serif;
     font-size: 16px;
     color: $main-yellow;
     text-decoration: none;
@@ -135,6 +134,8 @@
   .interest__input {
     border-radius: 20px;
     font-size: 24px;
+    padding-left: 34px;
+    width: 90%;
   }
 
   .interest__form {
@@ -142,11 +143,6 @@
     height: 81px;
     margin-bottom: 60px;
     border-radius: 20px;
-  }
-
-  .interest__input {
-    padding-left: 34px;
-    width: 90%;
   }
 
   .interest__auth-button {
@@ -164,7 +160,6 @@
   }
 
   .interest__contact {
-
     a {
       font-size: 28px;
     }
@@ -188,7 +183,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .interest {
     padding-top: 172px;
     padding-bottom: 74px;
@@ -196,6 +190,7 @@
 
   .interest__form {
     width: 1174px;
+    margin-bottom: 72px;
   }
 
   .interest__auth-button {
@@ -215,10 +210,6 @@
     margin-bottom: 61px;
   }
 
-  .interest__form {
-    margin-bottom: 72px;
-  }
-
   .interest__input {
     width: 73%;
   }
@@ -228,8 +219,6 @@
   }
 
   .interest__contact {
-    margin-left: 54px;
-    margin-right: 66px;
     justify-content: space-between;
     margin: 0;
     margin-right: 110px;

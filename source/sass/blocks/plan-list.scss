@@ -50,8 +50,9 @@
   margin-bottom: 20px;
 }
 
-.plan-list__block-cnt-name, .plan-list__block-cnt-um {
-  font-family: 'bloggersans-medium', arial, sans-serif;
+.plan-list__block-cnt-name,
+.plan-list__block-cnt-um {
+  font-family: "bloggersans-medium", "arial", sans-serif;
   text-transform: uppercase;
   color: $text-color;
 }
@@ -92,7 +93,7 @@
 }
 
 .plan-list__num {
-  font-family: 'bloggersans-medium', arial, sans-serif;
+  font-family: "bloggersans-medium", "arial", sans-serif;
   text-transform: uppercase;
   color: $text-color;
   font-size: 15px;
@@ -112,7 +113,7 @@
   color: #444444;
 
   &::before {
-    content:'';
+    content: "";
     display: inline-block;
     margin-right: 13px;
     width: 26px;
@@ -123,7 +124,7 @@
 }
 
 .plan-list__ischild-box:checked + .plan-list__ischild-label::before {
-  background-image: url('../img/tick.svg');
+  background-image: url("../img/tick.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 9px 9px;
@@ -181,7 +182,7 @@
   margin-bottom: 23px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     height: 2px;
     width: 15px;
@@ -192,7 +193,7 @@
 
   &:not(:last-child) {
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       height: 282px;
       width: 2px;
@@ -207,12 +208,12 @@
   display: flex;
   align-items: center;
   font-size: 18px;
-  font-family: 'bloggersans-medium', 'arial', sans-serif;
+  font-family: "bloggersans-medium", "arial", sans-serif;
   color: $text-color;
   margin-bottom: 15px;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     width: 6px;
     height: 6px;
@@ -241,7 +242,7 @@
   height: 220px;
   border-radius: 4px;
   border: 1px solid #cbced9;
-  font-family: 'bloggersans-light', 'Arial', sans-serif;
+  font-family: "bloggersans-light", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   padding: 7px 9px 12px 12px;
@@ -269,10 +270,7 @@
   margin: 0 auto;
 }
 
-
-
 @media (min-width: $tablet-width) {
-
   .plan-list {
     padding: 0;
   }
@@ -289,7 +287,9 @@
     margin-bottom: 60px;
   }
 
-  .plan-list__block-cnt-name, .plan-list__block-cnt-um, .plan-list__num  {
+  .plan-list__block-cnt-name,
+  .plan-list__block-cnt-um,
+  .plan-list__num {
     font-size: 20px;
   }
 
@@ -312,7 +312,7 @@
   }
 
   .plan-list__ischild-label {
-    font-family: 'bloggersans-medium';
+    font-family: "bloggersans-medium", "Arial", sans-serif;
     font-size: 20px;
     text-transform: uppercase;
     color: $text-color;
@@ -328,7 +328,7 @@
   }
 
   .plan-list__ischild-box:checked + .plan-list__ischild-label::before {
-    background-image: url('../img/tick.svg');
+    background-image: url("../img/tick.svg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 12px 12px;
@@ -337,7 +337,6 @@
   .plan-list__item {
     padding: 52px 42px;
     background-color: #ffffff;
-    border-radius: 10px;
     border-radius: 30px;
     width: 618px;
     margin: 0 auto;
@@ -423,9 +422,10 @@
     &::before {
       display: none;
     }
+
     &:not(:last-child) {
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         height: 263px;
         width: 3px;
@@ -458,7 +458,7 @@
     svg {
       width: 70px;
       height: 47px;
-      order: 2
+      order: 2;
     }
   }
 
@@ -501,11 +501,9 @@
   .plan-list__textarea-block {
     padding-right: 25px;
   }
-
-
 }
-@media (min-width: $desktop-width) {
 
+@media (min-width: $desktop-width) {
   .plan-list__item {
     width: 1320px;
     padding: 102px 159px;
@@ -519,7 +517,7 @@
 
     &:nth-child(2) {
       margin-bottom: 46px;
-   }
+    }
   }
 
   .plan-list__item-top {
@@ -543,7 +541,7 @@
     flex-wrap: wrap;
     border-top: 1px solid #d6d9e6;
     padding-top: 29px;
-    margin-bottom: 21px
+    margin-bottom: 21px;
   }
 
   .plan-list__block-cnt {
@@ -608,13 +606,13 @@
       background-color: transparent;
       border: none;
       font-size: 20px;
-      color: rgba(0,0,0,0.6);
+      color: rgba(0, 0, 0, 0.6);
       text-transform: uppercase;
       letter-spacing: 2px;
     }
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       margin-right: 37px;
       width: 5px;
@@ -626,13 +624,12 @@
 
     &--active {
       .plan-list__step-btn {
-        color: rgba(0,0,0,1);
+        color: rgba(0, 0, 0, 1);
       }
 
       &::before {
         opacity: 1;
       }
-
     }
   }
 
@@ -648,7 +645,6 @@
   }
 
   .plan-list__about-country-item {
-
     &:not(:last-child) {
       &::after {
         left: 774px;

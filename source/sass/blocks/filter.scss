@@ -126,13 +126,12 @@
   font-size: 17px;
   color: $prime-color;
 
-    svg {
-      margin-right: 10px;
-    }
+  svg {
+    margin-right: 10px;
+  }
 }
 
 @media (min-width: $tablet-width) {
-
   .filter {
     padding-top: 80px;
     border-radius: 0 0 60px 60px;
@@ -151,7 +150,7 @@
     }
 
     &--hidden {
-      height:198px;
+      height: 198px;
 
       & + section {
         padding-top: 30px;
@@ -211,11 +210,9 @@
       margin-right: 24px;
     }
   }
-
 }
 
 @media (min-width: $desktop-width) {
-
   .filter {
     position: relative;
     min-height: auto;
@@ -270,7 +267,7 @@
     height: 100px;
     border-radius: 20px;
     margin-top: 0;
-    width: 100%
+    width: 100%;
   }
 
   .filter__icon-show {

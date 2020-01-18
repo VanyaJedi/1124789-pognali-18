@@ -6,13 +6,13 @@
   top: 0;
   width: 100%;
   height: 568px;
-  background-color: #fff;
+  background-color: #ffffff;
   align-items: center;
 
   a {
     color: $prime-color;
     text-decoration: none;
-    font-family:'bloggersans-medium', 'Arial', sans-serif;
+    font-family: "bloggersans-medium", "Arial", sans-serif;
     text-transform: uppercase;
     line-height: 36px;
     font-size: 30px;
@@ -57,7 +57,7 @@
   background-color: $main-yellow;
   height: 50px;
   border: none;
-  font-family:'bloggersans-bold', 'Arial', sans-serif;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
   border-radius: 25px;
   font-size: 17px;
   color: $prime-color;
@@ -78,7 +78,7 @@
   align-items: center;
 
   a {
-    font-family: 'bloggersans-bold', 'Arial', sans-serif;
+    font-family: "bloggersans-bold", "Arial", sans-serif;
     font-size: 16px;
   }
 }
@@ -101,7 +101,7 @@
 }
 
 .drop-menu__social {
-  order:5;
+  order: 5;
   width: 106px;
   margin: 0 auto;
   list-style: none;
@@ -116,17 +116,16 @@
 }
 
 .drop-menu__slide-text {
-
   &--2 {
     display: none;
   }
 }
 
-@media (min-width:$tablet-width){
+@media (min-width: $tablet-width) {
   .drop-menu {
-    height:912px;
+    height: 912px;
     align-items: flex-start;
-    width:100%;
+    width: 100%;
   }
 
   .drop-menu__logo-toogle {
@@ -148,12 +147,11 @@
     margin-left: 59px;
     margin-bottom: 139px;
 
-      a {
-        font-size: 60px;
-        line-height: 71px;
-      }
+    a {
+      font-size: 60px;
+      line-height: 71px;
+    }
   }
-
 
   .drop-menu__contact {
     width: 100%;
@@ -165,24 +163,24 @@
   }
 
   .drop-menu__icon-wrapper {
-    width:68px;
-    height:68px;
-    margin-right:24px;
+    width: 68px;
+    height: 68px;
+    margin-right: 24px;
   }
 
   .drop-menu__contact-icon {
-    width:27px;
-    height:27px;
+    width: 27px;
+    height: 27px;
   }
 
   .drop-menu__social {
-    width:106px;
-    margin-left:84px;
-    margin-top:129px;
+    width: 106px;
+    margin-left: 84px;
+    margin-top: 129px;
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .drop-menu {
     position: static;
     display: flex;
@@ -199,7 +197,6 @@
       }
 
       .drop-menu__nav {
-
         li {
           margin: 0;
           margin-right: 35px;
@@ -216,8 +213,8 @@
     display: none;
   }
 
-  .drop-menu__contact{
-    display:none;
+  .drop-menu__contact {
+    display: none;
   }
 
   .drop-menu__auth-btn {
@@ -232,8 +229,8 @@
     align-items: flex-start;
     overflow: hidden;
 
-    &:hover, &:focus {
-
+    &:hover,
+    &:focus {
       .drop-menu__slide-text {
         transform: translateY(-50px);
       }
@@ -262,26 +259,26 @@
   }
 
   .drop-menu__nav {
-      display: flex;
-      padding: 0;
-      margin: 0;
-      align-items: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
 
-      li {
-        margin-left: 38px;
-      }
+    li {
+      margin-left: 38px;
+    }
 
-      a {
-        color: #fff;
-        font-size: 20px;
-      }
+    a {
+      color: #ffffff;
+      font-size: 20px;
+    }
 
-      &::before {
-        content: '';
-        display: block;
-        width: 60px;
-        height: 2px;
-        background-color: white;
-      }
+    &::before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 2px;
+      background-color: white;
+    }
   }
 }

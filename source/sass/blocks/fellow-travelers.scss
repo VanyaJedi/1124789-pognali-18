@@ -5,7 +5,7 @@
   padding-top: 68px;
   padding-bottom: 30px;
   border-radius: 0 0 30px 30px;
-  background-image: url('/img/rogovaya-back-mobile@1x.png'), url('/img/blue-back-mobile.png'), url('/img/smolov-back-desktop@1x.png');
+  background-image: url("/img/rogovaya-back-mobile@1x.png"), url("/img/blue-back-mobile.png"), url("/img/smolov-back-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: 71px 71px, auto, 143px 143px;
   background-position-x: -10px, 0, 86%;
@@ -14,7 +14,7 @@
 
 @media (min-resolution: $retina-dppx) {
   .fellow-travelers {
-    background-image: url('/img/rogovaya-back-mobile@2x.png'), url('/img/blue-back-mobile.png'), url('/img/smolov-back-desktop@2x.png');
+    background-image: url("/img/rogovaya-back-mobile@2x.png"), url("/img/blue-back-mobile.png"), url("/img/smolov-back-desktop@2x.png");
   }
 }
 
@@ -26,7 +26,7 @@
 .fellow-travelers__slogan-2 {
   width: 215px;
   margin-top: 21px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .fellow-travelers__button {
@@ -47,7 +47,7 @@
     border-radius: 0 0 60px 60px;
     padding-top: 131px;
     padding-bottom: 85px;
-    background-image: url('/img/rogovaya-back-desktop@1x.png'), url('/img/blue-back-big-rect.png'), url('/img/smolov-back-desktop@1x.png');
+    background-image: url("/img/rogovaya-back-desktop@1x.png"), url("/img/blue-back-big-rect.png"), url("/img/smolov-back-desktop@1x.png");
     background-repeat: no-repeat;
     background-size: 285px 285px, 213px 213px, 143px 143px;
     background-position-x: 84%, calc((100% - 84.37%) / 2), calc((100% - 84.37%) / 2 - 9px);
@@ -56,7 +56,7 @@
 
   @media (min-resolution: $retina-dppx) {
     .fellow-travelers {
-      background-image: url('/img/rogovaya-back-desktop@2x.png'), url('/img/blue-back-big-rect.png'), url('/img/smolov-back-desktop@2x.png');
+      background-image: url("/img/rogovaya-back-desktop@2x.png"), url("/img/blue-back-big-rect.png"), url("/img/smolov-back-desktop@2x.png");
     }
   }
 
@@ -89,7 +89,6 @@
   .fellow-travelers__text {
     padding: 77px 32px 57px 33px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -126,5 +125,4 @@
   .fellow-travelers__button {
     margin: 0;
   }
-
 }

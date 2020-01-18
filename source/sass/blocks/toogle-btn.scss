@@ -1,18 +1,18 @@
-.toogle-btn{
+.toogle-btn {
   @include clear-btn;
-  cursor:pointer;
+  cursor: pointer;
 }
-.toogle-btn__svg{
-  fill:#fff;
+
+.toogle-btn__svg {
+  fill: #ffffff;
 
   &--gray {
     fill: #cccccc;
   }
 }
 
-
-@media (min-width: $desktop-width){
-  .toogle-btn{
-    display:none;
+@media (min-width: $desktop-width) {
+  .toogle-btn {
+    display: none;
   }
 }

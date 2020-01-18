@@ -150,6 +150,7 @@
 
   .choose-fellow-travelers__filter {
     order: 2;
+    margin-left: 84px;
   }
 
   .choose-fellow-travelers__list {
@@ -175,13 +176,8 @@
   }
 
   .choose-fellow-travelers__pagination-arrow {
-
     &--next {
       margin-right: 19px;
     }
-  }
-
-  .choose-fellow-travelers__filter {
-    margin-left: 84px;
   }
 }

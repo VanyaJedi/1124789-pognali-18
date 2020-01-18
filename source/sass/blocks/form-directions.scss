@@ -128,12 +128,13 @@
 
 .form-directions__plan-num {
   margin-right: 5px;
-  font-family: 'bloggersans-medium', 'Arial', sans-serif;
+  font-family: "bloggersans-medium", "Arial", sans-serif;
 }
 
-.form-directions__plan-count, .form-directions__plan-date {
+.form-directions__plan-count,
+.form-directions__plan-date {
   color: $text-color;
-  font-family: 'bloggersans-medium', 'Arial', sans-serif;
+  font-family: "bloggersans-medium", "Arial", sans-serif;
   font-size: 14px;
   letter-spacing: 1.6px;
   text-transform: uppercase;
@@ -151,7 +152,7 @@
   letter-spacing: 1px;
   color: #000000;
   opacity: 0.3;
-  font-family: 'bloggersans-medium', 'Arial', sans-serif;
+  font-family: "bloggersans-medium", "Arial", sans-serif;
   font-size: 14px;
 }
 
@@ -189,7 +190,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .form-directions__person-info {
     margin-top: -60px;
   }
@@ -222,7 +222,7 @@
     padding-top: 120px;
     padding-left: 35px;
     padding-right: 35px;
-    padding-bottom:0px;
+    padding-bottom: 0;
   }
 
   .form-directions__sticker {
@@ -243,7 +243,7 @@
     margin-top: 11px;
     margin-bottom: -30px;
     font-size: 20px;
-    font-family: 'bloggersans-medium', Arial, sans-serif;
+    font-family: "bloggersans-medium", "Arial", sans-serif;
     margin-left: -27px;
   }
 
@@ -255,7 +255,7 @@
     margin-bottom: 51px;
 
     span {
-      font-family: 'bloggersans-medium', Arial, sans-serif;
+      font-family: "bloggersans-medium", "Arial", sans-serif;
       font-size: 20px;
       letter-spacing: 1.7px;
     }
@@ -307,7 +307,7 @@
     margin-bottom: 10px;
   }
 
-  .form-directions__plan-country  {
+  .form-directions__plan-country {
     width: 100%;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -317,7 +317,9 @@
     margin-bottom: 7px;
   }
 
-  .form-directions__plan-count, .form-directions__plan-date,  .form-directions__plan-btn  {
+  .form-directions__plan-count,
+  .form-directions__plan-date,
+  .form-directions__plan-btn {
     font-size: 20px;
     margin: 0;
     padding-top: 8px;
@@ -345,12 +347,11 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .form-directions__person-info-wrapper {
     position: relative;
     padding-top: 132px;
     padding-left: 64px;
-    padding-right: 0px;
+    padding-right: 0;
     padding-bottom: 28px;
   }
 
@@ -419,6 +420,7 @@
 
   .form-directions__my-plan {
     border-radius: 60px 60px 0 0;
+    padding-bottom: 84px;
   }
 
   .form-directions__plan-card {
@@ -431,7 +433,7 @@
     margin-bottom: 13px;
   }
 
-  .form-directions__plan-country  {
+  .form-directions__plan-country {
     width: 50%;
     flex-direction: row;
     justify-content: flex-start;
@@ -440,7 +442,9 @@
     margin: 0;
   }
 
-  .form-directions__plan-count, .form-directions__plan-date,  .form-directions__plan-btn  {
+  .form-directions__plan-count,
+  .form-directions__plan-date,
+  .form-directions__plan-btn {
     padding: 0;
   }
 
@@ -460,14 +464,7 @@
     margin-left: 16px;
   }
 
-  .form-directions__my-plan {
-    padding-bottom: 84px;
-  }
-
   .form-direction__add-plan {
     padding-bottom: 90px;
-}
-
-
-
+  }
 }

@@ -1,17 +1,17 @@
-.list-country{
+.list-country {
   list-style: none;
 }
 
-.list-country__item{
+.list-country__item {
   margin-bottom: 10px;
 }
 
-.list-country__block{
-  display:block;
+.list-country__block {
+  display: block;
   text-decoration: none;
 }
 
-.list-country__image{
+.list-country__image {
   display: block;
   position: relative;
   margin: 0 auto;
@@ -20,13 +20,13 @@
   border-radius: 10px 10px 0 0;
 }
 
-.list-country__item-desc{
-  width:270px;
-  position:relative;
-  z-index:10;
-  display:flex;
+.list-country__item-desc {
+  width: 270px;
+  position: relative;
+  z-index: 10;
+  display: flex;
   justify-content: space-between;
-  background-color:#fff;
+  background-color: #ffffff;
   padding: 25px 24px;
   height: 90px;
   border-radius: 10px;
@@ -34,28 +34,21 @@
   margin-top: -11px;
 
   &--last {
-    background: rgba(255,255,255,1);
-    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(237,239,246,1) 73%, rgba(237,239,246,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(73%, rgba(237,239,246,1)), color-stop(100%, rgba(237,239,246,1)));
-    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(237,239,246,1) 73%, rgba(237,239,246,1) 100%);
-    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(237,239,246,1) 73%, rgba(237,239,246,1) 100%);
-    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(237,239,246,1) 73%, rgba(237,239,246,1) 100%);
-    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(237,239,246,1) 73%, rgba(237,239,246,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#edeff6', GradientType=0 );
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(237, 239, 246, 1) 73%, rgba(237, 239, 246, 1) 100%);
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr="#ffffff", endColorstr="#edeff6", GradientType=0);
   }
 }
 
-
 .list-country__name {
-  color:$text-color;
-  font-size:21px;
+  color: $text-color;
+  font-size: 21px;
 }
 
 .list-country__slogan,
-.list-country__price{
-  font-family: 'bloggersans-medium','Arial', sans-serif;
-  font-size:16px;
-  color:#c7c7c7;
+.list-country__price {
+  font-family: "bloggersans-medium", "Arial", sans-serif;
+  font-size: 16px;
+  color: #c7c7c7;
 }
 
 .list-country__icon {
@@ -72,22 +65,22 @@
   height: 24px;
 }
 
-@media (min-width:$tablet-width){
-  .list-country__block{
-    display:flex;
+@media (min-width: $tablet-width) {
+  .list-country__block {
+    display: flex;
     flex-direction: row-reverse;
     width: 620px;
     margin: 0 auto;
   }
 
-  .list-country__image{
+  .list-country__image {
     margin: 0;
     width: 186px;
     height: 140px;
     border-radius: 0 10px 10px 0;
   }
 
-  .list-country__item-desc{
+  .list-country__item-desc {
     display: flex;
     width: 432px;
     flex-direction: column;
@@ -103,7 +96,7 @@
 
   .list-country__slogan,
   .list-country__price {
-    font-size:20px;
+    font-size: 20px;
   }
 
   .list-country__slogan {
@@ -127,7 +120,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .list-country__block{
+  .list-country__block {
     width: 559px;
   }
 
@@ -135,7 +128,7 @@
     border-radius: 0 20px 20px 0;
   }
 
-  .list-country__item-desc{
+  .list-country__item-desc {
     border-radius: 20px 0 0 20px;
     padding: 22px 0 23px 32px;
   }
@@ -143,6 +136,4 @@
   .list-country__icon-flag {
     top: 23px;
   }
-
-
 }

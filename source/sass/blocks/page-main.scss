@@ -1,6 +1,5 @@
 
 .page-main {
-
   &--filter {
     background-color: #edeff6;
     padding-bottom: 82px;
@@ -9,7 +8,7 @@
 
 .page-main__list {
   background-color: #192144;
-  padding-bottom:39px;
+  padding-bottom: 39px;
   border-top: 1px solid transparent;
 }
 
@@ -26,7 +25,7 @@
   z-index: 10;
   background-color: #192144;
   border-radius: 0 0 30px 30px;
-  background-image: url('../img/about-mobile@1x.png'), url('../img/blue-back-mobile.png') ;
+  background-image: url("../img/about-mobile@1x.png"), url("../img/blue-back-mobile.png");
   background-repeat: no-repeat, no-repeat;
   background-position-x: center, 0;
   background-position-y: 100%, 0;
@@ -34,7 +33,7 @@
 
 @media (min-resolution: $retina-dppx) {
   .page-main__about {
-    background-image: url('../img/about-mobile@2x.png'), url('../img/blue-back-mobile.png') ;
+    background-image: url("../img/about-mobile@2x.png"), url("../img/blue-back-mobile.png");
     background-size: 277px 352px, auto;
   }
 }
@@ -49,7 +48,7 @@
 .page-main__about-slogan-2 {
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #fff;
+  color: #ffffff;
   width: 211px;
 }
 
@@ -85,10 +84,8 @@
   margin-top: -20px;
 }
 
-@media (min-width:$tablet-width) {
-
+@media (min-width: $tablet-width) {
   .page-main {
-
     &--filter {
       padding-bottom: 99px;
     }
@@ -102,7 +99,7 @@
     padding-top: 71px;
     padding-left: 9px;
     border-radius: 0 0 60px 60px;
-    background-image: url('../img/about-tablet@1x.png'), url('../img/blue-back-big.png') ;
+    background-image: url("../img/about-tablet@1x.png"), url("../img/blue-back-big.png");
     background-repeat: no-repeat, no-repeat;
     background-size: auto, auto;
     background-position-x: 98%, 40px;
@@ -115,7 +112,7 @@
 
   @media (min-resolution: $retina-dppx) {
     .page-main__about {
-      background-image: url('../img/about-tablet@2x.png'), url('../img/blue-back-big.png');
+      background-image: url("../img/about-tablet@2x.png"), url("../img/blue-back-big.png");
       background-size: 376px 548px, auto;
     }
   }
@@ -145,6 +142,7 @@
     line-height: 33px;
     margin-bottom: 12px;
   }
+
   .page-main__about-slogan-2 {
     font-size: 21px;
     line-height: 25px;
@@ -163,10 +161,8 @@
   }
 }
 
-@media (min-width:$desktop-width) {
-
+@media (min-width: $desktop-width) {
   .page-main {
-
     &--filter {
       padding-bottom: 139px;
     }
@@ -182,7 +178,7 @@
 
   .page-main__about {
     min-height: 750px;
-    background-image: url('../img/about-desktop@1x.png'), url('../img/blue-back-big-rect.png');
+    background-image: url("../img/about-desktop@1x.png"), url("../img/blue-back-big-rect.png");
     background-repeat: no-repeat, no-repeat;
     background-size: 630px 665px, auto;
     background-position-x: calc(84.37% + (100% - 84.37%) / 2), 60px;
@@ -196,7 +192,7 @@
 
   @media (min-resolution: $retina-dppx) {
     .page-main__about {
-      background-image: url('../img/about-desktop@2x.png'), url('../img/blue-back-big-rect.png');
+      background-image: url("../img/about-desktop@2x.png"), url("../img/blue-back-big-rect.png");
     }
   }
 
