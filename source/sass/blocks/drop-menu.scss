@@ -245,6 +245,7 @@
 
   .drop-menu__slide-text {
     display: flex;
+    flex-shrink: 0;
     height: 100%;
     align-items: center;
     transition: all 0.2s linear;
