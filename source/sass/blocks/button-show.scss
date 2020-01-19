@@ -13,6 +13,18 @@
   text-align: left;
   font-family: "bloggersans-bold", "Arial", sans-serif;
 
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    svg,
+    span {
+      opacity: 0.3;
+    }
+  }
+
   &--border {
     border: 3px solid $second-color;
 
@@ -23,6 +35,19 @@
 
     svg {
       margin-right: -3px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $second-color;
+
+      span {
+        color: #ffffff;
+      }
+
+      svg {
+        fill: #ffffff;
+      }
     }
   }
 

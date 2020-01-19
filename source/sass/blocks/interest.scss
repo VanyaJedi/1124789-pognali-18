@@ -21,6 +21,15 @@
 
   a {
     color: $main-yellow;
+
+    &:hover,
+    &:focus {
+      color: #ff8d30;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   span {
@@ -47,6 +56,20 @@
 
   &::placeholder {
     opacity: 0.3;
+  }
+
+  &:hover {
+    background-color: #edeff6;
+
+    &::placeholder {
+      opacity: 0.5;
+    }
+  }
+
+  &:focus {
+    background-color: $second-color;
+    border: 1px solid #ffffff;
+    color: #ffffff;
   }
 }
 

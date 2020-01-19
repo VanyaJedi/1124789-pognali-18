@@ -48,6 +48,15 @@
   text-transform: uppercase;
   color: $text-color;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #edeff6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

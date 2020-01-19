@@ -11,6 +11,11 @@
   width: 270px;
   margin: 0 auto;
   margin-bottom: 10px;
+  transition: ease 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .traveler-list__link {
@@ -95,6 +100,15 @@
     &::before {
       background-color: #81e31e;
     }
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

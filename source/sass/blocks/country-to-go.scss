@@ -369,7 +369,7 @@
     justify-content: space-between;
 
     &:first-child {
-      padding-top: 60px;
+      padding-top: 63px;
     }
 
     &--non-choose {
@@ -381,6 +381,13 @@
     &--non-add {
       .country-to-go__drop {
         width: 730px;
+      }
+    }
+
+    &--non-choose-active {
+      .country-to-go__close {
+        top: auto;
+        right: auto;
       }
     }
   }
