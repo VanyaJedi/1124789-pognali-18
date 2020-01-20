@@ -233,6 +233,11 @@
   .filter__icon {
     width: 23px;
     height: 15px;
+
+    &--close {
+      width: 18px;
+      height: 18px;
+    }
   }
 
   .filter__menu {
@@ -269,13 +274,6 @@
     border-radius: 20px;
     margin-top: 0;
     width: 100%;
-  }
-
-  .filter__icon {
-    &--close {
-      width: 18px;
-      height: 18px;
-    }
   }
 
   .filter__icon-show {
