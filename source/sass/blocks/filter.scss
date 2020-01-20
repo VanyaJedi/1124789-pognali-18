@@ -252,9 +252,10 @@
 
   .filter__btn {
     position: relative;
-    margin: 0;
-    margin-left: auto;
-    margin-right: 127px;
+    width: 170px;
+    margin: 0 69px 0 auto;
+    display: flex;
+    justify-content: space-between;
 
     span {
       margin: 0;
@@ -268,6 +269,13 @@
     border-radius: 20px;
     margin-top: 0;
     width: 100%;
+  }
+
+  .filter__icon {
+    &--close {
+      width: 18px;
+      height: 18px;
+    }
   }
 
   .filter__icon-show {

@@ -181,7 +181,7 @@
     background-image: url("../img/about-desktop@1x.png"), url("../img/blue-back-big-rect.png");
     background-repeat: no-repeat, no-repeat;
     background-size: 630px 665px, auto;
-    background-position-x: calc(84.37% + (100% - 84.37%) / 2), 60px;
+    background-position-x: calc((100% - 1320px) / 2 + 1004px), calc((100% - 1320px) / 2 + 107px);
     background-position-y: 100%, 71px;
     padding: 0;
   }
