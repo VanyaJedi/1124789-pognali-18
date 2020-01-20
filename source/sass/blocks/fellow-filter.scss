@@ -1,0 +1,375 @@
+.fellow-filter {
+  width: 270px;
+  margin: 0 auto;
+  background-color: $main-yellow;
+  padding: 20px;
+  border-radius: 20px;
+
+  h3 {
+    display: block;
+    width: 50%;
+    font-size: 22.49px;
+    color: $text-color;
+    margin-bottom: 24px;
+  }
+}
+
+.fellow-filter__list {
+  list-style: none;
+}
+
+.fellow-filter__list-category {
+  border-top: 1px solid #f3c72b;
+  padding: 10px 0;
+
+  span {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: $text-color;
+  }
+}
+
+.fellow-filter__open {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &--opened {
+    .fellow-filter__icon {
+      transform: rotate(180deg);
+    }
+
+    + .fellow-filter__list-items {
+      display: block;
+    }
+
+    + .fellow-filter__list-items-transp {
+      display: flex;
+    }
+
+    + .fellow-filter__level {
+      display: block;
+    }
+  }
+}
+
+.fellow-filter__list-items,
+.fellow-filter__level,
+.fellow-filter__list-items-transp {
+  display: none;
+  list-style: none;
+  margin-top: 12px;
+}
+
+.fellow-filter__transport {
+  list-style: none;
+  justify-content: space-between;
+  width: 130px;
+}
+
+.fellow-filter__transport-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 32.25px;
+  height: 32.35px;
+  border-radius: 50%;
+}
+
+.fellow-filter__transport-icon {
+  fill: #1d2e5b;
+  cursor: pointer;
+
+  &--nonactive {
+    opacity: 0.15;
+  }
+}
+
+.fellow-filter__label {
+  font-family: "bloggersans", "Arial", sans-serif;
+  font-size: 15px;
+  color: #444444;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 9px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.fellow-filter__checkbox:checked + .fellow-filter__label::before {
+  background-image: url("../img/tick.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 9px 9px;
+}
+
+.fellow-filter__button {
+  border: none;
+  border-radius: 20px;
+  background-color: #ffffff;
+  width: 230px;
+  height: 40px;
+  font-size: 19px;
+  color: $prime-color;
+  margin: 0 auto;
+}
+
+.fellow-filter__level-num {
+  width: 222px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.fellow-filter__input-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #cbced9;
+  width: 111px;
+  height: 35px;
+  background-color: #ffffff;
+
+  input {
+    width: 29px;
+    border: none;
+    font-family: "bloggersans-medium", "Arial", sans-serif;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  &:nth-child(2) {
+    margin-left: -1px;
+  }
+}
+
+.fellow-filter__dec-rect {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 18px;
+  height: 11px;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #cbced9;
+  }
+}
+
+.fellow-filter__range {
+  position: relative;
+  width: 220px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: rgba(29, 46, 91, 0.2);
+  margin-bottom: 25px;
+}
+
+.fellow-filter__bar {
+  position: absolute;
+  top: 0;
+  left: 73px;
+  height: 2px;
+  width: calc(220px - 73px);
+  background-color: $text-color;
+}
+
+.fellow-filter__rangebtn {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-color: $text-color;
+  border-radius: 50%;
+  transform: translateY(-50%);
+
+  &:nth-child(1) {
+    left: 0;
+  }
+
+  &:nth-child(2) {
+    left: 100%;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $predesktop-width) {
+  .fellow-filter {
+    width: 688px;
+    padding: 35px;
+    border-radius: 25px;
+
+    h3 {
+      display: block;
+      width: 100%;
+      font-size: 30px;
+      margin-bottom: 45px;
+    }
+  }
+
+  .fellow-filter__list {
+    border-top: 1px solid #f3c72b;
+    border-bottom: 1px solid #f3c72b;
+    padding: 33px 0;
+    margin-bottom: 36px;
+  }
+
+  .fellow-filter__icon {
+    display: none;
+  }
+
+  .fellow-filter__list-category {
+    display: flex;
+    align-items: center;
+    border: none;
+  }
+
+  .fellow-filter__level {
+    width: 491px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .fellow-filter__level-num {
+    order: 2;
+    margin: 0;
+    margin-bottom: 25px;
+    width: 150px;
+
+    span {
+      width: 75px;
+    }
+  }
+
+  .fellow-filter__range {
+    order: 1;
+    margin: 0;
+    width: 277px;
+  }
+
+  .fellow-filter__open {
+    width: 120px;
+
+    &--opened {
+      + .fellow-filter__list-items {
+        display: flex;
+      }
+
+      + .fellow-filter__list-items-transp {
+        display: flex;
+      }
+
+      + .fellow-filter__level {
+        display: block;
+      }
+    }
+  }
+
+  .fellow-filter__list-items,
+  .fellow-filter__level,
+  .fellow-filter__list-items-transp {
+    display: flex;
+    margin-top: 0;
+  }
+
+  .fellow-filter__list-items {
+    width: 491px;
+    justify-content: space-between;
+  }
+
+  .fellow-filter__list-item {
+    width: 140px;
+  }
+
+  .fellow-filter__button {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .fellow-filter {
+    width: 285px;
+    padding: 44px 47px;
+
+    h3 {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+
+  .fellow-filter__list-category {
+    span {
+      font-size: 20px;
+    }
+  }
+
+  .fellow-filter__label {
+    font-size: 20px;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+      margin-right: 14px;
+    }
+  }
+
+  .fellow-filter__list-items {
+    margin-top: 22px;
+  }
+
+  .fellow-filter__list-item {
+    margin-bottom: 14px;
+  }
+
+  .fellow-filter__list-items-transp {
+    margin-top: 17px;
+    margin-bottom: 11px;
+  }
+
+  .fellow-filter__level {
+    margin-top: 19px;
+  }
+
+  .fellow-filter__level-num {
+    width: 192px;
+    margin-bottom: 37px;
+  }
+
+  .fellow-filter__input-block {
+    height: 46px;
+
+    input {
+      width: 38px;
+      font-size: 20px;
+    }
+  }
+
+  .fellow-filter__range {
+    width: 192px;
+    margin-bottom: 34px;
+  }
+
+  .fellow-filter__bar {
+    left: 62px;
+    width: 119px;
+  }
+
+  .fellow-filter__button {
+    width: 196px;
+    height: 50px;
+  }
+}

@@ -1,50 +1,84 @@
 .drop-menu {
   display: none;
   position: absolute;
+  z-index: 99;
   left: 0;
-  top: 73px;
+  top: 0;
   width: 100%;
-  height: 520px;
-  padding-top: 70px;;
-  background-color: #fff;
+  height: 568px;
+  background-color: #ffffff;
   align-items: center;
+
   a {
     color: $prime-color;
     text-decoration: none;
-    font-family:'bloggersans-medium', 'Arial', sans-serif;
+    font-family: "bloggersans-medium", "Arial", sans-serif;
     text-transform: uppercase;
     line-height: 36px;
+    font-size: 30px;
+  }
+
+  &--nojs {
+    display: block;
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+
+  &--active {
+    display: block;
   }
 }
 
-.drop-menu--active {
-  display: block;
+.drop-menu__container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.drop-menu--nojs {
-  position: relative;
-  top: auto;
+.drop-menu__logo-toogle {
+  width: 100%;
+  display: flex;
+  order: 1;
+  align-items: center;
+  justify-content: space-between;
+  height: 73px;
 }
 
 .drop-menu__nav {
+  width: 100%;
   padding: 0;
+  order: 2;
   list-style: none;
   text-align: center;
-  margin-bottom:54px;
-  a {
-    font-size:30px;
-  }
+  margin-bottom: 54px;
 }
 
 .drop-menu__auth-btn {
+  background-color: $main-yellow;
+  height: 50px;
+  border: none;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+  border-radius: 25px;
+  font-size: 17px;
+  color: $prime-color;
+  text-transform: uppercase;
+  margin: 0 auto;
+  width: 270px;
   margin-bottom: 49px;
+  order: 3;
+}
+
+.drop-menu__contacts {
+  width: 100%;
+  order: 4;
 }
 
 .drop-menu__contact {
   display: flex;
   align-items: center;
+
   a {
-    font-family: 'bloggersans-bold', 'Arial', sans-serif;
+    font-family: "bloggersans-bold", "Arial", sans-serif;
     font-size: 16px;
   }
 }
@@ -56,7 +90,7 @@
 }
 
 .drop-menu__icon-wrapper {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 14px;
@@ -67,6 +101,7 @@
 }
 
 .drop-menu__social {
+  order: 5;
   width: 106px;
   margin: 0 auto;
   list-style: none;
@@ -77,91 +112,174 @@
 }
 
 .drop-menu__svg {
-  stroke: #cccccc;
+  stroke: #cfcfcf;
 }
 
-@media (min-width:$tablet-width){
-  .drop-menu {
-    top:132px;
-    height:823px;
-    align-items: flex-start;
-    width:100%;
+.drop-menu__slide-text {
+  &--2 {
+    display: none;
   }
-  .drop-menu__nav {
-    text-align: left;
-    margin-left:59px;
-    margin-bottom:139px;
-      a {
-        font-size:60px;
-        line-height: 71px;
-      }
+}
+
+@media (min-width: $tablet-width) {
+  .drop-menu {
+    height: 912px;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .drop-menu__logo-toogle {
+    width: 50%;
+    height: 132px;
   }
 
   .drop-menu__auth-btn {
-    display:none;
+    width: 189px;
+    order: 2;
+    margin: 0;
+    margin-top: 40px;
+    margin-left: auto;
+  }
+
+  .drop-menu__nav {
+    order: 3;
+    text-align: left;
+    margin-left: 59px;
+    margin-bottom: 139px;
+
+    a {
+      font-size: 60px;
+      line-height: 71px;
+    }
   }
 
   .drop-menu__contact {
-    margin-left:59px;
-      a {
-        font-size:28px;
-      }
+    width: 100%;
+    margin-left: 59px;
+
+    a {
+      font-size: 28px;
+    }
   }
 
   .drop-menu__icon-wrapper {
-    width:68px;
-    height:68px;
-    margin-right:24px;
+    width: 68px;
+    height: 68px;
+    margin-right: 24px;
   }
 
   .drop-menu__contact-icon {
-    width:27px;
-    height:27px;
+    width: 27px;
+    height: 27px;
   }
 
   .drop-menu__social {
-    width:106px;
-    margin-left:84px;
-    margin-top:129px;
+    width: 106px;
+    margin-left: 84px;
+    margin-top: 129px;
   }
 }
 
-@media (min-width:$desktop-width) {
+@media (min-width: $desktop-width) {
   .drop-menu {
     position: static;
     display: flex;
-    height: 132px;
+    height: 107px;
     padding: 0;
     width: 700px;
     background-color: $prime-color;
     align-items: center;
+
+    &--form {
+      .drop-menu__container {
+        margin-top: 41px;
+        margin-left: -8px;
+      }
+
+      .drop-menu__nav {
+        li {
+          margin: 0;
+          margin-right: 35px;
+        }
+
+        &::before {
+          margin-right: 44px;
+        }
+      }
+    }
   }
 
-  .drop-menu__contact{
-    display:none;
+  .drop-menu__logo-toogle {
+    display: none;
+  }
+
+  .drop-menu__contact {
+    display: none;
+  }
+
+  .drop-menu__auth-btn {
+    display: none;
+  }
+
+  .drop-menu__slide-link {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    height: 50px;
+    align-items: flex-start;
+    overflow: hidden;
+
+    &:hover,
+    &:focus {
+      .drop-menu__slide-text {
+        transform: translateY(-50px);
+      }
+    }
+
+    &:active {
+      .drop-menu__slide-text {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  .drop-menu__slide-text {
+    display: flex;
+    flex-shrink: 0;
+    height: 100%;
+    align-items: center;
+    transition: all 0.2s linear;
+
+    &--2 {
+      color: $main-yellow;
+    }
   }
 
   .drop-menu__social {
-    display:none;
+    display: none;
   }
+
   .drop-menu__nav {
-      display: flex;
-      padding: 0;
-      margin: 0;
-      align-items: center;
-      li {
-        margin-left: 38px;
-      }
-      a {
-        color: #fff;
-        font-size: 20px;
-      }
-      &::before {
-        content: '';
-        display: block;
-        width: 60px;
-        height: 2px;
-        background-color: white;
-      }
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+
+    li {
+      margin-left: 38px;
+    }
+
+    a {
+      color: #ffffff;
+      font-size: 20px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 2px;
+      background-color: white;
+    }
   }
 }

@@ -1,27 +1,39 @@
 .profile {
   position: relative;
   z-index: 7;
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 55px;
+  padding-bottom: 38px;
   background-color: #edeff6;
   border-radius: 0 0 30px 30px;
 }
 
 .profile__wrapper {
   position: relative;
+  background-image: url("../img/rates@1x.png");
+  background-repeat: no-repeat;
+  background-size: 99px 99px;
+  background-position-x: 99%;
+  background-position-y: 12px;
+  padding-top: 24px;
+}
+
+@media (min-resolution: $retina-dppx) {
+  .profile__wrapper {
+    background-image: url("../img/rates@2x.png");
+  }
 }
 
 .profile__header {
   width: 104px;
-  margin-bottom: 42px;
+  margin-bottom: 46px;
   padding-left: 25px;
 }
 
 .profile__list {
-  padding-left: 25px;
+  padding-left: 24px;
   list-style: none;
   color: #444444;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 }
 
 .profile__list-item {
@@ -35,7 +47,7 @@
   justify-content: center;
   align-items: center;
   margin-left: auto;
-  color: #fff;
+  color: #ffffff;
   width: 34px;
   height: 34px;
   background-color: #ffa530;
@@ -52,8 +64,8 @@
 
 .profile__list-container {
   display: flex;
-  width: 200px;
-  padding: 12px 0;
+  width: 80%;
+  padding: 10px 0;
   flex-direction: column;
   border-top: 1px solid #e1e3e9;
 
@@ -69,32 +81,71 @@
   background: transparent;
   color: #192144;
   margin: 0 auto;
+  font-size: 16px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .profile__button-icon {
   display: none;
 }
 
+.profile__icon {
+  fill: currentColor;
+}
+
 @media (min-width: $tablet-width) {
   .profile {
     position: relative;
-    padding-top: 120px;
-    padding-bottom: 80px;
+    padding-top: 87px;
+    padding-bottom: 40px;
     border-radius: 0 0 60px 60px;
+  }
+
+  .profile__wrapper {
+    min-height: 441px;
+    background-position-x: 92%;
+    background-position-y: 98%;
+    padding-bottom: 25px;
+  }
+
+  @media (min-resolution: $retina-dppx) {
+    .profile__wrapper {
+      background-image: url("../img/rates@2x.png");
+    }
   }
 
   .profile__header {
     width: 100%;
     text-align: center;
-    margin-bottom: 72px;
+    margin-bottom: 87px;
     padding-left: 0;
   }
 
   .profile__list {
     padding-left: 0;
     padding-right: 33px;
-    margin-bottom: 35px;
+    margin-bottom: 31px;
     font-size: 28px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 71px;
+      right: 0;
+      width: 198px;
+      height: 285px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+    }
   }
 
   .profile__num {
@@ -134,17 +185,50 @@
     height: 67px;
     margin-right: 23px;
   }
+
+  .profile_icon {
+    fill: #132576;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .profile {
-    padding-top: 157px;
-    padding-bottom: 161px;
+    padding-top: 121px;
+    padding-bottom: 142px;
+  }
+
+  .profile__header {
+    margin-bottom: 149px;
+  }
+
+  .profile__wrapper {
+    background-size: 198px 198px;
+    background-position-x: 93.2%;
+    background-position-y: 61%;
+  }
+
+  .profile__num {
+    margin-right: 22px;
+  }
+
+  .profile__button-icon {
+    margin-right: 21px;
   }
 
   .profile__list {
     padding-left: 73px;
 
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 145px;
+      right: 189px;
+      width: 444px;
+      height: 300px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+    }
   }
 
   .profile__button {

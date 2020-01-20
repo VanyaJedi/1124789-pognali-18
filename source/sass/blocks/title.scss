@@ -1,10 +1,38 @@
-.title{
-  color:$main-orange;
-  font-family:'bloggersans-bold','Arial', sans-serif;
+.title {
+  color: $main-orange;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
   font-size: 24px;
+  line-height: 24px;
+
+  &--main {
+    display: inline-block;
+    vertical-align: center;
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: -2px;
+
+    &::after {
+      content: "";
+      display: block;
+      margin-top: 17px;
+      border-radius: 2.3px;
+      width: 100%;
+      height: 5px;
+      background-color: $main-orange;
+    }
+  }
 }
-@media (min-width:$tablet-width){
-  .title{
+
+@media (min-width: $tablet-width) {
+  .title {
     font-size: 45px;
+
+    &--main {
+      font-size: 60px;
+
+      &::after {
+        margin-top: 86px;
+      }
+    }
   }
 }

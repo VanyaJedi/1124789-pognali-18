@@ -1,25 +1,91 @@
 .button-show {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: none;
   border-radius: 10px;
   background-color: $main-yellow;
-  padding: 22px 25px;
+  padding: 0 24px;
   width: 270px;
-  font-size: 19px;
+  height: 62px;
+  font-size: 18px;
   color: $text-color;
   text-align: left;
-  font-family: 'bloggersans-bold', 'Arial', sans-serif;
+  font-family: "bloggersans-bold", "Arial", sans-serif;
+
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    svg,
+    span {
+      opacity: 0.3;
+    }
+  }
 
   &--border {
     border: 3px solid $second-color;
+
+    span {
+      margin-left: -3px;
+      margin-top: -1px;
+    }
+
+    svg {
+      margin-right: -3px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $second-color;
+
+      span {
+        color: #ffffff;
+      }
+
+      svg {
+        fill: #ffffff;
+      }
+    }
+  }
+
+  &--filter {
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 20px;
+    width: 230px;
+    height: 40px;
   }
 }
-@media (min-width:$tablet-width) {
+
+.button-show__icon {
+  fill: #1d2e5b;
+}
+
+@media (min-width: $tablet-width) {
   .button-show {
-    width: 629px;
     font-size: 24px;
     border-radius: 20px;
+    height: 81px;
+    padding: 0 35px;
+
+    &--filter {
+      font-size: 20px;
+      width: 148px;
+      height: 50px;
+      border-radius: 25px;
+    }
+
+    &--big {
+      width: 618px;
+    }
   }
 }
+
 @media (min-width: $desktop-width) {
   .button-show {
     width: 275px;

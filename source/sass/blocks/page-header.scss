@@ -1,177 +1,397 @@
-.page-header{
-  background-color:$prime-color;
+.page-header {
+  position: relative;
   padding-bottom: 112px;
-  min-height:762px;
+  background-color: $prime-color;
+  height: 762px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 479px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $prime-color;
+    background-image: url("../img/traveller-illustration-mobile@1x.png"), url("../img/globe-back-mobile@1x.jpg");
+    background-size: auto, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 62% 100%, center -10px;
+  }
+
+  &--non-main {
+    height: 143px;
+    padding-bottom: 0;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    z-index: 200;
+
+    &::after {
+      display: none;
+    }
+  }
 }
-.page-header__logo-image--tablet{
-  display:none;
+
+.page-header__section {
+  &--non-main {
+    display: flex;
+    flex-direction: column;
+  }
 }
-.page-header__logo-toogle{
-  //width:100%;
-  height:73px;
-  display:flex;
+
+.page-header__bottom {
+  margin-top: auto;
+}
+
+@media (min-resolution: $retina-dppx) {
+  .page-header {
+    &::after {
+      background-image: url("../img/traveller-illustration-mobile@2x.png"), url("../img/globe-back-mobile@2x.jpg");
+      background-size: auto 257px, cover;
+    }
+  }
+}
+
+.page-header__logo-toogle {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 18px;
+  height: 73px;
+  display: flex;
   justify-content: space-between;
-  margin-bottom:41px;
+
+  &--non-main {
+    margin-bottom: 0;
+    height: 54px;
+  }
 }
-.page-header__logo{
-  display:flex;
+
+.page-header__logo {
+  display: flex;
   align-items: center;
 }
-.page-header__icon{
-  width:40px;
-  height:40px;
-  border-radius:50%;
+
+.page-header__logo-image {
+  margin-top: 8px;
+}
+
+.page-header__icon {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   background-color: #ffbd30;
-  border:none;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background-color: #ff8d30;
+  }
+
+  &:active {
+    .page-header__icon-svg {
+      opacity: 0.3;
+    }
+  }
+
+  &--orange {
+    background-color: #ff8d30;
+
+    &:hover,
+    &:focus {
+      background-color: #f26926;
+    }
+  }
 }
 
-.page-header__icon--orange{
-  background-color: #ff8d30;
+.page-header__return {
+  display: none;
+  align-items: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+
+  svg {
+    fill: currentColor;
+    margin-left: 30px;
+  }
+
+  &--form {
+    display: none;
+  }
 }
 
-.page-header__auth{
+.page-header__auth {
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: center;
-  //width:100%;
-  margin:0 auto;
-  margin-bottom:27px;
+  margin: 0 auto;
+  margin-top: -20px;
+  margin-bottom: 27px;
+
+  &--non-main {
+    display: none;
+  }
 }
-.page-header__icon-svg{
+
+.page-header__icon-svg {
   fill: $prime-color;
 }
-.page-header__slogan{
-  margin:0 auto;
-  margin-bottom:244px;
-    p{
-      color:#fff;
-      text-align:center;
-      font-family: 'bloggersans-bold','Arial', sans-serif;
-      font-size: 36px;
-      line-height: 40px;
-      width:238px;
-      margin:0 auto;
-    }
+
+.page-header__slogan {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  margin-bottom: 267px;
+
+  p {
+    color: #ffffff;
+    text-align: center;
+    font-family: "bloggersans-bold", "Arial", sans-serif;
+    font-size: 36px;
+    line-height: 40px;
+    width: 238px;
+    margin: 0 auto;
+  }
 }
 
-.page-main__review{
-  width:160px;
-  color:#fff;
-    p{
-      margin-bottom:27px;
-    }
+.page-header__review-block {
+  position: relative;
+  z-index: 2;
 }
 
-@media (min-width: $tablet-width){
-  .page-header{
-    min-height:994px;
+.page-header__review {
+  width: 185px;
+  color: #ffffff;
+  padding-left: 25px;
+
+  p {
+    margin-bottom: 17px;
   }
-  .page-header__section{
-    display:flex;
-    flex-wrap:wrap;
+}
+
+.page-header__review_author {
+  font-style: normal;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    height: 994px;
+    background-color: #182044;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: #182044;
+      background-image: url("../img/traveller-illustration-tablet@1x.png"), url("../img/globe-back-tablet@1x.jpg");
+      background-size: auto, auto;
+      background-repeat: no-repeat, no-repeat;
+      background-position: 72% 74%, -353px 100%;
+    }
+
+    &--non-main {
+      height: 352px;
+      border-radius: 0 0 60px 60px;
+      background-color: $prime-color;
+
+      &::after {
+        display: none;
+      }
+    }
   }
 
-  .page-header__logo-image--mobile{
-    display:none;
+  @media (min-resolution: $retina-dppx) {
+    .page-header {
+      &::after {
+        background-image: url("../img/traveller-illustration-tablet@2x.png"), url("../img/globe-back-tablet@2x.jpg");
+        background-size: 372px 451px, 1479px 612px; //auto 589px;
+      }
+    }
   }
-  .page-header__logo-image--tablet{
-    display:block;
+
+  .page-header__section {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--non-main {
+      flex-direction: row;
+      height: 100%;
+    }
   }
-  .page-header__logo-toogle{
-    order:1;
-    width:50%;
-    height:132px;
+
+  .page-header__logo-toogle {
+    order: 1;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 27px;
+    width: 52%;
+    height: 132px;
     align-items: center;
-    padding:0;
-    margin:0;
-    margin-bottom:53px;
   }
-  .page-header__slogan{
-    order:3;
-    width:90%;
-    margin-bottom:100px;
-    p{
-      width:400px;
+
+  .page-header__bottom {
+    order: 5;
+    display: flex;
+    margin-top: 78px;
+    padding: 0 33px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .page-header__return {
+    display: flex;
+    align-self: flex-start;
+    margin-top: 4px;
+
+    &--form {
+      display: none;
+    }
+  }
+
+  .page-header__slogan {
+    order: 3;
+    width: 90%;
+    margin-bottom: 86px;
+
+    p {
+      width: 400px;
       font-size: 60px;
       line-height: 70px;
     }
   }
-  .page-header__auth{
-    order:2;
-    height:132px;
-    align-items:center;
+
+  .page-header__auth {
+    order: 2;
+    height: 132px;
+    align-items: center;
     justify-content: flex-end;
-    width:50%;
-    padding:0;
-    margin:0;
-  }
-  .page-header__icon{
-    display:none;
+    width: 48%;
+    padding: 0;
+    margin: 0;
+
+    &--non-main {
+      display: flex;
+    }
   }
 
-  .page-header__review-block{
-    order:4;
-    margin-left:33px;
+  .page-header__icon {
+    display: none;
   }
 
-  .page-main__review{
-    width:260px;
-    color:#fff;
-      p{
-        margin-bottom:27px;
-        font-size:28px;
-        line-height: 33px;
-      }
-      cite{
-        display:inline-block;
-        width:245px;
-        font-size:21px;
-        line-height: 25px;
-      }
+  .page-header__review-block {
+    order: 4;
+    margin-left: 8px;
+  }
+
+  .page-header__review {
+    width: 290px;
+    color: #ffffff;
+
+    p {
+      margin-bottom: 45px;
+      font-size: 28px;
+      line-height: 33px;
+    }
+
+    cite {
+      display: inline-block;
+      vertical-align: middle;
+      width: 245px;
+      font-size: 21px;
+      line-height: 25px;
+    }
   }
 }
 
-@media (min-width:$desktop-width){
-  .page-header{
-    min-height:750px;
+@media (min-width: $desktop-width) {
+  .page-header {
+    height: 750px;
+    background-color: #161c34;
 
+    &::after {
+      content: "";
+      display: block;
+      background-image: url("../img/traveller-illustration-desktop@1x.png"), url("../img/globe-back-desktop@1x.jpg");
+      background-size: auto, auto;
+      background-color: #161c34;
+      background-repeat: no-repeat, no-repeat;
+      background-position: calc((100% - 1320px) / 2 + 758px) 100%, calc((100% - 1320px) / 2 + 662px) 100%;
+    }
+
+    &--non-main {
+      height: 352px;
+
+      &::after {
+        display: none;
+      }
+    }
   }
 
-  .page-header__section{
+  .page-header__section {
     justify-content: space-between;
   }
 
-  .page-header__logo-toogle{
-    width:222px;
-  }
-  .page-header__icon{
-    width:50px;
-    height:50px;
-    display:block;
+  .page-header__logo-toogle {
+    width: 222px;
   }
 
-  .page-header__menu{
-    order:2;
-  }
-  .page-header__auth{
-    order:3;
-    width:345px;
+  .page-header__bottom {
+    padding-left: 65px;
+    padding-right: 64px;
   }
 
-  .page-header__slogan{
-      order:4;
-      width:50%;
-      margin:0;
-      margin-bottom:100px;
-      p{
-        text-align: left;
-        margin:0;
-        width:400px;
-        font-size: 60px;
-        line-height: 70px;
-      }
+  .page-header__logo-image {
+    width: 200px;
+    height: 52px;
+    margin-top: 17px;
+  }
+
+  .page-header__drop-menu-container {
+    margin-top: 43px;
+    margin-left: -7px;
+  }
+
+  .page-header__icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+  }
+
+  .page-header__menu {
+    order: 2;
+  }
+
+  .page-header__auth {
+    order: 3;
+    width: 345px;
+    margin-top: 9px;
+  }
+
+  .page-header__slogan {
+    order: 4;
+    width: 50%;
+    margin: 0;
+    margin-bottom: 100px;
+    margin-top: 48px;
+    margin-left: 67px;
+
+    p {
+      text-align: left;
+      margin: 0;
+      width: 400px;
+      font-size: 60px;
+      line-height: 70px;
     }
+  }
 
-  .page-header__review-block{
-    order:5;
+  .page-header__review-block {
+    order: 5;
+    margin-top: 58px;
+    margin-right: 21px;
   }
 }

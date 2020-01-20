@@ -2,77 +2,117 @@
   position: relative;
   z-index: 9;
   background-color: #edeff6;
-  padding-top: 100px;
+  padding-top: 65px;
   padding-bottom: 30px;
   border-radius: 0 0 30px 30px;
 }
 
 .directions__slogan {
   width: 195px;
-  margin-top: 23px;
+  margin-top: 20px;
   color: #444444;
 }
 
 .directions__text {
-  padding: 34px 32px 86px 25px;
+  padding: 34px 32px 61px 25px;
 }
 
-.directions__button{
-  display:block;
-  margin:0 auto;
+.directions__button {
+  display: flex;
+  margin: 0 auto;
+}
+
+.directions__list-country {
+  margin-bottom: 27px;
 }
 
 @media (min-width: $tablet-width) {
   .directions {
     border-radius: 0 0 60px 60px;
-    padding-top: 131px;
+    padding-top: 105px;
     padding-bottom: 80px;
   }
+
+  .directions__list-country {
+    margin-bottom: 47px;
+  }
+
+  .directions__wrapper {
+    position: relative;
+    background-image: url("../img/flags-back@1x.png");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 36px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 359px;
+      left: 0;
+      width: 141px;
+      height: 141px;
+      border-radius: 20px;
+      background-color: #e2e5f2;
+    }
+  }
+
+  .directions__text {
+    padding-left: 33px;
+    padding-bottom: 107px;
+  }
+
   .directions__slogan {
-    width: 375px;
+    width: 345px;
     font-size: 28px;
     line-height: 33px;
-    margin-top: 68px;
+    margin-top: 69px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .directions {
     padding-top: 155px;
-    padding-bottom: 139px;
+    padding-bottom: 79px;
   }
 
   .directions__wrapper {
+    min-height: 575px;
+    background-position-y: 0;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+
+    &::after {
+      top: -8px;
+    }
   }
 
   .directions__slogan {
-    margin-top: 63px;
+    margin-top: 67px;
   }
 
   .directions__text {
     width: 50%;
     order: 2;
-    padding-left: 114px;
-    padding-bottom: 114px;
+    padding: 78px 0 136px 141px;
   }
 
-  .directions__list-country{
-    width:50%;
+  .directions__list-country {
+    width: 50%;
     order: 1;
-    padding-left: 71px;
+    padding-left: 38px;
+    margin-top: 66px;
   }
 
   .directions__button-container {
     width: 50%;
     order: 3;
-    margin-top: -120px;
-    padding-left: 114px;
+    margin-top: -136px;
+    padding-left: 143px;
   }
+
   .directions__button {
     margin: 0;
   }
-
 }

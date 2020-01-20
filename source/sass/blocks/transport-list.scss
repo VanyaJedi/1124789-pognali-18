@@ -1,0 +1,162 @@
+.transport-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 130px;
+
+  .transport-list__transport-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 32.25px;
+    height: 32.35px;
+    border-radius: 50%;
+
+    &--grey {
+      background-color: #edeff6;
+    }
+  }
+
+  .transport-list__transport-icon {
+    fill: #1d2e5b;
+    cursor: pointer;
+
+    &--nonactive {
+      opacity: 0.15;
+    }
+  }
+
+  &--call {
+    .transport-list__transport-icon {
+      &--plane {
+        width: 14px;
+        height: 16px;
+      }
+
+      &--bus {
+        width: 13px;
+        height: 16px;
+      }
+
+      &--bike {
+        width: 19px;
+        height: 17px;
+      }
+
+      &--run {
+        width: 15px;
+        height: 17px;
+      }
+    }
+  }
+
+  &--fellow-filter {
+    .transport-list__transport-icon {
+      &--plane {
+        width: 14px;
+        height: 16px;
+      }
+
+      &--bus {
+        width: 13px;
+        height: 16px;
+      }
+
+      &--bike {
+        width: 19px;
+        height: 17px;
+      }
+
+      &--run {
+        width: 15px;
+        height: 17px;
+      }
+    }
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .transport-list {
+    &--call {
+      width: 60px;
+      flex-direction: column;
+      align-items: center;
+
+      .transport-list__transport-item {
+        background-color: #ffffff;
+        width: 43px;
+        height: 32px;
+      }
+
+      .transport-list__transport-icon {
+        &--plane {
+          width: 19px;
+          height: 21px;
+        }
+
+        &--bus {
+          width: 17px;
+          height: 21px;
+        }
+
+        &--bike {
+          width: 24px;
+          height: 21px;
+        }
+
+        &--run {
+          width: 20px;
+          height: 21px;
+        }
+      }
+    }
+
+    &--row {
+      width: 196px;
+      flex-direction: row;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .transport-list {
+    &--call {
+      width: 162px;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &--fellow-filter {
+      width: 173px;
+
+      .transport-list__transport-item {
+        width: 43px;
+        height: 43px;
+      }
+
+      .transport-list__transport-icon {
+        &--plane {
+          width: 19px;
+          height: 21px;
+        }
+
+        &--bus {
+          width: 17px;
+          height: 21px;
+        }
+
+        &--bike {
+          width: 24px;
+          height: 21px;
+        }
+
+        &--run {
+          width: 20px;
+          height: 21px;
+        }
+      }
+    }
+  }
+}

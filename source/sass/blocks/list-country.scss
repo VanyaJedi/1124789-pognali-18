@@ -1,59 +1,139 @@
-.list-country{
+.list-country {
   list-style: none;
 }
 
-.list-country__item{
+.list-country__item {
   margin-bottom: 10px;
 }
 
-.list-country__block{
-  display:block;
+.list-country__block {
+  display: block;
   text-decoration: none;
 }
 
-.list-country__image{
-  position:relative;
-  border-radius:10px 10px 0 0;
+.list-country__image {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 270px;
+  height: 110px;
+  border-radius: 10px 10px 0 0;
 }
 
-.list-country__item-desc{
-  width:100%;
-  position:relative;
-  z-index:10;
-  display:flex;
+.list-country__item-desc {
+  width: 270px;
+  position: relative;
+  z-index: 10;
+  display: flex;
   justify-content: space-between;
-  background-color:#fff;
-  padding:30px 24px;
-  height:90px;
-  border-radius:10px;
-  margin-top:-15px;
+  background-color: #ffffff;
+  padding: 25px 24px;
+  height: 90px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: -11px;
+
+  &--last {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(237, 239, 246, 1) 73%, rgba(237, 239, 246, 1) 100%);
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr="#ffffff", endColorstr="#edeff6", GradientType=0);
+  }
 }
 
-.list-country__name{
-  color:$text-color;
-  font-size:21px;
+.list-country__name {
+  color: $text-color;
+  font-size: 21px;
 }
 
 .list-country__slogan,
-.list-country__price{
-  font-family: 'bloggersans-medium','Arial', sans-serif;
-  font-size:16px;
-  color:#c7c7c7;
+.list-country__price {
+  font-family: "bloggersans-medium", "Arial", sans-serif;
+  font-size: 16px;
+  color: #c7c7c7;
 }
 
-@media (min-width:$tablet-width){
-  .list-country__block{
-    display:flex;
+.list-country__icon {
+  fill: #e8e8ec;
+  width: 11px;
+  height: 11px;
+}
+
+.list-country__icon-flag {
+  position: absolute;
+  top: -11px;
+  left: 25px;
+  width: 35px;
+  height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .list-country__block {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 620px;
+    margin: 0 auto;
   }
-  .list-country__image{
-    order:2;
+
+  .list-country__image {
+    margin: 0;
+    width: 186px;
+    height: 140px;
     border-radius: 0 10px 10px 0;
   }
-  .list-country__item-desc{
-    display:flex;
+
+  .list-country__item-desc {
+    display: flex;
+    width: 432px;
     flex-direction: column;
-    order:1;
-    margin-top:0;
-    height:140px;
+    margin: 0;
+    height: 140px;
+    border-radius: 10px 0 0 10px;
+    padding: 30px 0 20px 30px;
+  }
+
+  .list-country__name {
+    letter-spacing: 1.5px;
+  }
+
+  .list-country__slogan,
+  .list-country__price {
+    font-size: 20px;
+  }
+
+  .list-country__slogan {
+    margin-top: 2px;
+  }
+
+  .list-country__icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+  }
+
+  .list-country__icon-flag {
+    position: absolute;
+    top: 16px;
+    left: auto;
+    right: -35px;
+    width: 70px;
+    height: 47px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .list-country__block {
+    width: 559px;
+  }
+
+  .list-country__image {
+    border-radius: 0 20px 20px 0;
+  }
+
+  .list-country__item-desc {
+    border-radius: 20px 0 0 20px;
+    padding: 22px 0 23px 32px;
+  }
+
+  .list-country__icon-flag {
+    top: 23px;
   }
 }
