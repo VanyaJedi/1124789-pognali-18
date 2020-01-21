@@ -58,11 +58,6 @@
     color: #444444;
     font-size: 14px;
 
-    span {
-      display: none;
-      text-transform: lowercase;
-    }
-
     &:nth-child(6) {
       color: #ff5c23;
     }
@@ -70,6 +65,11 @@
     &:nth-child(7) {
       color: #ff5c23;
     }
+  }
+
+  .calendar__letter-hide {
+    display: none;
+    text-transform: lowercase;
   }
 }
 
@@ -156,18 +156,19 @@
       padding-top: 18px;
       padding-left: 5px;
       vertical-align: top;
+    }
 
-      span {
-        display: inline;
-        text-transform: lowercase;
-      }
+    .calendar__letter-hide {
+      display: inline;
+      text-transform: lowercase;
     }
   }
 
   .calendar__day {
     width: 77px;
     height: 70px;
-    font-family: "bloggersans-medium", "arial", sans-serif;
+    font-family: "bloggersans", "arial", sans-serif;
+    font-weight: 500;
     font-size: 20px;
 
     &--start {
@@ -175,7 +176,8 @@
     }
 
     button {
-      font-family: "bloggersans-medium", "arial", sans-serif;
+      font-family: "bloggersans", "arial", sans-serif;
+      font-weight: 500;
       font-size: 20px;
     }
   }
@@ -192,7 +194,8 @@
     height: 72px;
     vertical-align: top;
     text-align: left;
-    font-family: "bloggersans-light", "arial", sans-serif;
+    font-family: "bloggersans", "arial", sans-serif;
+    font-weight: 300;
 
     button {
       padding-top: 10px;

@@ -89,7 +89,8 @@
   display: flex;
   align-items: center;
   text-transform: uppercase;
-  font-family: "bloggersans-medium", "Arial", sans-serif;
+  font-family: "bloggersans", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 15px;
   color: $text-color;
   padding-left: 4px;
@@ -344,7 +345,7 @@
 @media (min-width: $desktop-width) {
   .call-person {
     padding: 0;
-    height: 285px;
+    min-height: 285px;
     width: 950px;
   }
 
@@ -393,6 +394,7 @@
     padding: 0;
     width: auto;
     flex-direction: column;
+    padding-bottom: 100px;
   }
 
   .call-person__country {
@@ -414,10 +416,13 @@
 
   .call-person__transport-list {
     flex-direction: row;
+    margin-bottom: 6px;
+    margin-left: 9px;
   }
 
   .call-person__hashtag {
     margin: -193px 0 0 340px;
+    padding-bottom: 100px;
   }
 
   .call-person__button-block {

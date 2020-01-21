@@ -109,7 +109,8 @@
   align-items: center;
 
   a {
-    font-family: "bloggersans-bold", "Arial", sans-serif;
+    font-family: "bloggersans", "Arial", sans-serif;
+    font-weight: 700;
     font-size: 16px;
     color: $main-yellow;
     text-decoration: none;
@@ -231,6 +232,7 @@
 
   .interest__text {
     margin-bottom: 61px;
+    width: 623px;
   }
 
   .interest__input {

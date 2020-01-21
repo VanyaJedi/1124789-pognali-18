@@ -88,6 +88,7 @@
 
 .fellow-filter__label {
   font-family: "bloggersans", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 15px;
   color: #444444;
 
@@ -141,7 +142,8 @@
   input {
     width: 29px;
     border: none;
-    font-family: "bloggersans-medium", "Arial", sans-serif;
+    font-family: "bloggersans", "Arial", sans-serif;
+    font-weight: 500;
     font-size: 15px;
     text-align: center;
   }

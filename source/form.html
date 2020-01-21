@@ -6,6 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Направления</title>
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.js" async></script>
+  <link rel="preload" href="fonts/bloggersans-bold.woff2" as font>
+  <link rel="preload" href="fonts/bloggersans-bold.woff" as font>
+  <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as font>
+  <link rel="preload" href="fonts/bloggersans-bolditalic.woff" as font>
+  <link rel="preload" href="fonts/bloggersans-italic.woff2" as font>
+  <link rel="preload" href="fonts/bloggersans-italic.woff" as font>
+  <link rel="preload" href="fonts/bloggersans-light.woff2" as font>
+  <link rel="preload" href="fonts/bloggersans-light.woff" as font>
+  <link rel="preload" href="fonts/bloggersans-lightitalic.woff2" as font>
+  <link rel="preload" href="fonts/bloggersans-lightitalic.woff" as font>
+  <link rel="preload" href="fonts/bloggersans-medium.woff2" as font>
+  <link rel="preload" href="fonts/bloggersans-medium.woff" as font>
+  <link rel="preload" href="fonts/bloggersans-mediumitalic.woff2" as font>
+  <link rel="preload" href="fonts/bloggersans-mediumitalic.woff" as font>
+  <link rel="preload" href="fonts/bloggersans.woff2" as font>
+  <link rel="preload" href="fonts/bloggersans.woff" as font>
 </head>
 <body>
     <!-- SVG СПРАЙТ-->
@@ -144,8 +165,7 @@
               <div class="form-directions__avatar">
                 <picture>
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-account-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/photo-account-mobile@1x.webp 1x, img/photo-account-mobile@2x.webp 2x" >
-
+                  <source type="image/webp" srcset="img/photo-account-mobile@1x.webp 1x, img/photo-account-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-account-tablet@1x.jpg 1x, img/photo-account-tablet@2x.jpg 2x">
                   <img class="form-direction__image" src="img/photo-account-mobile@1x.jpg" srcset="img/photo-account-mobile@2x.jpg 2x" alt="Фото путешественника, девушка плавает в бассейне на спине">
                 </picture>
@@ -251,7 +271,7 @@
                         <span>Даты пребывания</span>
                       </div>
                       <p class="plan-list__item-info">
-                        Укажите предпочтительное количество попутчиков, которых<span></span> вы&nbspхотели бы позвать в поездку и ее предполагаемую длительность.
+                        Укажите предпочтительное количество попутчиков, которых<span></span> вы&nbsp;хотели бы позвать в поездку и ее предполагаемую длительность.
                       </p>
                     </div>
                     <ul class="plan-list__steps-btns">
@@ -330,13 +350,13 @@
 
                     <div class="calendar__table">
                       <ul class="calendar__table-days-of-week">
-                        <li>п<span>н</span></li>
-                        <li>в<span>т</span></li>
-                        <li>с<span>р</span></li>
-                        <li>ч<span>т</span></li>
-                        <li>п<span>т</span></li>
-                        <li>с<span>б</span></li>
-                        <li>в<span>с</span></li>
+                        <li>п<span class="calendar__letter-hide">н</span></li>
+                        <li>в<span class="calendar__letter-hide">т</span></li>
+                        <li>с<span class="calendar__letter-hide">р</span></li>
+                        <li>ч<span class="calendar__letter-hide">т</span></li>
+                        <li>п<span class="calendar__letter-hide">т</span></li>
+                        <li>с<span class="calendar__letter-hide">б</span></li>
+                        <li>в<span class="calendar__letter-hide">с</span></li>
                       </ul>
                       <ul class="calendar__table-days">
                         <li class="calendar__day"><button type="button"><span class="calednar__day-num">23</span></button></li>

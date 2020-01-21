@@ -126,6 +126,13 @@
       width: 162px;
       flex-direction: row;
       align-items: center;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      .transport-list__transport-item {
+        width: 37px;
+        height: 43px;
+      }
     }
 
     &--fellow-filter {

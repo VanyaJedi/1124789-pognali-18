@@ -47,7 +47,8 @@
   margin-top: -1px;
   margin-left: -1px;
   color: $text-color;
-  font-family: "bloggersans-medium", "Arial", sans-serif;
+  font-family: "bloggersans", "Arial", sans-serif;
+  font-weight: 500;
 
   &--active {
     position: relative;
@@ -132,7 +133,8 @@
     border: none;
     margin: 0;
     background-color: transparent;
-    font-family: "bloggersans-bold", "Arial", sans-serif;
+    font-family: "bloggersans", "Arial", sans-serif;
+    font-weight: 700;
     font-size: 60px;
     width: 72px;
     height: 87px;

@@ -140,13 +140,15 @@
 
 .form-directions__plan-num {
   margin-right: 5px;
-  font-family: "bloggersans-medium", "Arial", sans-serif;
+  font-family: "bloggersans", "Arial", sans-serif;
+  font-weight: 500;
 }
 
 .form-directions__plan-count,
 .form-directions__plan-date {
   color: $text-color;
-  font-family: "bloggersans-medium", "Arial", sans-serif;
+  font-family: "bloggersans", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 14px;
   letter-spacing: 1.6px;
   text-transform: uppercase;
@@ -164,7 +166,8 @@
   letter-spacing: 1px;
   color: #000000;
   opacity: 0.3;
-  font-family: "bloggersans-medium", "Arial", sans-serif;
+  font-family: "bloggersans", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 14px;
 
   &:hover,
@@ -264,7 +267,8 @@
     margin-top: 11px;
     margin-bottom: -30px;
     font-size: 20px;
-    font-family: "bloggersans-medium", "Arial", sans-serif;
+    font-family: "bloggersans", "Arial", sans-serif;
+    font-weight: 500;
     margin-left: -27px;
   }
 
@@ -276,7 +280,8 @@
     margin-bottom: 51px;
 
     span {
-      font-family: "bloggersans-medium", "Arial", sans-serif;
+      font-family: "bloggersans", "Arial", sans-serif;
+      font-weight: 500;
       font-size: 20px;
       letter-spacing: 1.7px;
     }

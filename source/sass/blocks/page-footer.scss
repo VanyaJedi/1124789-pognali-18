@@ -28,8 +28,9 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 37px;
-  width: 180px;
+  width: 100%;
   list-style: none;
+  flex-wrap: wrap;
 
   li {
     display: flex;
