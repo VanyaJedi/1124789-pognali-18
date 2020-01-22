@@ -102,6 +102,15 @@
     width: 18px;
     height: 18px;
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .fellow-filter__checkbox:checked + .fellow-filter__label::before {
@@ -109,6 +118,21 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 9px 9px;
+}
+
+.fellow-filter__checkbox {
+  &:hover,
+  &:focus {
+    & + .fellow-filter__label::before {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    & + .fellow-filter__label::before {
+      opacity: 0.3;
+    }
+  }
 }
 
 .fellow-filter__button {
